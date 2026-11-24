@@ -36,4 +36,6 @@ This is a preview. Clinical content aims to be sensible and internally consisten
 - Code: [Apache License 2.0](LICENSE).
 - Data and written content (patients, extras, generated records, docs): [Creative Commons Attribution 4.0](DATA-LICENSE.md).
 
-If you use Open Census, please credit "Open Census (Northfield Medical Center synthetic record)" and link to this repository.
+If you use Open Census, please credit "Open Census by Annas Rahman (Northfield Medical Center synthetic record)" and link to this repository.
+
+Copyright 2026 Annas Rahman.

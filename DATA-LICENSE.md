@@ -6,7 +6,7 @@ This covers the patient records (`data.js`, `patients/`), per-patient reference 
 
 You may share and adapt this material for any purpose, including commercially, as long as you give appropriate credit, link to the license, and indicate if changes were made.
 
-Suggested credit: "Open Census (Northfield Medical Center synthetic record), https://github.com/DevRush/open-census, CC BY 4.0."
+Suggested credit: "Open Census by Annas Rahman (Northfield Medical Center synthetic record), https://github.com/DevRush/open-census, CC BY 4.0."
 
 All patients, staff, and events are invented. Any resemblance to real people is coincidental. Code is licensed separately under the Apache License 2.0 (see `LICENSE`).
 
