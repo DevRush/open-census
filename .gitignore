@@ -1,0 +1,6 @@
+export/
+ops/data/
+ops/out/
+node_modules/
+_preview.html
+.DS_Store

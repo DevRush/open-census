@@ -1,0 +1,232 @@
+{
+  "id": "p11",
+  "reference": {
+    "one_line": "49-year-old woman, day 4 after deceased-donor kidney transplant with delayed graft function, one dialysis session, urine output rising, creatinine plateaued at 7.4; tacrolimus level and new fluconazole order need review.",
+    "handoff": {
+      "severity": "Watch closely",
+      "summary": "Rosalba Okafor-Baptista, 49, is on day 4 after a deceased-donor kidney transplant with delayed graft function from ischaemic tubular injury; she had one dialysis session on 14 Nov. Urine output is rising every 4 hours (150 mL to 12:00) and creatinine is 7.4 mg/dL, down from 7.6, with potassium 5.3 and bicarbonate 19; no dialysis is planned today. This morning's tacrolimus level of 14.8 ng/mL was drawn at 07:10, 50 minutes after the dose was given early at 06:20, so it is not a trough and should not drive a dose change. Fluconazole 200 mg was ordered at 12:50 for yeast in a catheter urine culture, first dose due 15:00, with no tacrolimus adjustment and no pharmacy review. The surgery note quotes creatinine as 6.4; the laboratory value is 7.4.",
+      "to_do": [
+        "Hold the 15:00 fluconazole until transplant nephrology and the transplant pharmacist have reviewed it",
+        "Tell the nephrology fellow that the 14.8 tacrolimus level was drawn after a dose; give 6 mg at 20:00 unless they say otherwise",
+        "Tomorrow: tacrolimus trough at 07:30 BEFORE the 08:00 dose; do not give the dose early",
+        "Urine and drain output every 4 hours; call if urine is below 30 mL in 4 hours or falls suddenly",
+        "Bedside glucose before supper and at bedtime; lispro correction at 17:00, glargine 10 units at 21:00",
+        "No blood pressures or needles in the left arm (fistula); paper tape only",
+        "Catheter and drain removal planned for 18 Nov after surgical review"
+      ],
+      "if_then": [
+        "If urine output falls below 30 mL in 4 hours or drops suddenly, then call nephrology and expect a repeat Doppler",
+        "If potassium is 6.0 mmol/L or above, or she becomes breathless, then call nephrology about dialysis; her fistula is working",
+        "If temperature is 38 °C or above, then call the team at once: she has had antithymocyte globulin and lymphocytes are 0.1",
+        "If an azole antifungal is confirmed as needed, then tacrolimus must be reduced by a third to a half that day with a level within 48 hours, per the pharmacy note",
+        "If glucose is below 70 mg/dL, then treat and tell endocrinology: insulin lasts longer while the graft is not working"
+      ]
+    },
+    "brief_hospital_course": "Mrs Okafor-Baptista, 49, with end-stage kidney disease from polycystic kidney disease on haemodialysis since October 2023, was admitted on 13 Nov for a deceased-donor kidney transplant (donation after circulatory death, cold ischaemia 21 hours 40 minutes). The graft was placed in the right iliac fossa with a ureteric stent; mean arterial pressure fell briefly to 58 at reperfusion. Induction was antithymocyte globulin for three doses with steroid, followed by tacrolimus, mycophenolate and prednisone. Early function was delayed: on 14 Nov potassium was 6.1 mmol/L and creatinine 9.1 mg/dL with 180 mL of urine, and she had one haemodialysis session. Doppler studies on 14 and 17 Nov showed patent vessels and no obstruction, with the resistive index improving from 0.78 to 0.80 down to 0.74; drain fluid creatinine excluded a urine leak, and the implantation biopsy showed moderate acute tubular injury without rejection. Urine output has risen daily (225 mL on 15 Nov, 460 mL on 16 Nov) and creatinine has plateaued at 7.4 without further dialysis. New high glucose was treated with glargine 10 units and correction lispro. Tacrolimus was increased stepwise to 6 mg twice daily; the level of 14.8 ng/mL on 17 Nov was drawn 50 minutes after an early dose and is not a trough. A catheter urine culture grew Candida albicans without symptoms; fluconazole was ordered on 17 Nov and its interaction with tacrolimus needs review before the first dose. Biopsy is planned for 20 Nov if creatinine is not clearly falling.",
+    "problem_list": [
+      {"problem": "Deceased-donor kidney transplant 13 Nov 2026, postoperative day 4", "status": "active", "icd10cm": "Z94.0", "evidence": ["operative note 13 Nov", "nursing assessment: wound and drain row"]},
+      {"problem": "Delayed graft function from ischaemic acute tubular injury, early recovery", "status": "improving", "icd10cm": "T86.19", "evidence": ["path: implantation biopsy", "imaging: Doppler 14 and 17 Nov", "flowsheet: urine output row", "labs: Creatinine 9.1, 6.3, 7.6, 7.4"]},
+      {"problem": "End-stage kidney disease from polycystic kidney disease; left arm fistula working", "status": "active", "icd10cm": "N18.6", "evidence": ["history and physical 13 Nov", "flowsheet: dialysis fistula row"]},
+      {"problem": "Immunosuppression: tacrolimus not yet at a verified target trough (last true trough 6.1 on 16 Nov)", "status": "active", "icd10cm": "D84.821", "evidence": ["labs: drug levels", "pharmacy note 16 Nov", "meds: tacrolimus 17 Nov 06:20", "night nursing note 17 Nov"]},
+      {"problem": "High blood sugar after transplant (steroid and tacrolimus), on insulin", "status": "active", "icd10cm": "R73.9", "evidence": ["endocrinology consult 16 Nov", "flowsheet: bedside glucose row"]},
+      {"problem": "Potassium 5.3 mmol/L and bicarbonate 19 while the graft is not yet clearing", "status": "active", "icd10cm": "E87.5", "evidence": ["labs: chemistry 17 Nov", "alerts: potassium chloride"]},
+      {"problem": "Fluid excess: weight 70.3 kg against dry weight 66.0 kg, swelling to mid-shin", "status": "active", "icd10cm": null, "evidence": ["flowsheet: weight row", "intake and output", "nephrology progress note 17 Nov"]},
+      {"problem": "Yeast (Candida albicans) in catheter urine, no symptoms", "status": "active", "icd10cm": null, "evidence": ["micro: urine culture final 17 Nov", "surgery progress note 17 Nov"]},
+      {"problem": "Low white cells and platelets after antithymocyte globulin (3.6 and 118)", "status": "active", "icd10cm": null, "evidence": ["labs: blood count 17 Nov", "pharmacy note"]},
+      {"problem": "Hypertension", "status": "active", "icd10cm": "I12.0", "evidence": ["vitals: 142/79 at 12:00", "meds: amlodipine"]},
+      {"problem": "High cytomegalovirus risk (donor positive, recipient negative), on prophylaxis", "status": "active", "icd10cm": null, "evidence": ["history and physical", "meds: valganciclovir"]}
+    ],
+    "reconciled_medications": [
+      {"medicine": "Tacrolimus 6 mg oral twice daily", "source": "inpatient", "recommended_action": "continue", "reason": "The 14.8 level is a post-dose sample, not a trough; last true trough was 6.1 on 5 mg. Repeat a proper trough before changing the dose."},
+      {"medicine": "Mycophenolate mofetil 1,000 mg oral twice daily", "source": "inpatient", "recommended_action": "continue", "reason": "Maintenance immunosuppression; watch white cells (3.6)."},
+      {"medicine": "Prednisone 20 mg oral daily", "source": "inpatient", "recommended_action": "continue", "reason": "Maintenance immunosuppression after the methylprednisolone taper."},
+      {"medicine": "Fluconazole 200 mg oral daily", "source": "inpatient", "recommended_action": "hold", "reason": "Roughly doubles tacrolimus levels and no dose adjustment or pharmacy review was arranged; indication is weak (catheter specimen, no symptoms, catheter out tomorrow). Not yet given."},
+      {"medicine": "Valganciclovir 450 mg oral twice weekly", "source": "inpatient", "recommended_action": "continue", "reason": "Deliberately reduced for a graft not yet clearing drugs; step up as function recovers."},
+      {"medicine": "Sulfamethoxazole-trimethoprim 400/80 mg oral three times weekly", "source": "inpatient", "recommended_action": "continue", "reason": "Dose set for kidney function; note that it also raises potassium."},
+      {"medicine": "Nystatin suspension 500,000 units four times daily", "source": "inpatient", "recommended_action": "continue", "reason": "Thrush prevention that is not absorbed and does not interact with tacrolimus."},
+      {"medicine": "Insulin glargine 10 units nightly and insulin lispro 2 to 8 units with meals", "source": "inpatient", "recommended_action": "continue", "reason": "Started 16 Nov; adjust by 2 units every 2 days per endocrinology, readings today 176 and 221."},
+      {"medicine": "Amlodipine 10 mg oral daily", "source": "both", "recommended_action": "continue", "reason": "Blood pressure 139 to 159 systolic; little effect on tacrolimus."},
+      {"medicine": "Heparin 5,000 units subcutaneous every 12 hours", "source": "inpatient", "recommended_action": "continue", "reason": "Clot prevention; hold from the evening of 19 Nov if the biopsy goes ahead. Platelets 118."},
+      {"medicine": "Acetaminophen 650 mg oral every 6 hours as needed (home acetaminophen 500 mg)", "source": "both", "recommended_action": "continue", "reason": "Only pain relief needed; no anti-inflammatory drugs."},
+      {"medicine": "Losartan 50 mg nightly", "source": "home", "recommended_action": "stop", "reason": "Stopped at transplant; potassium 5.3 and graft not yet working."},
+      {"medicine": "Sevelamer 1,600 mg three times daily with meals", "source": "home", "recommended_action": "hold", "reason": "Stopped at transplant, but phosphate is 6.0 mg/dL while the graft is slow; ask nephrology whether to resume for now."},
+      {"medicine": "Cinacalcet 30 mg daily", "source": "home", "recommended_action": "stop", "reason": "Stopped at transplant per the admission plan."},
+      {"medicine": "Epoetin alfa 4,000 units three times weekly at dialysis", "source": "home", "recommended_action": "hold", "reason": "Not given since the last outpatient session; haemoglobin 8.8 g/dL, so nephrology should decide on a plan while graft function is delayed."}
+    ],
+    "pending_items": [
+      "Valid tacrolimus trough (repeat 18 Nov 07:30 before the dose)",
+      "Review of the fluconazole order before the 15:00 dose",
+      "Donor-specific antibody screen, sent 17 Nov",
+      "Decision on transplant biopsy 20 Nov (heparin to be held from 19 Nov evening if it goes ahead)",
+      "Catheter removal 18 Nov and drain removal if output stays below 50 mL per day",
+      "Repeat urine culture after catheter removal, as the laboratory suggests",
+      "Insulin pen teaching with the diabetes nurse on 18 Nov",
+      "Daily decision on dialysis; outpatient chair held Tuesday, Thursday, Saturday",
+      "Ureteric stent removal at about 4 weeks"
+    ]
+  },
+  "qa": [
+    {"q": "What kind of donor kidney did she receive and how long was the cold ischaemia time?", "a": "A left kidney from a 58-year-old donor after circulatory death, kept on cold machine perfusion; cold ischaemia time 21 hours 40 minutes, reperfused at 11:05 on 13 Nov.", "type": "lookup", "evidence": ["operative note 13 Nov 13:30"]},
+    {"q": "Has she needed dialysis since the transplant?", "a": "Once: haemodialysis on 14 Nov from 13:40 for 3.5 hours through the left arm fistula, 1.5 L removed, for potassium 6.1 and creatinine 9.1. None since.", "type": "lookup", "evidence": ["events 14 Nov", "nephrology progress note 17 Nov"]},
+    {"q": "What restrictions apply to her left arm?", "a": "No blood pressures or needles: it carries her brachiocephalic dialysis fistula, which still has a thrill and bruit.", "type": "lookup", "evidence": ["orders: nursing 13 Nov", "lines: dialysis fistula"]},
+    {"q": "How has serum creatinine moved since admission?", "a": "8.8 on 13 Nov, 9.1 on 14 Nov, 6.3 on 15 Nov (the morning after dialysis), 7.6 on 16 Nov and 7.4 on 17 Nov: the first day without a rise off dialysis, a plateau and not yet a clear fall.", "type": "trend", "evidence": ["labs: chemistry"]},
+    {"q": "What is the daily urine output trend?", "a": "180 mL on 14 Nov, 225 mL on 15 Nov, 460 mL on 16 Nov, and 235 mL in the first 8 hours of 17 Nov with a further 150 mL to 12:00. Her native kidney made about 200 mL a day.", "type": "trend", "evidence": ["nephrology progress note 17 Nov", "flowsheet: urine output row"]},
+    {"q": "How have tacrolimus doses and levels changed?", "a": "Started 14 Nov at 4 mg twice daily; trough 4.2 on 15 Nov, so 5 mg from that evening; trough 6.1 on 16 Nov, so 6 mg from 20:00 on 16 Nov; 14.8 on 17 Nov, which was drawn after a dose. Target trough is 8 to 12 ng/mL.", "type": "trend", "evidence": ["pharmacy note 16 Nov", "labs: drug levels", "meds: tacrolimus"]},
+    {"q": "What has her weight done, and how far is she from dry weight?", "a": "69.2 kg on 15 Nov, 69.9 on 16 Nov and 70.3 on 17 Nov, which is 4.3 kg above her dry weight of 66.0 kg.", "type": "trend", "evidence": ["flowsheet: weight row", "nephrology progress note"]},
+    {"q": "How long after the morning tacrolimus dose was today's level drawn?", "a": "Fifty minutes. The dose was given early at 06:20 because she was leaving for ultrasound and the blood was taken at 07:10. The order is to draw at 07:30 before the 08:00 dose.", "type": "temporal", "evidence": ["meds: tacrolimus 17 Nov 06:20", "night nursing note 17 Nov 07:25", "orders: laboratory tacrolimus trough"]},
+    {"q": "When is the fluconazole due, and when was it ordered?", "a": "Ordered at 12:50 on 17 Nov by the surgical resident; first dose due 15:00 and not yet given.", "type": "temporal", "evidence": ["meds: fluconazole", "surgery progress note 17 Nov 12:40"]},
+    {"q": "Should the tacrolimus dose be reduced because of the 14.8 level?", "a": "No. It was taken near the peak, 50 minutes after a dose, so it cannot be read as a trough. The pharmacy note says such a sample should be repeated, not acted on. Yesterday's true trough was 6.1, below target.", "type": "reasoning", "evidence": ["pharmacy note 16 Nov", "night nursing note 17 Nov", "labs: drug levels"]},
+    {"q": "Is rejection or a surgical problem the likely cause of the slow graft?", "a": "No. Both Dopplers show patent vessels and no obstruction, drain fluid creatinine (7.9) matches blood so there is no urine leak, and the implantation biopsy shows moderate acute tubular injury with a negative C4d stain and no rejection. Long cold storage from a circulatory-death donor explains it.", "type": "reasoning", "evidence": ["imaging: both Doppler reports", "labs: drain fluid creatinine 16 Nov", "path: implantation biopsy"]},
+    {"q": "Why is she on only twice-weekly valganciclovir when she is at high cytomegalovirus risk?", "a": "The dose is reduced for a graft that is not yet clearing drugs (creatinine clearance below 10 mL/min) under the unit protocol; it steps up as function recovers, towards 900 mg daily. White cells are already 3.6.", "type": "reasoning", "evidence": ["pharmacy note 16 Nov", "meds: valganciclovir", "labs: White cells 17 Nov"]},
+    {"q": "Has the transplant pharmacist reviewed the fluconazole order?", "a": "The chart does not show it. The pharmacy note predates the order (16 Nov) and asks to be called if an azole is needed; no later pharmacy entry or tacrolimus adjustment exists.", "type": "absence", "evidence": ["pharmacy note 16 Nov 11:40", "meds: fluconazole and tacrolimus orders"]},
+    {"q": "What is her cytomegalovirus viral load?", "a": "None has been measured this admission. The chart records only the serology mismatch (donor positive, recipient negative) and prophylaxis.", "type": "absence", "evidence": ["labs: all panels", "history and physical 13 Nov"]},
+    {"q": "What did the donor-specific antibody screen sent today show?", "a": "No result yet; the order from 17 Nov 10:00 is still pending. The pre-transplant screen showed none.", "type": "absence", "evidence": ["orders: laboratory, pending", "history and physical 13 Nov"]}
+  ],
+  "tasks": [
+    {
+      "key_index": 0,
+      "kind": "err",
+      "prompt": "Interpret this morning's tacrolimus level and recommend what to do about the dose.",
+      "expected_findings": [
+        "The level of 14.8 ng/mL was drawn at 07:10",
+        "The morning tacrolimus dose had been given early at 06:20 because she was leaving for ultrasound at 07:30",
+        "The sample is therefore about 50 minutes after a dose, near the peak, and is not a trough",
+        "The standing order says to draw at 07:30 before the 08:00 dose",
+        "The last true trough was 6.1 on 16 Nov on a lower dose, below the 8 to 12 target"
+      ],
+      "acceptable_actions": ["Flag the 14.8 result as invalid for dosing", "Continue tacrolimus 6 mg twice daily", "Repeat a true trough before the morning dose on 18 Nov and hold that dose until blood is drawn", "Tell the nephrology fellow and transplant pharmacist", "Remind staff not to give tacrolimus early on level mornings"],
+      "must_not": ["Reduce or hold tacrolimus because of the 14.8", "Attribute the tremor and headache to toxicity on this level alone", "Treat 14.8 as evidence the dose is right"],
+      "evidence": ["meds: tacrolimus 17 Nov 06:20", "labs: drug levels 17 Nov 07:10", "night nursing note 17 Nov 07:25", "pharmacy note 16 Nov", "orders: tacrolimus trough"]
+    },
+    {
+      "key_index": 1,
+      "kind": "err",
+      "prompt": "A new medicine was ordered at 12:50 today. Check it against her other medicines and existing advice before the first dose.",
+      "expected_findings": [
+        "Fluconazole 200 mg daily, ordered by the surgical resident, first dose due 15:00",
+        "Azole antifungals raise tacrolimus levels about 2-fold",
+        "The pharmacy note says: if an azole is truly needed, reduce tacrolimus by a third to a half the day it starts, check a level within 48 hours and call transplant pharmacy; none of this was done and tacrolimus 6 mg remains active",
+        "The indication is weak: Candida in a catheter specimen, no symptoms, catheter due out on 18 Nov; the laboratory suggests repeating after removal"
+      ],
+      "acceptable_actions": ["Hold the 15:00 dose and contact the surgical resident, nephrology and transplant pharmacy", "Cancel fluconazole and repeat the urine culture after catheter removal", "If treatment is judged necessary, reduce tacrolimus as the pharmacy note describes and schedule a level"],
+      "must_not": ["Give fluconazole with tacrolimus unchanged", "Swap to another azole such as voriconazole", "Stop nystatin on interaction grounds"],
+      "evidence": ["meds: fluconazole", "surgery progress note 17 Nov plan item 3", "pharmacy note 16 Nov", "micro: urine culture"]
+    },
+    {
+      "key_index": 2,
+      "kind": "doc",
+      "prompt": "Check the laboratory values quoted in today's transplant surgery progress note against the results.",
+      "expected_findings": [
+        "The note says creatinine 6.4 today (7.6 yesterday) and that graft function is picking up briskly",
+        "The laboratory creatinine on 17 Nov is 7.4 mg/dL",
+        "The true change is 7.6 to 7.4: a plateau, not a brisk fall",
+        "The nephrology note on the same day quotes 7.4 correctly"
+      ],
+      "acceptable_actions": ["Ask the author to correct the note", "Make sure decisions about dialysis, biopsy and drug dosing use 7.4"],
+      "must_not": ["Cancel the planned biopsy or step up kidney-dosed medicines on the strength of 6.4", "Assume a second sample exists"],
+      "evidence": ["surgery progress note 17 Nov 12:40", "labs: chemistry 17 Nov 07:10", "nephrology progress note 17 Nov 09:50"]
+    },
+    {
+      "key_index": 3,
+      "kind": "time",
+      "prompt": "Her husband asks why the kidney is slow and whether it is being rejected. From the chart, give the most likely cause and what should and should not be done.",
+      "expected_findings": [
+        "Ischaemic acute tubular injury: donor after circulatory death, cold ischaemia 21 hours 40 minutes, and a brief fall in mean pressure to 58 at reperfusion",
+        "Both Dopplers: patent artery and vein, no obstruction, resistive index improving from 0.78 to 0.80 down to 0.74",
+        "Drain fluid creatinine equals blood, so no urine leak",
+        "Implantation biopsy: moderate acute tubular injury, no rejection, C4d negative; recovery typically over 1 to 3 weeks",
+        "Urine output is rising each day and creatinine has stopped rising"
+      ],
+      "acceptable_actions": ["Supportive care: daily review for dialysis, potassium and fluid limits, avoid contrast and anti-inflammatory drugs", "Keep immunosuppression on target", "Keep the day 7 biopsy as a fallback only if creatinine is not clearly falling", "Explain to the family that the kidney is slow, not failed"],
+      "must_not": ["Start rejection treatment such as pulse steroid without a biopsy", "Recommend surgical re-exploration", "Order a contrast CT of the graft"],
+      "evidence": ["operative note", "anaesthesia note", "imaging: Doppler 14 and 17 Nov", "path: implantation biopsy", "flowsheet: transplant monitoring"]
+    },
+    {
+      "key_index": 4,
+      "kind": "dis",
+      "prompt": "A covering physician thinks the infection-prevention medicines are under-dosed. Review the doses and respond.",
+      "expected_findings": [
+        "Valganciclovir 450 mg twice weekly and sulfamethoxazole-trimethoprim 400/80 mg three times weekly are lower than the usual daily regimens",
+        "Both are intentionally reduced because the graft is not yet clearing drugs (creatinine clearance below 10 mL/min), as the pharmacy note explains",
+        "They will be stepped up as function recovers (valganciclovir towards 900 mg daily; trimethoprim daily once clearance is above 30)",
+        "Full doses now would risk further falls in white cells (already 3.6) and a higher potassium"
+      ],
+      "acceptable_actions": ["Leave the doses as they are", "Plan a pharmacy review of doses as creatinine falls"],
+      "must_not": ["Increase valganciclovir or sulfamethoxazole-trimethoprim to full daily doses now", "Report the doses as a prescribing error"],
+      "evidence": ["meds: valganciclovir and sulfamethoxazole-trimethoprim", "pharmacy note 16 Nov", "labs: blood count 17 Nov"]
+    }
+  ],
+  "epilogue": {
+    "note": "What happens AFTER 'now' in this simulated world. Never shown in the chart; for outcome-prediction ground truth.",
+    "course": "The transplant pharmacist intercepted the fluconazole while verifying the order; it was cancelled before the 15:00 dose, and a urine culture repeated after the catheter came out grew nothing. The tacrolimus error slipped through for a day: the fellow, not knowing the sample followed a dose, cut tacrolimus to 4 mg that evening. A properly timed trough next morning was 6.3, the pharmacist traced the cause, and 6 mg was restored; troughs stayed below target until 21 Nov. No rejection followed and the antibody screen was negative. The kidney opened up as predicted: urine passed 1 L on 18 Nov, creatinine fell to 6.8, 5.7 and 4.5 on successive days, and the biopsy was cancelled. She needed no more dialysis and went home on 23 Nov with creatinine 2.8, on insulin, with her husband filling the pill organiser. At one month creatinine was 1.4, the stent was out and insulin was being reduced.",
+    "events": [
+      {"t": "2026-11-17T14:50", "event": "Transplant pharmacist calls the surgical resident; fluconazole cancelled before the first dose."},
+      {"t": "2026-11-17T16:10", "event": "Nephrology fellow reduces tacrolimus to 4 mg twice daily from the 20:00 dose on the basis of the 14.8 level."},
+      {"t": "2026-11-18T07:30", "event": "Tacrolimus trough 6.3 ng/mL, drawn before the dose. Creatinine 6.8 mg/dL."},
+      {"t": "2026-11-18T09:20", "event": "Pharmacist identifies the post-dose sample on rounds; tacrolimus restored to 6 mg from 20:00."},
+      {"t": "2026-11-18T10:30", "event": "Urinary catheter and surgical drain removed. Urine 1,150 mL over the day."},
+      {"t": "2026-11-19T16:00", "event": "Creatinine 5.7 mg/dL; donor-specific antibodies negative; biopsy cancelled."},
+      {"t": "2026-11-21T07:30", "event": "Tacrolimus trough 8.4 ng/mL, in range. Repeat urine culture: no growth."},
+      {"t": "2026-11-23T13:30", "event": "Discharged home, creatinine 2.8 mg/dL, glargine 14 units; outpatient dialysis chair released."},
+      {"t": "2026-12-11T09:00", "event": "Ureteric stent removed by cystoscopy as a day case."},
+      {"t": "2026-12-21T10:00", "event": "Clinic: creatinine 1.4 mg/dL, tacrolimus trough 9.1, glargine down to 8 units."}
+    ],
+    "discharge": {"t": "2026-11-23T13:30", "disposition": "Home", "length_of_stay_days": 10},
+    "outcomes_30_day": {"readmitted": false, "readmission_reason": null, "emergency_visits": 0, "died": false, "notable": "Graft recovered without further dialysis or biopsy; three days of low tacrolimus exposure after a mistimed level, with no rejection."}
+  },
+  "portal_messages": [
+    {"t": "2026-10-08T19:20", "from": "patient", "channel": "patient portal", "subject": "Can I travel while on the list?", "body": "Thank you for the review on Tuesday. One thing I forgot to ask. My daughter has a concert at her university at the end of the month, about three hours' drive from here, and we'd stay one night. I've been on the list since 2022 and I'm terrified of missing the call. Am I allowed to go? How quickly would I have to get to the hospital if the phone rang? I'd dialyse on the Saturday morning as usual before we left.", "urgency_truth": "routine", "ideal_reply_points": ["She can travel; tell the coordinators the dates, the location and a second phone number", "Give the unit's expected arrival window after a call", "Keep the phone on and loud overnight; stop eating and drinking when called", "Keep to her dialysis schedule", "Warm acknowledgement of the long wait"]},
+    {"t": "2026-10-09T10:05", "from": "transplant coordinator (nurse)", "channel": "patient portal", "subject": "Re: Can I travel while on the list?", "body": "Dear Rosalba, yes, please go and enjoy it. Send me the dates, the address and Anselm's mobile number so the on-call coordinator has them. Three hours away is workable: when an offer comes we normally need you here within about four hours, so keep your phone on loud by the bed and the car fuelled. If we ring, stop eating and drinking and set off. Keep your Saturday dialysis as planned. You stay active on the list the whole time you are away.", "urgency_truth": "routine", "ideal_reply_points": ["Clear yes with practical conditions", "Arrival window stated", "What to do when the call comes", "Reassurance that listing status is unaffected"]},
+    {"t": "2026-11-16T21:40", "from": "patient", "channel": "patient portal", "subject": "Is the kidney failing?", "body": "I'm writing from my hospital bed because I can't sleep and I don't want to bother the night nurse. I had dialysis on Saturday, the day after the transplant, and nobody has really said what that means. The doctors call the kidney 'sleepy'. Has it failed? I'm passing a bit more urine each day but they keep saying the numbers are high. If it hasn't woken up by now, will it ever? I waited nearly five years for this and I feel I've wasted it.", "urgency_truth": "routine", "ideal_reply_points": ["Slow start is common with this type of donor kidney and long cold storage, and usually recovers over 1 to 3 weeks", "The scan shows good blood flow and the biopsy taken at surgery shows recoverable injury, not rejection", "Rising urine is an encouraging sign; dialysis is a bridge, not a verdict", "The team will go through it with her and her husband on rounds", "She has not wasted anything; invite her to use the call bell when anxious at night"]},
+    {"t": "2026-11-27T08:05", "from": "patient", "channel": "patient portal", "subject": "Took tacrolimus before blood test - sorry", "body": "I've done exactly what you told me not to. My blood test is at 9:30 this morning and I took my tacrolimus at 8 on autopilot with the other tablets before I remembered. Anselm says to go anyway. Should I still come for the test or will it mess everything up? I don't want anyone changing my dose because of my mistake. Do I still take tonight's one at 8? My hands are shaking enough already without this.", "urgency_truth": "same day", "ideal_reply_points": ["Thank her for saying so; this is exactly the right thing to report", "Come anyway: creatinine, potassium and blood count are still needed", "The tacrolimus level will be labelled as post-dose and not used for dosing, or repeated on the next visit before the dose", "Take tonight's dose at 20:00 as usual; do not skip or double", "Suggest keeping the morning capsule in her bag on test days"]},
+    {"t": "2026-11-27T08:32", "from": "transplant coordinator (nurse)", "channel": "patient portal", "subject": "Re: Took tacrolimus before blood test - sorry", "body": "Rosalba, thank you for telling us straight away, that is what keeps you safe. Please still come at 9:30. We need your kidney numbers today regardless. I've put a note on the request that the tacrolimus was taken at 8:00, so that level won't be used to change your dose; we'll take a proper one on Monday before your morning capsule. Take tonight's dose at 8 pm as normal, no extra and no skipping. Tip from other patients: on test mornings, put the capsule in your coat pocket the night before.", "urgency_truth": "same day", "ideal_reply_points": ["Non-blaming tone", "Attend as planned", "Level annotated and repeat arranged", "Evening dose unchanged"]},
+    {"t": "2026-12-08T17:35", "from": "patient", "channel": "patient portal", "subject": "Antibiotic from walk-in clinic", "body": "I've had a blocked nose and a cough for four days and a sore face today, so I went to the walk-in clinic near home. No fever, it was 37.3 this morning. The doctor there gave me clarithromycin for a sinus infection. I told him about the transplant and he said it would be fine. But I remember being told no new antibiotics without asking you first. I haven't taken any yet. The pharmacy shuts at nine. Can I start it tonight?", "urgency_truth": "same day", "ideal_reply_points": ["Do not start clarithromycin: it raises tacrolimus levels sharply", "She did the right thing by checking first", "The transplant team will choose a safe alternative if an antibiotic is needed at all and will want to assess her, since she is under four weeks out and heavily immunosuppressed", "Call the on-call line now if fever reaches 38 °C, she becomes breathless or urine falls", "Reply before the pharmacy closes"]}
+  ],
+  "conversation": {
+    "setting": "Transplant Unit, bed TX-09, late morning to midday on 17 Nov; second discharge teaching session",
+    "participants": ["R. Sternhagen RN (transplant coordinator)", "Rosalba Okafor-Baptista (patient)", "Anselm (husband)"],
+    "turns": [
+      {"speaker": "Coordinator", "text": "Right, round two. Anselm, good to meet you properly. Rosalba, how are the hands today?"},
+      {"speaker": "Patient", "text": "Still shaky. Look at that. I'm a music teacher and I can't hold a cup still."},
+      {"speaker": "Coordinator", "text": "That's mostly the tacrolimus. Keep telling the doctors about it. So, yesterday you gave me two of the three anti-rejection medicines. Want to try for all three?"},
+      {"speaker": "Patient", "text": "Tacrolimus. Myco... mycophenolate. And prednisone, the steroid."},
+      {"speaker": "Coordinator", "text": "All three. And what are they for?"},
+      {"speaker": "Patient", "text": "To stop my body attacking the kidney."},
+      {"speaker": "Coordinator", "text": "Exactly. Now the one I'm fussiest about. Tacrolimus is twice a day, twelve hours apart. Eight in the morning, eight at night."},
+      {"speaker": "Husband", "text": "Eight and eight. I'll set an alarm on both phones."},
+      {"speaker": "Coordinator", "text": "Good. Here's the bit people get caught on. On a blood-test morning you do not take the morning tacrolimus until after the blood has been drawn."},
+      {"speaker": "Patient", "text": "Why, if I'm supposed to take it at..."},
+      {"speaker": "Husband", "text": "Because it would show up in the blood?"},
+      {"speaker": "Coordinator", "text": "That's it. We measure the level at its lowest point, just before the next dose. If you've already swallowed it, the number comes back falsely high, and somebody might change your dose the wrong way."},
+      {"speaker": "Patient", "text": "So on clinic days I bring it with me and take it after the needle."},
+      {"speaker": "Coordinator", "text": "Perfect. Say the whole thing back to me once, so I know I've been clear."},
+      {"speaker": "Patient", "text": "Eight and eight, twelve hours apart. Blood-test days, blood first, then the capsule."},
+      {"speaker": "Coordinator", "text": "Lovely. Next, things to steer clear of. Grapefruit, and that includes the juice."},
+      {"speaker": "Husband", "text": "She loves grapefruit."},
+      {"speaker": "Patient", "text": "Loved."},
+      {"speaker": "Coordinator", "text": "Sorry. Also anti-inflammatory painkillers, ibuprofen and its cousins. And any new antibiotic or antifungal, unless the transplant team has agreed it."},
+      {"speaker": "Husband", "text": "Even if another doctor prescribes it?"},
+      {"speaker": "Coordinator", "text": "Even then. You ring us first. Okay, glucose meter. Rosalba, you're driving this time."},
+      {"speaker": "Patient", "text": "Wash hands, strip in... which bit of the finger?"},
+      {"speaker": "Coordinator", "text": "The side, not the pad. Hold it steady against the table if the shake gets in the way. There. Squeeze gently."},
+      {"speaker": "Patient", "text": "Oh. It's counting down. I did it."},
+      {"speaker": "Coordinator", "text": "You did, I only pointed. The diabetes nurse comes tomorrow to teach the insulin pen. At home you'll keep a log: temperature, weight, blood pressure, how much urine you pass, and your glucose."},
+      {"speaker": "Husband", "text": "Every day?"},
+      {"speaker": "Coordinator", "text": "Every day. And you call us for any of these. Temperature thirty-eight or above. The urine dropping off. Pain or swelling over the kidney. Or your weight up a kilo in a day."},
+      {"speaker": "Patient", "text": "Thirty-eight, less urine, pain over the kidney, a kilo in a day."},
+      {"speaker": "Coordinator", "text": "Yes. How did you get on with the pill organiser?"},
+      {"speaker": "Patient", "text": "Hopeless. With this shake it's too fiddly, they went everywhere."},
+      {"speaker": "Husband", "text": "I'll fill it."},
+      {"speaker": "Coordinator", "text": "Good plan. Rosalba, you've gone quiet."},
+      {"speaker": "Patient", "text": "It's just, it's day four and it's still not working, is it? I had dialysis on Saturday. I keep thinking the kidney isn't working and never will."},
+      {"speaker": "Coordinator", "text": "What did Dr Brennan-Osei tell you this morning?"},
+      {"speaker": "Patient", "text": "That it's slow, not failed. That it's making a bit more urine every day."},
+      {"speaker": "Coordinator", "text": "That's right, and it counts. You won't go home until it's clearly recovering and you're free of dialysis, or we've confirmed a dialysis slot. Your old unit is holding your Tuesday, Thursday, Saturday chair just in case."},
+      {"speaker": "Husband", "text": "And once we're home?"},
+      {"speaker": "Coordinator", "text": "Clinic and blood tests twice a week for the first month. It's about forty minutes for you, isn't it?"},
+      {"speaker": "Husband", "text": "Forty. I'll drive."},
+      {"speaker": "Coordinator", "text": "Then that's us for today. Same again tomorrow, with the pen."}
+    ],
+    "note_it_should_produce": "Existing note: 'Transplant coordinator: teaching session 2' by R. Sternhagen RN, 17 Nov 13:20."
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "id": "p3",
+  "reference": {
+    "one_line": "74-year-old woman with heart failure (ejection fraction 25 to 30%) admitted fluid overloaded; diuresing, weight 82.4 to 81.0 kg, creatinine 2.4, potassium 3.2 with replacement dose overdue.",
+    "handoff": {
+      "severity": "Watch closely",
+      "summary": "Eleanor Achterberg, 74, was admitted on 16 Nov with acute decompensated heart failure after a salt load and missed furosemide doses; echocardiogram shows ejection fraction 25 to 30%. She is responding to furosemide 80 mg intravenous twice daily: about 2 L net negative, weight 82.4 to 81.0 kg (target near 77), oxygen down from 4 L to 2 L, but neck veins are still raised with 2+ swelling to mid-shin. Creatinine has risen from 2.1 to 2.4 mg/dL (baseline 1.6); the kidney team attributes this to congestion and advises continuing diuresis. Potassium is 3.2 and magnesium 1.6 after a four-beat wide-complex run at 22:14 last night. She is in permanent atrial fibrillation, rate controlled, and her code status is no CPR with intubation acceptable.",
+      "to_do": [
+        "Give the second potassium chloride 40 mEq dose now; it was due at 12:15 and is overdue.",
+        "Chemistry recheck at 16:00 (potassium, magnesium, creatinine); furosemide 80 mg intravenous is also due at 16:00.",
+        "Apixaban is ordered at 2.5 mg twice daily but her home dose is 5 mg and she meets only one dose-reduction criterion; ask the team or pharmacist to review before the 21:00 dose.",
+        "Magnesium oxide 400 mg due 21:00; aim for potassium above 4 and magnesium above 2.",
+        "Continue cardiac monitoring; save any further wide-complex strips.",
+        "Daily weight at 05:30 on the same scale; kidney team suggests furosemide once daily from tomorrow if weight keeps falling.",
+        "Wean oxygen to room air; diet teaching with daughter Katrien present."
+      ],
+      "if_then": [
+        "If there is a further run of wide-complex beats, especially sustained or with symptoms, then check the patient, get a 12-lead ECG, send urgent potassium and magnesium and call the resident.",
+        "If the 16:00 potassium is still below 3.5, then ask for further replacement before the evening.",
+        "If creatinine rises above 2.6 or urine falls below 140 mL over 4 hours, then call the resident and kidney team; do not stop the diuretic without discussion, as she is still congested.",
+        "If she becomes more breathless or saturation drops below 92% on 2 L, then sit her up, increase oxygen and call the resident.",
+        "If her heart stops, then do not start chest compressions; she would accept a short trial of a breathing tube for respiratory failure."
+      ]
+    },
+    "brief_hospital_course": "Mrs Achterberg is a 74-year-old woman with non-ischaemic heart failure, permanent atrial fibrillation, stage 3b chronic kidney disease and hypertension who presented on 16 Nov with a week of worsening breathlessness, orthopnoea and leg swelling after eating tinned soup for two weeks and missing furosemide doses. She was hypoxaemic (90% on 4 L) with raised neck veins, crackles to the mid-zones and 3+ oedema; BNP was 2,840 pg/mL, chest X-ray showed pulmonary oedema, and troponin was flat at 38 and 41 ng/L. Echocardiography showed an ejection fraction of 25 to 30% (32% in March 2025) with moderate mitral regurgitation. She was treated with furosemide 80 mg intravenously twice daily, fluid and salt restriction, with lisinopril and spironolactone held for kidney injury. By the afternoon of 17 Nov she was about 2 L net negative, weight had fallen from 82.4 to 81.0 kg and oxygen requirement from 4 L to 2 L, though she remained congested. Creatinine rose from 2.1 to 2.4 mg/dL (baseline 1.6); the kidney team judged this cardiorenal and advised continued diuresis. Potassium fell to 3.2 mmol/L and magnesium to 1.6 mg/dL, with a four-beat asymptomatic wide-complex run overnight; both were replaced. Apixaban was ordered at 2.5 mg twice daily on admission, lower than her 5 mg home dose, and is under review. She confirmed her wish for no chest compressions and declined a defibrillator. Case management is arranging home nursing, a scale and heart failure clinic follow-up.",
+    "problem_list": [
+      {"problem": "Acute on chronic systolic heart failure, ejection fraction 25 to 30%, still fluid overloaded", "status": "improving", "icd10cm": "I50.23", "evidence": ["imaging: Echocardiogram 16 Nov 11:30", "labs: B-type natriuretic peptide 2,840 to 1,910", "flowsheet: Weight 82.4 to 81.0 kg; Leg swelling 3+ to 2+"]},
+      {"problem": "Acute kidney injury on stage 3b chronic kidney disease, cardiorenal", "status": "active", "icd10cm": "N17.9", "evidence": ["labs: Creatinine 2.1, 2.2, 2.4 (baseline 1.6)", "kidney medicine consult 17 Nov 10:20"]},
+      {"problem": "Chronic kidney disease stage 3b", "status": "active", "icd10cm": "N18.32", "evidence": ["history and physical 16 Nov 05:20: creatinine 1.6 in September"]},
+      {"problem": "Hypokalaemia on loop diuretic, replacement incomplete", "status": "active", "icd10cm": "E87.6", "evidence": ["labs: Potassium 4.8, 3.9, 3.2", "meds: Potassium chloride 40 mEq, second dose due 12:15 not given"]},
+      {"problem": "Hypomagnesaemia", "status": "active", "icd10cm": "E83.42", "evidence": ["labs: Magnesium 1.9, 1.7, 1.6", "meds: Magnesium oxide 400 mg"]},
+      {"problem": "Non-sustained wide-complex rhythm, four beats at 22:14 on 16 Nov", "status": "active", "icd10cm": "I47.29", "evidence": ["flowsheet: Heart rhythm 17 Nov 00:00 column", "nursing note 17 Nov 07:00"]},
+      {"problem": "Permanent atrial fibrillation; apixaban under-dosed in hospital", "status": "active", "icd10cm": "I48.21", "evidence": ["imaging: 12-lead ECG 16 Nov 03:25", "meds: Apixaban 2.5 mg", "history and physical: apixaban 5 mg twice daily at home"]},
+      {"problem": "Mild hyponatraemia, improving with diuresis", "status": "improving", "icd10cm": "E87.1", "evidence": ["labs: Sodium 131, 132, 134"]},
+      {"problem": "Hypertension, lisinopril on hold", "status": "active", "icd10cm": "I10", "evidence": ["orders: Lisinopril 10 mg HOLD", "flowsheet: Blood pressure 151/92 on arrival, 124/69 at 17 Nov 12:00"]},
+      {"problem": "Left shin blister from oedema", "status": "improving", "icd10cm": null, "evidence": ["lines: Wound dressing, left shin, 1.5 cm", "nursing assessment: Skin"]},
+      {"problem": "Lives alone; missed diuretic doses and high salt intake; no CPR status", "status": "active", "icd10cm": "Z66", "evidence": ["case management note 17 Nov 11:30", "cardiology attending note 16 Nov 13:40"]}
+    ],
+    "reconciled_medications": [
+      {"medicine": "Furosemide 40 mg oral daily (home); 80 mg intravenous twice daily (inpatient)", "source": "both", "recommended_action": "change", "reason": "Continue intravenous diuresis while congested; kidney team suggests 80 mg once daily from 18 Nov if weight keeps falling. Discharge dose will need to be higher than 40 mg."},
+      {"medicine": "Apixaban 5 mg oral twice daily (home); 2.5 mg twice daily (inpatient)", "source": "both", "recommended_action": "change", "reason": "Return to 5 mg twice daily. Dose reduction needs two of: age 80 or over, weight 60 kg or under, creatinine 1.5 mg/dL or over. She is 74 and 81 kg and meets only the creatinine criterion."},
+      {"medicine": "Lisinopril 10 mg oral daily", "source": "home", "recommended_action": "hold", "reason": "Acute kidney injury; restart when creatinine is falling."},
+      {"medicine": "Spironolactone 25 mg oral daily", "source": "home", "recommended_action": "hold", "reason": "Acute kidney injury; restart when creatinine is falling, watching potassium."},
+      {"medicine": "Metoprolol succinate 50 mg oral daily", "source": "both", "recommended_action": "continue", "reason": "Rate control and heart failure therapy; heart rate 82 to 93, blood pressure adequate."},
+      {"medicine": "Atorvastatin 40 mg oral nightly", "source": "both", "recommended_action": "continue", "reason": "Unchanged home medicine."},
+      {"medicine": "Potassium chloride 40 mEq oral, 2 doses 4 hours apart", "source": "inpatient", "recommended_action": "continue", "reason": "Potassium 3.2 mmol/L with ventricular ectopy; first dose given 08:15, second overdue since 12:15. Give now and recheck at 16:00."},
+      {"medicine": "Magnesium oxide 400 mg oral twice daily, 4 doses", "source": "inpatient", "recommended_action": "continue", "reason": "Magnesium 1.6 mg/dL; target above 2."},
+      {"medicine": "Acetaminophen 650 mg oral every 6 hours as needed", "source": "inpatient", "recommended_action": "continue", "reason": "Not yet used; safe choice, anti-inflammatory drugs are to be avoided."}
+    ],
+    "pending_items": [
+      "Second potassium chloride 40 mEq dose (overdue since 12:15).",
+      "Chemistry recheck at 16:00 on 17 Nov.",
+      "Review of the apixaban dose, raised by the kidney consult and not yet acted on.",
+      "Decision on reducing furosemide to once daily from 18 Nov.",
+      "When to restart lisinopril and spironolactone; sacubitril-valsartan and an SGLT2 inhibitor to be considered in clinic.",
+      "Home services: scale, pill organiser, low-salt meals, home nursing, heart failure clinic within 7 days."
+    ]
+  },
+  "qa": [
+    {"q": "What is her ejection fraction and how does it compare with before?", "a": "25 to 30% on 16 Nov, down slightly from 32% in March 2025; moderate mitral regurgitation and estimated pulmonary artery systolic pressure 52 mmHg.", "type": "lookup", "evidence": ["imaging: Echocardiogram 16 Nov 11:30"]},
+    {"q": "What is her resuscitation status?", "a": "No CPR; she would accept a short trial of a breathing tube. She has also declined a defibrillator. Confirmed on 16 and 17 Nov, form on the chart.", "type": "lookup", "evidence": ["header: code status", "cardiology attending note 16 Nov 13:40", "case management note 17 Nov 11:30"]},
+    {"q": "What did the troponin show?", "a": "38 then 41 ng/L three hours apart: flat, read as strain and not a heart attack; no coronary study planned.", "type": "lookup", "evidence": ["labs: Cardiac markers", "cardiology attending note 16 Nov 13:40"]},
+    {"q": "How much weight has she lost since admission and what is the target?", "a": "1.4 kg: 82.4 kg on admission to 81.0 kg at 05:30 on 17 Nov. Target weight is near 77 kg.", "type": "trend", "evidence": ["flowsheet: Heart failure, Weight", "nursing note 17 Nov 07:00", "cardiology attending note 16 Nov 13:40"]},
+    {"q": "What is the creatinine trend?", "a": "2.1, 2.2, then 2.4 mg/dL on 17 Nov 05:05, against a baseline of 1.6; urea nitrogen 52, 54, 57.", "type": "trend", "evidence": ["labs: Chemistry"]},
+    {"q": "How have potassium and magnesium changed with diuresis?", "a": "Potassium 4.8, 3.9, 3.2 mmol/L; magnesium 1.9, 1.7, 1.6 mg/dL.", "type": "trend", "evidence": ["labs: Chemistry"]},
+    {"q": "How has her oxygen requirement changed?", "a": "4 L nasal on arrival with saturation 90%, 3 L from 12:00 on 16 Nov, 2 L from 20:00, saturation 94 to 95% since.", "type": "trend", "evidence": ["flowsheet: Vitals, Oxygen delivery and saturation"]},
+    {"q": "Has the second potassium dose been given?", "a": "No. It was due at 12:15 and by 14:30 has not been charted as given, 2 hours 15 minutes late. The first was given at 08:15.", "type": "temporal", "evidence": ["meds: Potassium chloride 40 mEq"]},
+    {"q": "When was the wide-complex run and what were the electrolytes around it?", "a": "Four beats at 22:14 on 16 Nov, asymptomatic. Potassium was 3.9 at 14:10 that afternoon and 3.2 at 05:05 the next morning; magnesium 1.7 then 1.6.", "type": "temporal", "evidence": ["flowsheet: Heart rhythm", "nursing note 17 Nov 07:00", "labs: Chemistry"]},
+    {"q": "What is her net fluid balance since admission?", "a": "About 1,690 mL negative to 07:00 on 17 Nov and 1,990 mL negative by 14:30.", "type": "temporal", "evidence": ["intake and output: Net balance −1,070, −620, −300"]},
+    {"q": "Is apixaban 2.5 mg twice daily the right dose for her?", "a": "No. She takes 5 mg twice daily at home and meets only one of the three reduction criteria (creatinine 1.5 or over); she is 74 years old and weighs 81 kg. Three reduced doses have been given.", "type": "reasoning", "evidence": ["meds: Apixaban 2.5 mg", "history and physical 16 Nov 05:20", "kidney medicine consult 17 Nov 10:20, recommendation 4"]},
+    {"q": "Should furosemide be stopped because the creatinine is rising?", "a": "No. She is still congested (raised neck veins, 2+ oedema, crackles), urine output is good, and the kidney team judges the rise cardiorenal; they advise continuing diuresis at 1 to 1.5 L net negative per day.", "type": "reasoning", "evidence": ["kidney medicine consult 17 Nov 10:20", "flowsheet: Neck veins, Leg swelling", "progress note 17 Nov 09:15"]},
+    {"q": "Is furosemide safe given her sulfonamide allergy?", "a": "Yes. The allergy is hives with sulfonamide antibiotics; furosemide is a different class and she has taken it for years without a reaction.", "type": "reasoning", "evidence": ["history and physical 16 Nov 05:20, Allergies", "allergies"]},
+    {"q": "What did the 16:00 chemistry recheck show?", "a": "Not available. It is planned for 16:00 on 17 Nov and has not been drawn at the time of the chart.", "type": "absence", "evidence": ["progress note 17 Nov 09:15, plan item 2", "labs: Chemistry, last time point 17 Nov 05:05"]},
+    {"q": "Has the cause of her anaemia (haemoglobin 10.9) been investigated with iron studies?", "a": "The chart does not say; no iron studies, ferritin or other anaemia work-up is recorded.", "type": "absence", "evidence": ["labs: Blood count only"]}
+  ],
+  "tasks": [
+    {
+      "key_index": 0,
+      "kind": "err",
+      "prompt": "Reconcile the inpatient medication orders against the home medication list and check each dose for appropriateness.",
+      "expected_findings": [
+        "Apixaban is ordered at 2.5 mg twice daily; her home dose is 5 mg twice daily.",
+        "The reduced dose requires two of three criteria (age 80 or over, weight 60 kg or under, creatinine 1.5 mg/dL or over). She is 74, weighs 81 kg and has creatinine 2.4, so she meets one.",
+        "Three reduced doses have been given (16 Nov 09:05 and 21:10, 17 Nov 09:02); the kidney consult asks for the dose to be reviewed."
+      ],
+      "acceptable_actions": [
+        "Recommend changing apixaban to 5 mg twice daily from the next dose and notify the resident and pharmacist.",
+        "Note that furosemide (higher than home), lisinopril and spironolactone (held) differ from home intentionally."
+      ],
+      "must_not": [
+        "Accept 2.5 mg as correct 'because of kidney disease'.",
+        "Recommend stopping apixaban altogether.",
+        "Flag the held lisinopril and spironolactone as omissions."
+      ],
+      "evidence": ["meds: Apixaban 2.5 mg, ordered 16 Nov 05:30", "history and physical 16 Nov 05:20, Medications at home", "kidney medicine consult 17 Nov 10:20, recommendation 4", "header: age 74, weight 81.0 kg"]
+    },
+    {
+      "key_index": 1,
+      "kind": "err",
+      "prompt": "Review the medication administration record for doses that are late or missed, and say which matter most.",
+      "expected_findings": [
+        "The second potassium chloride 40 mEq dose, due 12:15, has not been given by 14:30.",
+        "It matters because potassium is 3.2 mmol/L, magnesium 1.6 mg/dL, she is on twice-daily intravenous furosemide with another dose due at 16:00, and she had a four-beat wide-complex run overnight with an ejection fraction of 25 to 30%."
+      ],
+      "acceptable_actions": [
+        "Give the overdue dose now and tell the nurse in charge or resident.",
+        "Make sure the 16:00 chemistry is drawn and interpreted knowing the second dose was late.",
+        "Keep her on the cardiac monitor."
+      ],
+      "must_not": [
+        "Skip the dose and wait for the 16:00 level.",
+        "Order an additional new potassium dose before giving the one already ordered.",
+        "List the acetaminophen (as needed, never given) as a missed dose."
+      ],
+      "evidence": ["meds: Potassium chloride 40 mEq, 12:15 dose status 'due'", "labs: Potassium 17 Nov 05:05", "flowsheet: Heart rhythm, 22:14 wide-complex beats", "kidney medicine consult, recommendation 2"]
+    },
+    {
+      "key_index": 2,
+      "kind": "doc",
+      "prompt": "Verify the figures quoted in today's cardiology progress note against the flowsheets and intake and output record.",
+      "expected_findings": [
+        "The 17 Nov 09:15 progress note says 'Weight down 2.1 kg since admission.'",
+        "The flowsheet and night nursing note give 82.4 kg on admission and 81.0 kg at 05:30 on 17 Nov, a fall of 1.4 kg.",
+        "The 'net negative 1.7 L' in the same note agrees with the intake and output record (1,690 mL to 07:00)."
+      ],
+      "acceptable_actions": [
+        "Ask the author to correct the weight change to 1.4 kg.",
+        "Use the measured weights when judging progress towards the 77 kg target and tomorrow's diuretic dose."
+      ],
+      "must_not": [
+        "Call the net fluid balance figure wrong.",
+        "Reduce the diuretic on the basis of an overstated weight loss."
+      ],
+      "evidence": ["progress note 17 Nov 09:15, Objective", "flowsheet: Heart failure, Weight", "nursing note 17 Nov 07:00", "intake and output"]
+    },
+    {
+      "key_index": 3,
+      "kind": "time",
+      "prompt": "Creatinine has risen from 2.1 to 2.4 mg/dL during treatment. State the most likely cause and what should be done about the diuretic.",
+      "expected_findings": [
+        "The rise is due to venous congestion (cardiorenal), not over-diuresis: neck veins are still raised, there is 2+ leg oedema and basal crackles, she is 4 kg above target weight, urine output remains good and the urine sediment is bland.",
+        "No nephrotoxins: no contrast, no anti-inflammatory drugs, lisinopril and spironolactone held.",
+        "Diuresis should continue; a small creatinine rise during effective decongestion is acceptable."
+      ],
+      "acceptable_actions": [
+        "Continue furosemide, aiming for 1 to 1.5 L net negative per day, with twice-daily chemistry.",
+        "Follow the kidney team's suggestion of once-daily dosing from tomorrow if weight keeps falling.",
+        "Keep lisinopril and spironolactone on hold and avoid contrast."
+      ],
+      "must_not": [
+        "Stop or hold the diuretic.",
+        "Give intravenous fluid for presumed volume depletion.",
+        "Attribute the rise to furosemide toxicity or order a contrast study."
+      ],
+      "evidence": ["kidney medicine consult 17 Nov 10:20, Assessment", "flowsheet: Heart failure, Neck veins and Leg swelling", "flowsheet: Urine output", "labs: Creatinine"]
+    },
+    {
+      "key_index": 4,
+      "kind": "dis",
+      "prompt": "Check the active medications against the allergy list.",
+      "expected_findings": [
+        "The listed allergy is to sulfonamide antibiotics (hives).",
+        "Furosemide is a non-antibiotic sulfonamide with no meaningful cross-reactivity, and the admission history records that she has taken it for years without a reaction.",
+        "There is no allergy conflict among the active medications."
+      ],
+      "acceptable_actions": [
+        "Continue furosemide.",
+        "Optionally clarify the allergy entry as 'sulfonamide antibiotics only'."
+      ],
+      "must_not": [
+        "Report furosemide as contraindicated or recommend changing to another diuretic on allergy grounds.",
+        "Raise an allergy alert that would delay the 16:00 dose."
+      ],
+      "evidence": ["allergies: Sulfonamide antibiotics, hives", "history and physical 16 Nov 05:20, Allergies", "meds: Furosemide 80 mg, three doses given without reaction"]
+    }
+  ],
+  "epilogue": {
+    "note": "What happens AFTER 'now' in this simulated world. Never shown in the chart; for outcome-prediction ground truth.",
+    "course": "The overdue potassium dose was noticed when the nurse prepared the 16:00 furosemide and was given at 15:05. The 16:00 potassium was 3.6. At 21:40 she had a seven-beat run of ventricular tachycardia without symptoms and received more potassium and intravenous magnesium; there were no further runs. A pharmacist's reconciliation on 18 Nov found the apixaban error and the dose returned to 5 mg after five reduced doses, with no embolic event. As diuresis continued the creatinine peaked at 2.4 and fell to 1.9 by 20 Nov. She left on 21 Nov at 77.6 kg on oral furosemide 80 mg daily and low-dose lisinopril, with home nursing. Despite taking her tablets, her weight climbed again from early December, an extra furosemide dose did not help, and she was readmitted on 9 Dec for four days of intravenous diuresis and a change to torsemide.",
+    "events": [
+      {"t": "2026-11-17T15:05", "event": "Second potassium chloride 40 mEq dose given, 2 hours 50 minutes late."},
+      {"t": "2026-11-17T16:20", "event": "Chemistry: potassium 3.6 mmol/L, magnesium 1.7 mg/dL, creatinine 2.4 mg/dL."},
+      {"t": "2026-11-17T21:40", "event": "Seven-beat run of non-sustained ventricular tachycardia, asymptomatic; potassium chloride 40 mEq oral and magnesium sulfate 2 g intravenous given."},
+      {"t": "2026-11-18T05:30", "event": "Weight 79.8 kg; creatinine 2.3 mg/dL, potassium 4.2 mmol/L. Furosemide reduced to 80 mg intravenous once daily."},
+      {"t": "2026-11-18T10:15", "event": "Pharmacist reconciliation: apixaban corrected to 5 mg twice daily from the 21:00 dose."},
+      {"t": "2026-11-19T08:00", "event": "Off oxygen; creatinine 2.1 mg/dL."},
+      {"t": "2026-11-20T09:00", "event": "Changed to oral furosemide 80 mg daily; creatinine 1.9 mg/dL; weight 78.1 kg."},
+      {"t": "2026-11-21T11:40", "event": "Discharged home with home nursing; weight 77.6 kg; lisinopril restarted at 5 mg, spironolactone still on hold."},
+      {"t": "2026-11-27T10:30", "event": "Heart failure clinic: weight 78.0 kg, creatinine 1.8 mg/dL, potassium 4.4 mmol/L."},
+      {"t": "2026-12-09T13:20", "event": "Emergency department with breathlessness, weight 81.2 kg; readmitted to cardiology for four days."}
+    ],
+    "discharge": {"t": "2026-11-21T11:40", "disposition": "Home with services", "length_of_stay_days": 5},
+    "outcomes_30_day": {"readmitted": true, "readmission_reason": "Recurrent fluid overload from heart failure 18 days after discharge, despite adherence to oral furosemide", "emergency_visits": 1, "died": false, "notable": "The one emergency visit is the 9 Dec presentation that led to readmission; diuretic changed to torsemide and spironolactone restarted at 12.5 mg."}
+  },
+  "portal_messages": [
+    {
+      "t": "2026-11-12T16:45",
+      "from": "patient",
+      "channel": "patient portal",
+      "subject": "Swollen ankles",
+      "body": "Dear Doctor, I do not like to bother you. My ankles have swollen so that my shoes will not go on, and I am rather puffed going from the sitting room to the kitchen. Last night I needed a third pillow. Katrien is away until next week and I have been living on tinned soup, which I suspect is the culprit. I confess I have missed the water tablet on the days I went out. Should I take two of them for a few days to catch up? Yours, Eleanor Achterberg",
+      "urgency_truth": "same day",
+      "ideal_reply_points": [
+        "This is worsening heart failure and needs assessment today or tomorrow, not self-adjustment by message.",
+        "Telephone her (she is hard of hearing and lives alone); arrange a weight, examination and blood tests.",
+        "Take furosemide every day; avoid tinned soup and other salty food.",
+        "Go to the emergency department if breathless at rest, unable to lie down, or with chest pain.",
+        "Do not advise doubling the diuretic without a recent creatinine and potassium, given stage 3b kidney disease."
+      ]
+    },
+    {
+      "t": "2026-11-13T11:20",
+      "from": "heart failure clinic nurse",
+      "channel": "patient portal",
+      "subject": "Re: Swollen ankles",
+      "body": "Dear Mrs Achterberg, you are not bothering us at all; this is exactly what we want to hear about. Swollen ankles, more breathlessness and needing extra pillows mean fluid is building up. I tried to telephone you twice this morning without an answer. Please ring the clinic on the number on your card so we can see you today or Monday for a weight and a blood test before changing the dose. Meanwhile take your furosemide every single morning and stop the tinned soup. If you are breathless sitting still or cannot lie down, call an ambulance; do not wait.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Recognise fluid overload.",
+        "Attempt telephone contact and offer an early appointment.",
+        "Daily diuretic, salt advice.",
+        "Clear emergency instructions."
+      ]
+    },
+    {
+      "t": "2026-11-24T19:30",
+      "from": "family member (daughter)",
+      "channel": "patient portal",
+      "subject": "Two boxes of furosemide and a different apixaban strength",
+      "body": "This is Katrien Achterberg, Eleanor's daughter, writing from her account with her beside me. Mum came home on Saturday. In her cupboard there is the old box of furosemide 40 mg and the new one from the hospital that says 80 mg. She took one from the old box this morning. Also, a nurse on the ward told her they were giving a 2.5 apixaban, but the discharge list says 5 mg twice a day, which is what she had before. Which is right? I am filling the pill organiser tonight and do not want to get it wrong.",
+      "urgency_truth": "same day",
+      "ideal_reply_points": [
+        "Furosemide is now 80 mg once each morning; remove the 40 mg box from the house or mark it clearly.",
+        "Having taken 40 mg today, take another 40 mg now if before late afternoon, otherwise resume 80 mg tomorrow; watch the weight.",
+        "Apixaban 5 mg twice daily is correct; the lower hospital dose was corrected before discharge.",
+        "Lisinopril 5 mg (reduced), spironolactone still on hold.",
+        "Ask the home nurse to check the organiser at the next visit."
+      ]
+    },
+    {
+      "t": "2026-11-25T09:15",
+      "from": "heart failure clinic nurse",
+      "channel": "patient portal",
+      "subject": "Re: Two boxes of furosemide and a different apixaban strength",
+      "body": "Good morning Katrien, thank you for checking; you were right to ask. Furosemide is now 80 mg once every morning. Please take the old 40 mg box out of the cupboard altogether so it cannot be picked up by mistake. Apixaban is 5 mg twice a day. The lower strength in hospital was an error that the pharmacist corrected before your mother left, and 5 mg is right for her. Lisinopril is 5 mg for now and spironolactone stays stopped until we say. I have asked the home nurse to look over the organiser on Thursday. Please write her weight down every morning and bring the list on Friday.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Unambiguous doses for both medicines.",
+        "Remove the superseded box.",
+        "Honest explanation of the in-hospital dose.",
+        "Link to home nursing visit and the 27 Nov clinic appointment."
+      ]
+    },
+    {
+      "t": "2026-12-07T08:50",
+      "from": "family member (daughter)",
+      "channel": "patient portal",
+      "subject": "Weight going up again",
+      "body": "Katrien again. Mum's weights this week: Thursday 78.4, Friday 79.0, Saturday 79.6, yesterday 80.1 and this morning 80.6. Her ankles are back and she stopped twice on the way to the lift yesterday. She has taken every tablet, I have watched her do it, and there has been no soup. She slept in bed last night but on two pillows. She says she is fine and does not want a fuss. What should we do?",
+      "urgency_truth": "same day",
+      "ideal_reply_points": [
+        "A gain of more than 2 kg in four days with returning oedema and breathlessness needs action today.",
+        "Arrange same-day review or a telephone call from the heart failure team; give a temporary increase in diuretic with blood tests within 48 hours, given her kidney function.",
+        "Go to the emergency department if breathless at rest, unable to lie flat, or light-headed.",
+        "Acknowledge the daughter's careful record and the patient's reluctance to 'make a fuss'."
+      ]
+    },
+    {
+      "t": "2026-12-07T10:05",
+      "from": "heart failure clinic nurse",
+      "channel": "patient portal",
+      "subject": "Re: Weight going up again",
+      "body": "Katrien, thank you, those daily weights are exactly what we need. I have spoken with Dr. Peverell. Please give your mother an extra furosemide 80 mg at lunchtime today and again tomorrow, so two tablets on each of those days, and keep to 1,500 mL of fluid. The home nurse will take blood on Wednesday morning and weigh her. If the weight is not coming down by then, or if at any point she is breathless sitting still, cannot lie down or feels faint, bring her to the emergency department. You are not making a fuss.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Same-day plan agreed with the cardiologist.",
+        "Specific temporary dose and duration.",
+        "Blood test and weight check arranged.",
+        "Clear threshold for the emergency department."
+      ]
+    }
+  ],
+  "conversation": {
+    "setting": "Bedside on 4 East, 4E-08, 17 Nov at about 11:00; discharge planning assessment, daughter on speakerphone",
+    "participants": ["T. Rasmussen-Ibe (case manager)", "patient", "Katrien (daughter, by phone)"],
+    "turns": [
+      {"speaker": "T. Rasmussen-Ibe", "text": "Mrs Achterberg? Hello. My name's Rasmussen-Ibe, I'm the case manager on this ward. My job is to make sure things are set up properly for when you go home. Is now all right?"},
+      {"speaker": "Patient", "text": "Sorry, dear, you'll have to say that again. This ear's the better one."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "Of course. I'm the case manager. I help plan for going home. Can we talk for ten minutes?"},
+      {"speaker": "Patient", "text": "Oh, going home. Yes. Yes, please. My daughter wanted to listen in. She said to ring her."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "Let's do that. I'll put her on the speaker. ... Hello, is that Katrien? I'm with your mother on 4 East."},
+      {"speaker": "Katrien", "text": "Hi, yes, thanks for calling. I'm at work but I can talk. Mum, can you hear me?"},
+      {"speaker": "Patient", "text": "Just about. Don't shout, Katrien."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "Mrs Achterberg, tell me about home. You're in a flat?"},
+      {"speaker": "Patient", "text": "Second floor. There's a lift, thank goodness. I've been on my own there since 2023."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "And how do you get about?"},
+      {"speaker": "Patient", "text": "Indoors I'm fine. I take the frame if I go out. Not that I've been out much lately, with my legs like tree trunks."},
+      {"speaker": "Katrien", "text": "I'm about fifteen minutes away. I come twice a week and do the shopping. But I was away for two weeks just before this, and I think that's when it went wrong."},
+      {"speaker": "Patient", "text": "I managed perfectly well."},
+      {"speaker": "Katrien", "text": "Mum. You had tinned soup every night."},
+      {"speaker": "Patient", "text": "Most evenings. It's easy. I didn't know it was full of salt until the nurse gave me the leaflet this morning."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "A lot of people don't. What about your tablets, who sorts those out?"},
+      {"speaker": "Patient", "text": "I do. Out of the boxes. I know which is which."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "And do you take them every day? Honestly. No one's going to tell you off."},
+      {"speaker": "Patient", "text": "Well. I sometimes skip the water tablet. If I'm going out. You can't be looking for a lavatory every twenty minutes at the hairdresser's."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "That makes complete sense, and it's really useful to know. There are ways round it, like taking it when you get back. The doctors can talk to you about that. Do you have scales at home? For weighing yourself?"},
+      {"speaker": "Patient", "text": "No. I gave up weighing myself years ago."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "Here's why I ask. With your heart, a jump in weight over a few days is fluid, and it shows up before the breathing gets bad. So a weight every morning is your early warning. I'd like to get you a scale, a weekly pill box, and low-salt meals delivered. How does that sound?"},
+      {"speaker": "Patient", "text": "The meals, are they edible?"},
+      {"speaker": "Katrien", "text": "Mum, try them. I can fill the pill box on Sundays."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "I'd also like a nurse to visit you at home to begin with, to check your weight and take blood tests, and an appointment at the heart failure clinic within a week of leaving. Would you accept a nurse coming in?"},
+      {"speaker": "Patient", "text": "A nurse, yes. But I'm not going into a home. I want that understood."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "Understood, and nobody's suggesting it. The plan is your own flat with some help. One more thing I need to check, because it's on your chart. You've told the doctors that if your heart were to stop, you wouldn't want chest compressions. Is that still how you feel?"},
+      {"speaker": "Patient", "text": "It is. I've had a good innings. No thumping on my chest. I signed the form."},
+      {"speaker": "Katrien", "text": "We've talked about it. I know what she wants."},
+      {"speaker": "T. Rasmussen-Ibe", "text": "Thank you both. So, to make sure I've got it right: scale, pill box, low-salt meals, a visiting nurse, heart clinic within seven days, and home to the flat. Have I missed anything?"},
+      {"speaker": "Katrien", "text": "When is she likely to come out?"},
+      {"speaker": "T. Rasmussen-Ibe", "text": "The team's thinking two to three days, but it depends on her kidney blood tests, so I can't promise. I'll ring you when there's a date."},
+      {"speaker": "Patient", "text": "Thank you, dear. You've been very clear. Katrien, go back to work."}
+    ],
+    "note_it_should_produce": "Case management note, 'Discharge planning assessment' (T. Rasmussen-Ibe, 17 Nov 11:30)."
+  }
+}

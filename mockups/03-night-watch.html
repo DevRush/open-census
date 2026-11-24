@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Larkspur Clinical · 03 Night Watch</title>
+<!-- Direction 03: Night Watch. High-contrast dark for night shifts and the ICU: near-black surfaces, large legible numerals and solid status blocks that read across the room. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{font-family:var(--font);font-size:var(--fs);line-height:1.35;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none;cursor:default}
+ul,ol{list-style:none}
+table{border-collapse:collapse;width:100%}
+th{font-weight:inherit;text-align:left}
+small{font-size:inherit}
+sub,sup{font-size:.72em;line-height:0}
+.num{font-variant-numeric:tabular-nums;font-family:var(--nfont,inherit)}
+.grow{flex:1}
+.app{width:1440px;height:900px;display:grid;grid-template-rows:var(--sys-h) var(--ws-h) minmax(0,1fr) var(--st-h)}
+
+/* system bar */
+.sys{display:flex;align-items:center;gap:14px;padding:0 14px;background:var(--chrome);color:var(--chrome-ink);min-width:0}
+.brand{display:flex;align-items:center;gap:8px;white-space:nowrap;font-weight:500}
+.brand b{font-weight:700}
+.logo{width:18px;height:18px;flex:none}
+.nav{display:flex;align-items:stretch;align-self:stretch;gap:2px;margin-left:6px}
+.nav a{display:flex;align-items:center;gap:6px;padding:0 10px;white-space:nowrap}
+.ct{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:16px;padding:0 5px;border-radius:8px;font-size:.82em;font-weight:700;font-variant-numeric:tabular-nums;background:var(--badge,rgba(127,127,127,.25));color:var(--badge-ink,inherit)}
+.ct.hot{background:var(--crit);color:var(--crit-ink,#fff)}
+.search{margin-left:auto;display:flex;align-items:center;gap:8px;width:250px;height:calc(var(--sys-h) - 12px);max-height:32px;padding:0 9px;border-radius:var(--r);background:var(--field);color:var(--field-ink);border:1px solid var(--field-line,transparent)}
+.search span{flex:1;white-space:nowrap;overflow:hidden}
+.search svg{flex:none}
+.search kbd{font:inherit;font-size:.82em;line-height:1.3;border:1px solid currentColor;opacity:.65;padding:0 5px;border-radius:3px}
+.clock{display:flex;gap:7px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.clock .ctm{font-weight:700}
+.user{display:flex;align-items:center;gap:8px;white-space:nowrap;line-height:1.15}
+.user .av{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;font-size:.78em;font-weight:700;background:var(--accent);color:var(--accent-ink)}
+.user small{display:block;font-size:.84em;opacity:.75}
+
+/* workspace tabs */
+.ws{display:flex;align-items:flex-end;gap:2px;padding:0 10px;background:var(--ws);color:var(--ws-ink);border-bottom:1px solid var(--line);min-width:0}
+.wt{display:flex;align-items:center;gap:8px;height:calc(var(--ws-h) - 5px);padding:0 10px;white-space:nowrap;border:1px solid transparent;border-bottom:0;border-radius:var(--r) var(--r) 0 0}
+.wt .wb{font-size:.86em;opacity:.8;font-variant-numeric:tabular-nums}
+.wt .x{opacity:.5;font-size:1.05em;line-height:1}
+.wt.on{background:var(--surface);color:var(--ink);border-color:var(--line);font-weight:600;margin-bottom:-1px;height:calc(var(--ws-h) - 4px)}
+.ws-right{margin-left:auto;align-self:center;font-size:.9em;opacity:.75;white-space:nowrap}
+
+/* main frame */
+.main{display:grid;grid-template-columns:var(--side-w) minmax(0,1fr);min-height:0}
+.side{background:var(--side,var(--surface));color:var(--side-ink,var(--ink));border-right:1px solid var(--line);padding:var(--side-pad,12px);display:flex;flex-direction:column;gap:var(--side-gap,10px);min-height:0;overflow:hidden}
+.id{display:flex;align-items:center;gap:10px}
+.pav{flex:none;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:var(--r);background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:.95em;letter-spacing:.02em}
+.pname{font-family:var(--hfont,inherit);font-weight:700;font-size:1.12em;line-height:1.2}
+.pdemo{color:var(--side-ink2,var(--ink2));font-size:.94em;white-space:nowrap}
+.loc{display:flex;align-items:baseline;gap:8px;white-space:nowrap}
+.loc .bed{font-weight:700;font-variant-numeric:tabular-nums}
+.loc .unit{color:var(--side-ink2,var(--ink2));font-size:.94em}
+.flags{display:grid;gap:5px}
+.flag{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:4px 8px;border-radius:var(--r);border:1px solid var(--line);white-space:nowrap}
+.flag .fl{font-size:.86em;color:var(--side-ink2,var(--ink2))}
+.flag .fv{font-weight:700}
+.flag.crit{background:var(--crit-soft);border-color:var(--crit);color:var(--crit)}
+.flag.crit .fl{color:inherit}
+.facts{display:grid;gap:3px}
+.facts div{display:flex;justify-content:space-between;gap:8px;white-space:nowrap}
+.facts dt{color:var(--side-ink2,var(--ink2))}
+.facts dd{font-weight:500;overflow:hidden;text-overflow:ellipsis}
+.sblock h4{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--hfont,inherit);font-size:.86em;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--side-ink2,var(--ink2));padding-bottom:4px;margin-bottom:5px;border-bottom:1px solid var(--side-line,var(--line))}
+.sblock h4 span{font-weight:500;letter-spacing:0}
+.svg{display:grid;grid-template-columns:1fr 1fr;gap:3px 14px}
+.svg div{display:flex;justify-content:space-between;align-items:baseline;gap:6px;white-space:nowrap}
+.svg div.wide{grid-column:1/-1;justify-content:flex-start}
+.svg div.wide b{margin-left:auto;order:3}
+.svg span{color:var(--side-ink2,var(--ink2))}
+.svg b{font-weight:700}
+.svg em{font-style:normal;font-size:.9em;color:var(--side-ink2,var(--ink2));order:2}
+.sp ol{display:grid;gap:4px;counter-reset:p}
+.sp li{counter-increment:p;display:grid;grid-template-columns:16px 1fr;line-height:1.28}
+.sp li::before{content:counter(p);color:var(--side-ink2,var(--ink3));font-variant-numeric:tabular-nums;font-size:.9em}
+
+/* chart */
+.chart{display:grid;grid-template-rows:var(--ct-h) var(--sub-h) minmax(0,1fr);min-width:0;min-height:0;background:var(--bg)}
+.ctabs{display:flex;align-items:flex-end;gap:2px;padding:0 var(--pad);background:var(--ctbg,var(--surface));border-bottom:1px solid var(--line);min-width:0}
+.ctab{display:flex;align-items:center;gap:6px;height:calc(var(--ct-h) - 1px);padding:0 11px;white-space:nowrap;color:var(--ink2);border-bottom:2px solid transparent}
+.ctab.on{color:var(--accent);border-bottom-color:var(--accent);font-weight:700}
+.cb{display:inline-flex;align-items:center;justify-content:center;min-width:17px;height:15px;padding:0 4px;border-radius:8px;font-size:.8em;font-weight:700;font-variant-numeric:tabular-nums;background:var(--surface2);color:var(--ink2)}
+.sub{display:flex;align-items:center;gap:12px;padding:0 var(--pad);border-bottom:1px solid var(--line2,var(--line));background:var(--subbg,transparent);white-space:nowrap;min-width:0;overflow:hidden}
+.views{display:flex;gap:4px}
+.views a{padding:2px 9px;border-radius:var(--r);color:var(--ink2)}
+.views a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.subr{margin-left:auto;color:var(--ink3);font-size:.94em}
+
+.body{display:grid;grid-template-columns:repeat(24,minmax(0,1fr));gap:var(--gap);padding:var(--pad);min-height:0}
+.p-vit{grid-area:vit}.p-due{grid-area:due}.p-team{grid-area:team}.p-res{grid-area:res}.p-med{grid-area:med}
+.lay-A{grid-template-rows:minmax(0,.78fr) minmax(0,1fr);grid-template-areas:
+ "vit vit vit vit vit vit vit vit vit vit due due due due due due due due team team team team team team"
+ "res res res res res res res res res res med med med med med med med med med med med med med med"}
+.lay-C{grid-template-rows:minmax(0,1fr) minmax(0,.74fr);grid-template-areas:
+ "res res res res res res res res res res med med med med med med med med med med med med med med"
+ "due due due due due due due due vit vit vit vit vit vit vit vit vit vit team team team team team team"}
+.lay-H{grid-template-rows:minmax(0,.86fr) minmax(0,1fr);grid-template-areas:
+ "due due due due due due vit vit vit vit vit vit vit vit res res res res res res res res res res"
+ "team team team team team team med med med med med med med med med med med med med med med med med med"}
+.lay-K{grid-template-rows:minmax(0,.86fr) minmax(0,1fr);grid-template-areas:
+ "vit vit vit vit vit vit res res res res res res res res res res due due due due due due due due"
+ "team team team team team team med med med med med med med med med med med med med med med med med med"}
+.lay-D{grid-template-rows:auto minmax(0,1fr) minmax(0,1.04fr);grid-template-areas:
+ "vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit"
+ "due due due due due due due due res res res res res res res res res res team team team team team team"
+ "med med med med med med med med med med med med med med med med med med med med med med med med"}
+
+.panel{display:flex;flex-direction:column;min-width:0;min-height:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.ph{flex:none;display:flex;align-items:center;gap:10px;height:var(--ph);padding:0 var(--pp,10px);border-bottom:1px solid var(--line);background:var(--phbg,transparent);white-space:nowrap}
+.ph h3{font-family:var(--hfont,inherit);font-size:1em;font-weight:700}
+.ph .pm{color:var(--ink3);font-size:.92em;overflow:hidden;text-overflow:ellipsis}
+.ph .pl{margin-left:auto;color:var(--accent);font-size:.92em;font-weight:600}
+.ph .pl::after{content:" ›"}
+.pb{flex:1;min-height:0;display:flex;flex-direction:column;padding:var(--pbp,4px var(--pp,10px) 6px)}
+
+/* vitals */
+.vit.rows{flex:1;display:grid;grid-auto-rows:minmax(0,1fr)}
+.vit.rows .v{display:grid;grid-template-columns:minmax(98px,1.1fr) minmax(86px,.9fr) minmax(70px,1.4fr) minmax(84px,auto);align-items:center;gap:10px;border-bottom:1px solid var(--line2,var(--line));white-space:nowrap;min-height:0}
+.vit.rows .v:last-child{border-bottom:0}
+.vl{color:var(--ink2)}
+.vl i{font-style:normal;font-size:.86em;color:var(--ink3);margin-left:6px}
+.vv{font-weight:700;font-size:1.22em}
+.vv small{font-weight:400;font-size:.68em;color:var(--ink3);margin-left:3px}
+.vs{display:block;height:24px;min-width:0}
+.spark{display:block;width:100%;height:100%;overflow:visible}
+.spark .sl{stroke:var(--spark,var(--accent));stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+.spark .sd{stroke:var(--spark,var(--accent));stroke-width:5;stroke-linecap:round;fill:none}
+.spark .sa{fill:var(--spark,var(--accent));opacity:.14}
+.spark .sb{fill:var(--spark,var(--accent));opacity:.45}
+.spark .sb.last{opacity:1}
+.vr{color:var(--ink3);font-size:.9em;text-align:right}
+.ar{font-weight:700}
+.vit.tiles{flex:1;display:grid;grid-template-columns:repeat(var(--vcols,3),minmax(0,1fr));grid-auto-rows:minmax(0,1fr);gap:var(--tgap,8px)}
+.vit.tiles .v{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto minmax(0,1fr);align-content:start;gap:1px 6px;padding:8px 10px;border:1px solid var(--line2,var(--line));border-radius:var(--r);background:var(--tile,transparent);min-width:0;min-height:0;white-space:nowrap}
+.vit.tiles .vl{grid-column:1/-1;font-size:.9em;line-height:1.6}
+.vit.tiles .vv{font-size:1.7em;line-height:1.1}
+.vit.tiles .vr{align-self:end;padding-bottom:3px}
+.vit.tiles .vs{grid-column:1/-1;height:auto;min-height:14px;max-height:34px;align-self:stretch;margin-top:3px}
+
+/* work due */
+.wdl{flex:1;display:grid;grid-auto-rows:minmax(0,1fr)}
+.wd{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:10px;border-bottom:1px solid var(--line2,var(--line));min-height:0}
+.wd:last-child{border-bottom:0}
+.wtm{font-weight:700}
+.wm{min-width:0;line-height:1.25}
+.wm b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wm small{display:block;color:var(--ink3);font-size:.9em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chip{display:inline-flex;align-items:center;height:20px;padding:0 8px;border-radius:10px;font-size:.86em;font-weight:600;white-space:nowrap;background:var(--surface2);color:var(--ink2)}
+.chip.due{background:var(--warn-soft);color:var(--warn)}
+.chip.held{background:var(--held-soft,var(--surface2));color:var(--held,var(--ink2))}
+.wd.due .wtm{color:var(--warn)}
+
+/* abnormal results */
+.res,.med{flex:1 1 auto}
+.filler{grid-area:fill;display:flex;align-items:center;justify-content:center;border:1px dashed var(--line);border-radius:var(--r);color:var(--ink3);font-size:.92em;min-height:0}
+.res th,.res td{height:var(--rh);padding:0 6px;white-space:nowrap;border-bottom:1px solid var(--line2,var(--line))}
+.res thead th{height:calc(var(--rh) - 2px);font-size:.86em;font-weight:600;color:var(--ink3);border-bottom-color:var(--line)}
+.res tbody tr:last-child td{border-bottom:0}
+.res .r{text-align:right}
+.res th:first-child,.res td:first-child{padding-left:0}
+.res th:last-child,.res td:last-child{padding-right:0}
+.res .val{font-weight:700}
+.res tr.hi .val{color:var(--crit)}
+.res tr.lo .val{color:var(--low)}
+.res .fc{width:26px;padding:0;text-align:center}
+.fg{display:inline-flex;align-items:center;justify-content:center;width:18px;height:17px;border-radius:3px;font-size:.82em;font-weight:700}
+.fg.hi{background:var(--crit-soft);color:var(--crit)}
+.fg.lo{background:var(--low-soft);color:var(--low)}
+.critrow .fg.hi{background:var(--crit);color:var(--crit-ink,#fff)}
+.res .prev,.res .dl,.res .ref{color:var(--ink2)}
+.res .ref{font-size:.93em;padding-left:14px}
+.res th:last-child{padding-left:14px}
+
+/* medication grid */
+.med{table-layout:fixed}
+.med th,.med td{height:var(--mh,var(--rh));border-bottom:1px solid var(--line2,var(--line));padding:0}
+.med thead th{height:calc(var(--rh) - 2px);font-size:.86em;font-weight:600;color:var(--ink3);border-bottom-color:var(--line)}
+.med .mn{width:var(--mnw,184px);padding-right:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}
+.med tbody .mn b{display:block;font-weight:600;overflow:hidden;text-overflow:ellipsis}
+.med tbody .mn small{display:block;font-size:.86em;color:var(--ink3);overflow:hidden;text-overflow:ellipsis}
+.med .hh{text-align:center}
+.med .mc{text-align:center;border-left:1px solid var(--line2,var(--line))}
+.med .now{background:var(--now,var(--accent-soft))}
+.med th.now{color:var(--accent);font-weight:700}
+.med tbody tr:last-child th,.med tbody tr:last-child td{border-bottom:0}
+.g{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:4px;vertical-align:middle;font-weight:700;font-size:.86em}
+.given .g{background:var(--ok-soft);color:var(--ok)}
+.due .g{background:var(--warn);color:var(--warn-ink,#fff)}
+.sched .g{color:var(--ink3)}
+.held .g{background:var(--held-soft,var(--surface2));color:var(--held,var(--ink2))}
+.inf{border-left:1px solid var(--line2,var(--line))}
+.inf .bar{display:flex;align-items:center;height:16px;margin:0;padding:0 8px;background:var(--ok-soft);color:var(--ok);font-size:.86em;font-weight:600;white-space:nowrap;border-radius:3px 0 0 3px;overflow:hidden}
+.inf.plan{border-left:0}
+.inf.plan .bar{background:repeating-linear-gradient(90deg,var(--ok-soft) 0 6px,transparent 6px 10px);border-radius:0 3px 3px 0;margin-right:4px}
+.legend{display:flex;gap:16px;align-items:center;margin-top:auto;padding-top:6px;border-top:1px solid var(--line);color:var(--ink2);font-size:.9em;white-space:nowrap}
+.lg{display:inline-flex;align-items:center;gap:6px}
+.lg .g{width:18px;height:18px}
+.lbar{display:inline-block;width:22px;height:8px;border-radius:2px;background:var(--ok-soft);border:1px solid var(--ok)}
+
+/* care team */
+.team{flex:1;display:grid;grid-auto-rows:minmax(0,1fr)}
+.team li{display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:center;gap:0 8px;border-bottom:1px solid var(--line2,var(--line));line-height:1.25;min-height:0}
+.team li:last-child{border-bottom:0}
+.team .tr{grid-column:1/-1;color:var(--ink3);font-size:.88em}
+.team .tnm{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.team .tx{color:var(--ink2);font-size:.92em;white-space:nowrap}
+
+/* status bar */
+.status{display:flex;align-items:center;gap:18px;padding:0 14px;background:var(--stbg,var(--surface2));color:var(--stink,var(--ink2));border-top:1px solid var(--line);font-size:.9em;white-space:nowrap;min-width:0;overflow:hidden}
+
+/* ===== Direction 03: Night Watch ===== */
+
+:root{--font:"Atkinson Hyperlegible",system-ui,sans-serif;--fs:13px;
+--bg:#07090b;--surface:#11151a;--surface2:#1c232b;--line:#2f3944;--line2:#212931;--ink:#f3f6f8;--ink2:#bcc6d0;--ink3:#93a0ad;
+--accent:#a9b8ff;--accent-ink:#0b1030;--accent-soft:#222a55;--chrome:#000;--chrome-ink:#e8edf2;--field:#161b21;--field-ink:#aab5c0;--field-line:#2f3944;
+--ws:#07090b;--ws-ink:#bcc6d0;--crit:#ff7a70;--crit-soft:#3f1512;--crit-ink:#200402;--warn:#ffc145;--warn-soft:#3b2b06;--warn-ink:#221600;--ok:#6fdc8c;--ok-soft:#10331d;--low:#7fd0ff;--low-soft:#0c2d42;
+--held:#d6c2ff;--held-soft:#2c2146;
+--r:4px;--sys-h:40px;--ws-h:32px;--ct-h:38px;--sub-h:26px;--st-h:22px;--side-w:248px;--pad:10px;--gap:10px;--rh:25px;--ph:30px;--vcols:6;--tile:#161b21;--now:#1b2140;--stbg:#000;--badge:#2f3944;--side:#0c0f13}
+.sys{border-bottom:1px solid var(--line)}
+.brand .logo{color:var(--accent)}
+.brand{font-size:14.5px;font-weight:700}.brand b{color:var(--accent)}
+.wt{border-color:var(--line);background:#0e1216}
+.wt.on{background:var(--surface);border-top:2px solid var(--accent);color:#fff}
+.pav{background:var(--accent);color:var(--accent-ink)}
+.pname{font-size:16px;color:#fff}
+.loc .bed{background:#fff;color:#000;padding:0 6px;border-radius:3px}
+.flag.crit{background:var(--crit);color:var(--crit-ink);border-color:var(--crit)}
+.flag.code{border-color:var(--ok);color:var(--ok)}.flag.code .fl{color:var(--ink2)}
+.svg b{color:#fff;font-size:15px}
+.ctabs{gap:4px;align-items:center;background:var(--bg)}
+.ctab{height:28px;border:1px solid var(--line);border-radius:4px;color:var(--ink2);padding:0 12px}
+.ctab.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.ctab.on .cb{background:var(--accent-ink);color:var(--accent)}
+.cb{background:var(--surface2);color:var(--ink)}
+.sub{border-bottom:0}
+.views a.on{color:var(--accent)}
+.ph h3{font-size:14px;color:#fff}
+.pb{padding:6px 10px 8px}
+.vit.tiles{grid-auto-rows:76px}
+.vit.tiles .v{grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;border-color:var(--line);padding:7px 10px 6px;gap:0 10px}
+.vit.tiles .vl{color:var(--ink2);font-size:12px}
+.vit.tiles .vv{font-size:25px;line-height:1.05;color:#fff;grid-row:2/4;align-self:center}
+.vit.tiles .vv small{font-size:11px}
+.vit.tiles .vs{grid-column:2;grid-row:2;margin:0;max-height:none;min-height:0}
+.vit.tiles .vr{grid-column:2;grid-row:3;padding:0;font-size:11.5px;color:var(--ink2)}
+.spark .sl{stroke-width:2}.spark .sa{opacity:.22}
+.wtm{font-size:15px}
+.wd.due .wtm{color:var(--warn)}
+.chip.due{background:var(--warn);color:var(--warn-ink)}
+.res .val{font-size:14.5px}
+.fg.hi{background:var(--crit-soft);border:1px solid var(--crit)}.fg.lo{background:var(--low-soft);border:1px solid var(--low)}
+.critrow .fg.hi{background:var(--crit);color:var(--crit-ink)}
+.critrow td{background:#1e0f0e}
+.given .g{background:var(--ok);color:#05230f}
+.sched .g{color:var(--ink2)}
+.held .g{border:1px solid var(--held)}
+.inf .bar{background:var(--ok);color:#05230f;font-weight:700}
+.inf.plan .bar{background:repeating-linear-gradient(90deg,#1f6b38 0 6px,transparent 6px 10px)}
+.lbar{background:var(--ok)}
+.med .mc.now,.med th.now{box-shadow:inset 1px 0 0 var(--accent),inset -1px 0 0 var(--accent)}
+.body{grid-template-areas:
+ "vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit vit"
+ "due due due due due due due due due res res res res res res res res res team team team team team team"
+ "med med med med med med med med med med med med med med med med med med med med med med med med"}
+.vit.tiles{grid-template-columns:1fr 1fr 1.3fr 1fr 1fr 1fr;grid-auto-rows:72px}
+.med{--mnw:330px}
+.med tbody .mn b,.med tbody .mn small{display:inline}.med tbody .mn small{margin-left:9px}
+.status{color:var(--ink3)}
+
+</style>
+</head>
+<body class="d03">
+<div class="app">
+<header class="sys">
+  <div class="brand"><svg class="logo" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 19V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M10 1.5l2.6 3L10 7.5 7.4 4.5z" fill="currentColor"/><path d="M10 8.5l4.2-2.2.6 3.9-3.6 1.9z" fill="currentColor" opacity=".8"/><path d="M10 12.500l-4.2-2.2-.6 3.9 3.6 1.9z" fill="currentColor" opacity=".6"/></svg><span class="bn">Larkspur <b>Clinical</b></span></div>
+  <nav class="nav"><a>Patient lists</a><a>Unit board</a><a>Operating rooms</a><a>Emergency board</a><a>Chat<span class="ct ">2</span></a><a>Inbox<span class="ct hot">7</span></a></nav>
+  <div class="search"><svg viewBox="0 0 14 14" width="13" height="13" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9.2 9.2l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Search patient or record no.</span><kbd>/</kbd></div>
+  <div class="clock"><span class="cd">Tue 17 Nov</span><span class="ctm">14:32</span></div>
+  <div class="user"><span class="av">TB</span><span class="un">Dr. T. Brandt<small>Resident · Medical ICU</small></span></div>
+</header>
+<div class="ws">
+  <a class="wt home"><span class="wn">Patient lists</span></a>
+  <a class="wt on"><span class="wn">Okonkwo-Reyes, Harlan</span><span class="wb">MICU-12</span><span class="x">×</span></a>
+  <a class="wt"><span class="wn">Thackeray-Mbeki, Odile</span><span class="wb">5W-08</span><span class="x">×</span></a>
+  <a class="wt"><span class="wn">Lindqvist-Asante, Per</span><span class="wb">CCU-03</span><span class="x">×</span></a>
+  <span class="ws-right">3 charts open</span>
+</div>
+<div class="main">
+<aside class="side">
+  <div class="id">
+    <span class="pav">HO</span>
+    <div class="idt"><div class="pname">Okonkwo-Reyes, Harlan</div><div class="pdemo">68 M · born 03 Feb 1958</div></div>
+  </div>
+  <div class="loc"><span class="bed">MICU-12</span><span class="unit">Medical ICU · day 3</span></div>
+  <div class="flags">
+    <div class="flag crit"><span class="fl">Allergy</span><span class="fv">Penicillin</span></div>
+    <div class="flag code"><span class="fl">Code status</span><span class="fv">Full code</span></div>
+  </div>
+  <dl class="facts">
+    <div><dt>Record no.</dt><dd class="num">LX-204471</dd></div>
+    <div><dt>Attending</dt><dd>Dr. Imogen Varga</dd></div>
+    <div><dt>Admitted</dt><dd class="num">15 Nov 22:40</dd></div>
+    <div class="opt"><dt>Weight</dt><dd class="num">86 kg · 178 cm</dd></div>
+  </dl>
+  <div class="sblock sv">
+    <h4>Latest vitals <span class="num">14:00</span></h4>
+    <div class="svg">
+      <div><span>T</span><b class="num">37.4</b></div>
+      <div><span>HR</span><b class="num">89</b></div>
+      <div><span>BP</span><b class="num">113/63</b></div>
+      <div><span>RR</span><b class="num">20</b></div>
+      <div class="wide"><span>SpO<sub>2</sub></span><b class="num">96%</b><em>on high-flow</em></div>
+    </div>
+  </div>
+  <div class="sblock sp">
+    <h4>Problems <span class="num">5</span></h4>
+    <ol><li>Septic shock, weaning vasopressor</li><li>Right lower lobe pneumonia with pneumococcal bacteraemia</li><li>Acute kidney injury</li><li>Type 2 diabetes</li><li>COPD</li></ol>
+  </div>
+</aside>
+<section class="chart">
+<nav class="ctabs"><a class="ctab ct-summary on"><span class="cl">Summary</span></a><a class="ctab ct-review"><span class="cl">Chart review</span></a><a class="ctab ct-results"><span class="cl">Results</span><span class="cb">8</span></a><a class="ctab ct-flow"><span class="cl">Flowsheets</span></a><a class="ctab ct-meds"><span class="cl">Medications</span><span class="cb">2</span></a><a class="ctab ct-orders"><span class="cl">Orders</span><span class="cb">1</span></a><a class="ctab ct-notes"><span class="cl">Notes</span><span class="cb">4</span></a><a class="ctab ct-history"><span class="cl">History</span></a><a class="ctab ct-discharge"><span class="cl">Discharge</span></a><a class="ctab ct-coding"><span class="cl">Coding</span></a></nav>
+<div class="sub"><div class="views"><a class="on">Overview</a><a>Handoff</a><a>Rounding</a><a>Fluid balance</a></div><div class="subr">Septic shock from pneumococcal pneumonia · hospital day 3 · updated <span class="num">14:31</span></div></div>
+<div class="body lay-D">
+<section class="panel p-vit from-flow">
+  <div class="ph"><h3>Vitals</h3><span class="pm">Last 12 h · charted <span class="num">14:00</span></span><a class="pl">Flowsheets</a></div>
+  <div class="pb"><div class="vit tiles">
+    <div class="v"><span class="vl">Temperature</span><span class="vv num">37.4<small>°C</small></span><span class="vs"><svg class="spark area" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"><polygon class="sa" points="3,28 3,3 12.5,4.8 22,8.5 31.5,6.7 41,12.2 50.5,15.8 60,14 69.5,17.7 79,21.3 88.5,19.5 98,23.2 107.5,23.2 117,25 117,28"/><polyline class="sl" points="3,3 12.5,4.8 22,8.5 31.5,6.7 41,12.2 50.5,15.8 60,14 69.5,17.7 79,21.3 88.5,19.5 98,23.2 107.5,23.2 117,25" fill="none" vector-effect="non-scaling-stroke"/><path class="sd" d="M117 25h0" vector-effect="non-scaling-stroke"/></svg></span><span class="vr num"><span class="ar down">↓</span> from 38.6</span></div>
+    <div class="v"><span class="vl">Heart rate</span><span class="vv num">89<small>/min</small></span><span class="vs"><svg class="spark area" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"><polygon class="sa" points="3,28 3,3 12.5,4.9 22,6.8 31.5,5.9 41,10.7 50.5,13.5 60,15.4 69.5,17.3 79,18.3 88.5,21.2 98,22.1 107.5,24 117,25 117,28"/><polyline class="sl" points="3,3 12.5,4.9 22,6.8 31.5,5.9 41,10.7 50.5,13.5 60,15.4 69.5,17.3 79,18.3 88.5,21.2 98,22.1 107.5,24 117,25" fill="none" vector-effect="non-scaling-stroke"/><path class="sd" d="M117 25h0" vector-effect="non-scaling-stroke"/></svg></span><span class="vr num"><span class="ar down">↓</span> from 112</span></div>
+    <div class="v"><span class="vl">Blood pressure</span><span class="vv num">113/63<small>mmHg</small></span><span class="vs"><svg class="spark area" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"><polygon class="sa" points="3,28 3,25 12.5,22.4 22,21.1 31.5,18.5 41,15.9 50.5,14.6 60,12.1 69.5,13.4 79,9.5 88.5,6.9 98,8.2 107.5,4.3 117,3 117,28"/><polyline class="sl" points="3,25 12.5,22.4 22,21.1 31.5,18.5 41,15.9 50.5,14.6 60,12.1 69.5,13.4 79,9.5 88.5,6.9 98,8.2 107.5,4.3 117,3" fill="none" vector-effect="non-scaling-stroke"/><path class="sd" d="M117 3h0" vector-effect="non-scaling-stroke"/></svg></span><span class="vr num"><span class="ar up">↑</span> from 96/52</span></div>
+    <div class="v"><span class="vl">Mean arterial</span><span class="vv num">80<small>mmHg</small></span><span class="vs"><svg class="spark area" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"><polygon class="sa" points="3,28 3,25 12.5,23.4 22,21.9 31.5,20.3 41,17.1 50.5,15.6 60,12.4 69.5,14 79,9.3 88.5,6.1 98,7.7 107.5,4.6 117,3 117,28"/><polyline class="sl" points="3,25 12.5,23.4 22,21.9 31.5,20.3 41,17.1 50.5,15.6 60,12.4 69.5,14 79,9.3 88.5,6.1 98,7.7 107.5,4.6 117,3" fill="none" vector-effect="non-scaling-stroke"/><path class="sd" d="M117 3h0" vector-effect="non-scaling-stroke"/></svg></span><span class="vr num"><span class="ar up">↑</span> from 66</span></div>
+    <div class="v"><span class="vl">Resp. rate</span><span class="vv num">20<small>/min</small></span><span class="vs"><svg class="spark area" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"><polygon class="sa" points="3,28 3,3 12.5,6.7 22,6.7 31.5,10.3 41,14 50.5,14 60,17.7 69.5,17.7 79,21.3 88.5,21.3 98,25 107.5,21.3 117,25 117,28"/><polyline class="sl" points="3,3 12.5,6.7 22,6.7 31.5,10.3 41,14 50.5,14 60,17.7 69.5,17.7 79,21.3 88.5,21.3 98,25 107.5,21.3 117,25" fill="none" vector-effect="non-scaling-stroke"/><path class="sd" d="M117 25h0" vector-effect="non-scaling-stroke"/></svg></span><span class="vr num"><span class="ar down">↓</span> from 26</span></div>
+    <div class="v"><span class="vl">SpO<sub>2</sub><i>high-flow</i></span><span class="vv num">96<small>%</small></span><span class="vs"><svg class="spark area" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"><polygon class="sa" points="3,28 3,25 12.5,20.6 22,20.6 31.5,16.2 41,16.2 50.5,11.8 60,11.8 69.5,7.4 79,7.4 88.5,7.4 98,3 107.5,3 117,3 117,28"/><polyline class="sl" points="3,25 12.5,20.6 22,20.6 31.5,16.2 41,16.2 50.5,11.8 60,11.8 69.5,7.4 79,7.4 88.5,7.4 98,3 107.5,3 117,3" fill="none" vector-effect="non-scaling-stroke"/><path class="sd" d="M117 3h0" vector-effect="non-scaling-stroke"/></svg></span><span class="vr num"><span class="ar up">↑</span> from 91</span></div>
+  </div></div>
+</section>
+<section class="panel p-due from-meds">
+  <div class="ph"><h3>Work due</h3><span class="pm">2 due · 2 later</span><a class="pl">Medications</a></div>
+  <div class="pb"><ul class="wdl">
+    <li class="wd due"><span class="wtm num">14:00</span><span class="wm"><b>Heparin 5,000 units</b><small>Subcutaneous · every 8 hours</small></span><span class="chip due">Due · +32 min</span></li>
+    <li class="wd due"><span class="wtm num">14:00</span><span class="wm"><b>Ipratropium-albuterol nebuliser</b><small>Inhaled · every 6 hours</small></span><span class="chip due">Due · +32 min</span></li>
+    <li class="wd sched"><span class="wtm num">18:00</span><span class="wm"><b>Insulin lispro, correction</b><small>Subcutaneous · per glucose check</small></span><span class="chip sched">In 3 h 28 min</span></li>
+    <li class="wd held"><span class="wtm num">18:00</span><span class="wm"><b>Metformin 500 mg</b><small>Oral · morning dose held</small></span><span class="chip held">Review hold</span></li>
+  </ul></div>
+</section>
+<section class="panel p-team from-review">
+  <div class="ph"><h3>Care team</h3><span class="pm">Day shift</span><a class="pl">Chart review</a></div>
+  <div class="pb"><ul class="team">
+    <li><span class="tr">Attending</span><span class="tnm">Dr. Imogen Varga</span><span class="tx num">ext. 4410</span></li>
+    <li><span class="tr">Resident</span><span class="tnm">Dr. Tae-yang Brandt (PGY-2)</span><span class="tx num">ext. 4417</span></li>
+    <li><span class="tr">Nurse (day)</span><span class="tnm">C. Adeyemi-Frost RN</span><span class="tx num">ext. 4120</span></li>
+    <li><span class="tr">Pharmacist</span><span class="tnm">Priya Lindqvist, PharmD</span><span class="tx num">ext. 4306</span></li>
+    <li><span class="tr">Respiratory therapist</span><span class="tnm">J. Abernathy-Cole RRT</span><span class="tx num">ext. 4188</span></li>
+  </ul></div>
+</section>
+<section class="panel p-res from-results">
+  <div class="ph"><h3>Abnormal results</h3><span class="pm">Collected 17 Nov <span class="num">05:40</span></span><a class="pl">Results</a></div>
+  <div class="pb"><table class="res">
+    <thead><tr><th>Test</th><th class="r">Result</th><th class="fc"></th><th class="r">Previous</th><th class="r">Change</th><th>Reference</th></tr></thead>
+    <tbody>
+    <tr class="hi"><td class="tn">Urea nitrogen</td><td class="r num val">34</td><td class="fc"><span class="fg hi">H</span></td><td class="r num prev">41</td><td class="r num dl"><span class="ar down">↓</span> 7</td><td class="ref num">7–20 mg/dL</td></tr>
+    <tr class="hi"><td class="tn">Creatinine</td><td class="r num val">1.7</td><td class="fc"><span class="fg hi">H</span></td><td class="r num prev">2.1</td><td class="r num dl"><span class="ar down">↓</span> 0.4</td><td class="ref num">0.7–1.3 mg/dL</td></tr>
+    <tr class="hi"><td class="tn">Glucose</td><td class="r num val">154</td><td class="fc"><span class="fg hi">H</span></td><td class="r num prev">188</td><td class="r num dl"><span class="ar down">↓</span> 34</td><td class="ref num">70–99 mg/dL</td></tr>
+    <tr class="lo"><td class="tn">Calcium</td><td class="r num val">8.2</td><td class="fc"><span class="fg lo">L</span></td><td class="r num prev">8.0</td><td class="r num dl"><span class="ar up">↑</span> 0.2</td><td class="ref num">8.6–10.2 mg/dL</td></tr>
+    <tr class="hi"><td class="tn">White cells</td><td class="r num val">12.8</td><td class="fc"><span class="fg hi">H</span></td><td class="r num prev">16.4</td><td class="r num dl"><span class="ar down">↓</span> 3.6</td><td class="ref num">4.0–11.0 ×10<sup>9</sup>/L</td></tr>
+    <tr class="lo"><td class="tn">Haemoglobin</td><td class="r num val">11.2</td><td class="fc"><span class="fg lo">L</span></td><td class="r num prev">11.6</td><td class="r num dl"><span class="ar down">↓</span> 0.4</td><td class="ref num">13.5–17.5 g/dL</td></tr>
+    <tr class="lo"><td class="tn">Platelets</td><td class="r num val">139</td><td class="fc"><span class="fg lo">L</span></td><td class="r num prev">128</td><td class="r num dl"><span class="ar up">↑</span> 11</td><td class="ref num">150–400 ×10<sup>9</sup>/L</td></tr>
+    <tr class="hi critrow"><td class="tn">Procalcitonin</td><td class="r num val">9.7</td><td class="fc"><span class="fg hi">H</span></td><td class="r num prev">18.3</td><td class="r num dl"><span class="ar down">↓</span> 8.6</td><td class="ref num">&lt;0.5 ng/mL</td></tr>
+    </tbody>
+  </table></div>
+</section>
+<section class="panel p-med from-meds">
+  <div class="ph"><h3>Medications by hour</h3><span class="pm">Today <span class="num">06:00–22:00</span></span><a class="pl">Medications</a></div>
+  <div class="pb"><table class="med">
+    <thead><tr><th class="mn">Medicine</th><th class="hh num">06</th><th class="hh num">07</th><th class="hh num">08</th><th class="hh num">09</th><th class="hh num">10</th><th class="hh num">11</th><th class="hh num">12</th><th class="hh num">13</th><th class="hh num now">14</th><th class="hh num">15</th><th class="hh num">16</th><th class="hh num">17</th><th class="hh num">18</th><th class="hh num">19</th><th class="hh num">20</th><th class="hh num">21</th><th class="hh num">22</th></tr></thead>
+    <tbody>
+    <tr class="infrow"><th class="mn"><b>Norepinephrine infusion</b><small>0.04 mcg/kg/min · central line</small></th><td class="inf run" colspan="9"><div class="bar"><span>0.04 mcg/kg/min · since 11:00</span></div></td><td class="inf plan" colspan="8"><div class="bar"></div></td></tr>
+    <tr><th class="mn"><b>Heparin 5,000 units</b><small>Subcutaneous · every 8 h</small></th><td class="mc given"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 6.4l2.4 2.4 5.2-5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc now due"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M6 2v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="6" cy="10" r="1.1" fill="currentColor"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc sched"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="3.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td></tr>
+    <tr><th class="mn"><b>Ipratropium-albuterol</b><small>Nebuliser · every 6 h</small></th><td class="mc"></td><td class="mc"></td><td class="mc given"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 6.4l2.4 2.4 5.2-5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc now due"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M6 2v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="6" cy="10" r="1.1" fill="currentColor"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc sched"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="3.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td><td class="mc"></td><td class="mc"></td></tr>
+    <tr><th class="mn"><b>Insulin lispro, correction</b><small>Subcutaneous · with meals</small></th><td class="mc"></td><td class="mc"></td><td class="mc given"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 6.4l2.4 2.4 5.2-5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc given"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 6.4l2.4 2.4 5.2-5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td class="mc"></td><td class="mc now"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc sched"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="3.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td></tr>
+    <tr><th class="mn"><b>Insulin glargine 10 units</b><small>Subcutaneous · nightly</small></th><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc now"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc sched"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="3.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td><td class="mc"></td></tr>
+    <tr><th class="mn"><b>Metformin 500 mg</b><small>Oral · every 12 h</small></th><td class="mc"></td><td class="mc"></td><td class="mc held"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M4 2.5v7M8 2.5v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc now"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc sched"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="3.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td></tr>
+    <tr><th class="mn"><b>Pantoprazole 40 mg</b><small>Oral · daily</small></th><td class="mc"></td><td class="mc"></td><td class="mc given"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 6.4l2.4 2.4 5.2-5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc now"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td></tr>
+    <tr><th class="mn"><b>Acetaminophen 650 mg</b><small>Oral · as needed, fever</small></th><td class="mc"></td><td class="mc given"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 6.4l2.4 2.4 5.2-5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc given"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 6.4l2.4 2.4 5.2-5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td class="mc now"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td><td class="mc"></td></tr>
+    </tbody>
+  </table>
+  <div class="legend"><span class="lg given"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 6.4l2.4 2.4 5.2-5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Given</span><span class="lg due"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M6 2v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="6" cy="10" r="1.1" fill="currentColor"/></svg></span>Due</span><span class="lg sched"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="3.4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>Scheduled</span><span class="lg held"><span class="g"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M4 2.5v7M8 2.5v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Held</span><span class="lg run"><i class="lbar"></i>Infusion running</span></div>
+  </div>
+</section>
+
+</div>
+</section>
+</div>
+<footer class="status"><span>Dr. Tae-yang Brandt · Resident (PGY-2)</span><span>Medical ICU</span><span class="grow"></span><span>Practice environment · synthetic patients</span><span class="num">Saved 14:31</span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+{
+  "id": "p12",
+  "reference": {
+    "one_line": "23-year-old woman with type 1 diabetes in ketoacidosis after pump site failure and gastroenteritis, improving on insulin infusion but not resolved; potassium 3.4 unreplaced and dextrose fluid not started.",
+    "handoff": {
+      "severity": "Watch closely",
+      "summary": "Linnea Brackenridge-Osei, 23, came in at 06:10 with diabetic ketoacidosis (pH 7.09, bicarbonate 8, anion gap 28) after her insulin pump site failed during a stomach bug. She is much better clinically: alert, no vomiting since 07:40, heart rate 92, glucose 148 at 14:00 on insulin 3 units/h. The ketoacidosis has not resolved: at 13:10 the anion gap was 16, bicarbonate 14 and pH 7.29, although the 13:45 progress note says the gap has closed and plans to stop the infusion at 16:00. Potassium has fallen from 5.4 to 3.4 mmol/L and the potassium ordered at 09:05 was never hung. She is still on plain 0.9% saline at 250 mL/h; the dextrose fluid due when glucose fell below 250 at 11:00 has not been started, so glucose is dropping about 25 mg/dL an hour with no glucose source.",
+      "to_do": [
+        "Start 5% dextrose in 0.45% saline at 150 mL/h now, with potassium chloride 20 mEq per litre; chase the bag from pharmacy or use ward stock",
+        "Tell the medicine resident that the 13:10 anion gap is 16, not 12, and that potassium has not been given; ask whether extra potassium is wanted for 3.4",
+        "Keep the insulin infusion running; do not stop it at 16:00 and do not restart the pump until endocrinology's criteria are met",
+        "Bedside glucose every hour; next chemistry and venous gas due at about 15:10, and every 2 hours until the gap is 12 or below twice",
+        "Repeat the ECG now that potassium has fallen",
+        "Keep her nothing by mouth except ice chips and sips until the diet order is changed",
+        "Step-down bed still pending; mother arrives this evening"
+      ],
+      "if_then": [
+        "If bedside glucose is below 70 mg/dL, then give dextrose 50% 25 mL as ordered, recheck in 15 minutes and call the resident; do not simply switch the insulin off",
+        "If potassium is below 3.3 mmol/L, then call the resident before the next hour of insulin: replacement must catch up",
+        "If she develops palpitations, muscle weakness or an irregular monitor trace, then get an ECG and urgent potassium, magnesium and phosphate",
+        "If headache, vomiting or drowsiness returns, then call the physician at once",
+        "If the pump is to be restarted, then use a new site away from the abdomen and overlap the infusion by 1 to 2 hours"
+      ]
+    },
+    "brief_hospital_course": "Ms Brackenridge-Osei, 23, with type 1 diabetes on an insulin pump, presented at 06:10 on 17 Nov after three days of gastroenteritis and a day of vomiting, with glucose 542 mg/dL, pH 7.09, bicarbonate 8 mmol/L, anion gap 28, beta-hydroxybutyrate 6.8 mmol/L, potassium 5.4 mmol/L and creatinine 1.4 mg/dL. The pump download showed that insulin delivery had failed at about 22:00 on 15 Nov, from an infusion set worn for more than 3.5 days, roughly 32 hours before arrival. She received two litres of saline and then 250 mL/h, with an insulin infusion at 6 units/h from 07:10, reduced to 3 units/h at 11:15. A white cell count of 18.4 with no fever, a clear chest film and bland urine was judged a stress response and fell to 12.6 without antibiotics. By 13:10 she was alert and no longer vomiting, creatinine was 0.9 and glucose 168, but the anion gap was 16 with bicarbonate 14 and pH 7.29, so the ketoacidosis had not resolved; the 13:45 progress note records the gap as closed. Potassium fell to 3.4 mmol/L because the replacement ordered at 09:05 was not started, and dextrose-containing fluid was not started when glucose fell below 250 at 11:00. At the time of writing she remains in the emergency department on insulin 3 units/h and plain saline, awaiting a step-down bed; potassium, dextrose and continued two-hourly testing are needed before any return to her pump.",
+    "problem_list": [
+      {"problem": "Diabetic ketoacidosis, improving but not resolved (anion gap 16, bicarbonate 14, pH 7.29 at 13:10)", "status": "improving", "icd10cm": "E10.10", "evidence": ["labs: chemistry and venous blood gas, four time points", "flowsheet: ketoacidosis pathway"]},
+      {"problem": "Insulin pump infusion-set failure from about 22:00 on 15 Nov; set worn more than 3.5 days", "status": "active", "icd10cm": "T85.694A", "evidence": ["endocrinology and diabetes education consult 11:40", "lines: own insulin pump"]},
+      {"problem": "Potassium falling on insulin without replacement (5.4, 4.4, 3.8, 3.4)", "status": "active", "icd10cm": "E87.6", "evidence": ["labs: Potassium", "meds: potassium chloride 09:15 still due", "flowsheet: potassium added row", "pharmacy note 13:20"]},
+      {"problem": "No dextrose running while on insulin with glucose below 250 since 11:00; risk of low glucose", "status": "active", "icd10cm": null, "evidence": ["orders: nursing pathway order", "flowsheet: fluid and bedside glucose rows", "nursing note 12:30"]},
+      {"problem": "Viral gastroenteritis with vomiting, settled since 07:40", "status": "improving", "icd10cm": "A08.4", "evidence": ["emergency note", "flowsheet: vomiting row"]},
+      {"problem": "Acute kidney injury from volume loss (creatinine 1.4 to 0.9)", "status": "resolved", "icd10cm": "N17.9", "evidence": ["labs: Creatinine 06:25 and 13:10"]},
+      {"problem": "High white cell count without infection (18.4 to 12.6)", "status": "improving", "icd10cm": "D72.829", "evidence": ["emergency note", "labs: blood count", "imaging: chest X-ray"]},
+      {"problem": "Phosphate falling (5.1 to 2.2 mg/dL); no replacement needed yet", "status": "active", "icd10cm": "E83.39", "evidence": ["labs: Phosphate", "pharmacy note"]},
+      {"problem": "Autoimmune hypothyroidism on levothyroxine", "status": "active", "icd10cm": "E06.3", "evidence": ["history and physical", "meds: levothyroxine"]},
+      {"problem": "Glucose control drifting (A1c 8.1%, 7.9% in September); no ketone strips, expired backup pen", "status": "active", "icd10cm": null, "evidence": ["labs: Haemoglobin A1c", "consult 11:40", "encounters: 22 Sep 2026"]}
+    ],
+    "reconciled_medications": [
+      {"medicine": "Insulin regular infusion, 3 units/h", "source": "inpatient", "recommended_action": "continue", "reason": "Ketoacidosis not resolved at 13:10; continue until the gap is 12 or below and bicarbonate at least 18 on two panels and she is eating, then overlap with subcutaneous insulin."},
+      {"medicine": "Sodium chloride 0.9% infusion 250 mL/h", "source": "inpatient", "recommended_action": "change", "reason": "Glucose has been below 250 since 11:00; the pathway calls for dextrose-containing fluid at 150 mL/h. About 3.5 L given and chloride is 107."},
+      {"medicine": "Dextrose 5% in sodium chloride 0.45% at 150 mL/h", "source": "inpatient", "recommended_action": "continue", "reason": "Active order that was never started; start now so insulin can keep clearing ketones safely."},
+      {"medicine": "Potassium chloride 20 mEq per litre of maintenance fluid", "source": "inpatient", "recommended_action": "continue", "reason": "Ordered 09:05 and never hung; potassium is now 3.4. Start now and ask whether additional replacement is wanted."},
+      {"medicine": "Insulin lispro by pump (basal 0.70 units/h, 1 unit per 10 g carbohydrate, correction 1 per 45 mg/dL above 120)", "source": "home", "recommended_action": "hold", "reason": "Pump disconnected 06:30; restart only when endocrinology agrees, with new reservoir, insulin and a site away from the abdomen."},
+      {"medicine": "Insulin glargine pen 14 units daily (backup; home pen expired March 2026)", "source": "home", "recommended_action": "change", "reason": "Use 14 units with a 2-hour overlap if the pump is not restarted tonight; supply a new in-date pen at discharge."},
+      {"medicine": "Levothyroxine 75 mcg oral daily before breakfast", "source": "both", "recommended_action": "continue", "reason": "Long-term treatment; given 10:50 today."},
+      {"medicine": "Enoxaparin 40 mg subcutaneous daily", "source": "inpatient", "recommended_action": "continue", "reason": "Clot prevention while dehydrated and in bed; stop when walking freely or at discharge."},
+      {"medicine": "Ondansetron 4 mg intravenous every 8 hours as needed", "source": "inpatient", "recommended_action": "continue", "reason": "One dose at 06:35; QTc 441 ms on arrival, recheck with the repeat ECG."},
+      {"medicine": "Acetaminophen 1,000 mg intravenous every 8 hours as needed", "source": "inpatient", "recommended_action": "continue", "reason": "Abdominal pain now 1 out of 10; change to oral once eating."},
+      {"medicine": "Dextrose 50% 25 mL intravenous as needed for glucose below 70", "source": "inpatient", "recommended_action": "continue", "reason": "Rescue for low glucose while on the infusion."},
+      {"medicine": "Nasal glucagon 3 mg as needed", "source": "home", "recommended_action": "continue", "reason": "Emergency treatment for severe low glucose at home."},
+      {"medicine": "Levonorgestrel intrauterine device", "source": "home", "recommended_action": "continue", "reason": "In place since 2024; pregnancy test negative."}
+    ],
+    "pending_items": [
+      "Chemistry and venous gas due about 15:10 (every 2 hours until the gap is 12 or below twice)",
+      "Dextrose bag requested from pharmacy at 11:20, not yet on the unit",
+      "Potassium replacement ordered 09:05, not started",
+      "Repeat ECG after the fall in potassium",
+      "Endocrinology agreement before the pump is restarted",
+      "Medical step-down bed, requested 10:20",
+      "Diet order still nothing by mouth except ice chips and sips",
+      "New glargine pen, ketone strips and clinic within 2 weeks at discharge",
+      "Mother arriving this evening"
+    ]
+  },
+  "qa": [
+    {"q": "How severe was the ketoacidosis on arrival?", "a": "Glucose 542 mg/dL, venous pH 7.09, bicarbonate 8 mmol/L, anion gap 28, beta-hydroxybutyrate 6.8 mmol/L, potassium 5.4, lactate 2.9, with Glasgow Coma Scale 14.", "type": "lookup", "evidence": ["labs: chemistry and venous blood gas 06:25", "triage nursing note"]},
+    {"q": "What rate is the insulin infusion running at, and when was it changed?", "a": "3 units/h. It started at 07:10 at 6 units/h (0.1 units/kg/h, no bolus) and was halved at 11:15 when bedside glucose was 243. About 31 units had been given by 13:20.", "type": "lookup", "evidence": ["meds: insulin regular infusion", "pharmacy note 13:20"]},
+    {"q": "What are her home pump settings?", "a": "Lispro basal 0.70 units/h (16.8 units a day), 1 unit per 10 g carbohydrate, correction 1 unit per 45 mg/dL above 120; average total daily dose 38 units.", "type": "lookup", "evidence": ["pharmacy note 13:20", "history: home medicines"]},
+    {"q": "What has serum potassium done since arrival?", "a": "5.4 at 06:25, 4.4 at 08:40, 3.8 at 10:45 and 3.4 at 13:10, falling steadily on insulin with no potassium given.", "type": "trend", "evidence": ["labs: Potassium", "flowsheet: potassium added to fluid row"]},
+    {"q": "How have the anion gap, bicarbonate and pH changed?", "a": "Gap 28, 22, 19, 16; bicarbonate 8, 11, 13, 14; pH 7.09, 7.18, 7.25, 7.29; beta-hydroxybutyrate 6.8, 4.9, 3.1, 1.9. Improving steadily but not yet normal.", "type": "trend", "evidence": ["labs: chemistry and venous blood gas"]},
+    {"q": "How fast is bedside glucose falling this afternoon?", "a": "243 at 11:00, 201 at 12:00, 172 at 13:00 and 148 at 14:00: about 25 to 40 mg/dL an hour on 3 units/h with no dextrose running.", "type": "trend", "evidence": ["flowsheet: bedside glucose row"]},
+    {"q": "When did bedside glucose first fall below 250, and what was supposed to happen then?", "a": "At 11:00 (243). The standing order says change to 5% dextrose in 0.45% saline at 150 mL/h and reduce insulin to 3 units/h. Insulin was reduced at 11:15; the fluid is still plain saline at 250 mL/h at 14:00.", "type": "temporal", "evidence": ["orders: nursing pathway order 07:00", "flowsheet: fluid row", "nursing note 12:30"]},
+    {"q": "How long was she without effective insulin before she arrived?", "a": "About 32 hours: the download shows delivery failing at about 22:00 on 15 Nov and she arrived at 06:10 on 17 Nov. Her own account, a leak at about 20:00 on 16 Nov, would make it only 10 hours.", "type": "temporal", "evidence": ["endocrinology and diabetes education consult", "triage and emergency notes"]},
+    {"q": "When did she last vomit?", "a": "07:40 on 17 Nov; 350 mL in total, with nausea only at 09:00 and none since.", "type": "temporal", "evidence": ["flowsheet: vomiting row", "nursing note 12:30"]},
+    {"q": "Has the ketoacidosis resolved, so that the insulin infusion can stop at 16:00?", "a": "No. The 13:10 panel gives a gap of 16 (sodium 137, chloride 107, bicarbonate 14), pH 7.29 and beta-hydroxybutyrate 1.9. Endocrinology asked for a gap of 12 or below and bicarbonate of at least 18 on two panels, and for her to be eating.", "type": "reasoning", "evidence": ["labs: 13:10 chemistry and gas", "consult 11:40 recommendation 1", "progress note 13:45"]},
+    {"q": "Should she have had antibiotics for a white cell count of 18.4?", "a": "No. She was afebrile with a clear chest X-ray, bland urine and 2% band forms; the emergency physician judged it a stress response to ketoacidosis, and it fell to 12.6 with fluids and insulin alone.", "type": "reasoning", "evidence": ["emergency note 07:45", "labs: blood count and urine", "imaging: chest X-ray"]},
+    {"q": "Does the phosphate of 2.2 mg/dL need replacing?", "a": "Not at present. The pharmacist advises replacement only if phosphate is below 1.0 or she becomes weak; it should be rechecked with the next panels because it is still falling.", "type": "reasoning", "evidence": ["pharmacy note 13:20", "labs: Phosphate 13:10"]},
+    {"q": "Has the ECG been repeated since potassium fell?", "a": "No. The only tracing is from 06:22, which advised a repeat once potassium had fallen with treatment.", "type": "absence", "evidence": ["imaging: 12-lead ECG 06:22"]},
+    {"q": "Has endocrinology agreed to restarting her pump at 15:00?", "a": "There is no record of agreement. The active order says not to restart until endocrinology agrees, and the consult's conditions (two panels with a closed gap, eating) have not been met.", "type": "absence", "evidence": ["orders: nursing pump order 06:35", "consult 11:40", "progress note 13:45"]},
+    {"q": "What were her thyroid function tests this admission?", "a": "None were sent. The last recorded result is from March 2026, normal on levothyroxine 75 mcg.", "type": "absence", "evidence": ["labs: all panels", "encounters: 11 Mar 2026"]}
+  ],
+  "tasks": [
+    {
+      "key_index": 0,
+      "kind": "err",
+      "prompt": "Review electrolyte management since the insulin infusion was started.",
+      "expected_findings": [
+        "Potassium chloride 20 mEq per litre was ordered at 09:05 when potassium was 4.4 on an insulin infusion",
+        "The medication record shows the 09:15 start still due, and the pathway flowsheet records 'None' for potassium added at every hour",
+        "Potassium has fallen 5.4, 4.4, 3.8, 3.4 mmol/L",
+        "The pharmacist could find no potassium-containing bag dispensed to ED-22",
+        "The admission note and the 13:45 progress note both write as though potassium were running"
+      ],
+      "acceptable_actions": ["Start potassium replacement now in the maintenance fluid", "Ask the physician about additional intravenous or oral potassium for 3.4", "Repeat potassium within 2 hours and repeat the ECG", "Keep cardiac monitoring", "Correct the notes and report the missed order"],
+      "must_not": ["Stop the insulin infusion to protect the potassium while ketoacidosis is unresolved", "Give potassium as a rapid intravenous push", "Add a duplicate order without checking what is hanging", "Treat magnesium 1.7 as the main problem"],
+      "evidence": ["meds: potassium chloride", "flowsheet: ketoacidosis pathway, potassium row", "labs: Potassium", "pharmacy note 13:20", "progress note 13:45"]
+    },
+    {
+      "key_index": 1,
+      "kind": "err",
+      "prompt": "Check whether the ketoacidosis pathway orders have been carried out as her bedside glucose has come down.",
+      "expected_findings": [
+        "The standing order: when bedside glucose is below 250, change to 5% dextrose in 0.45% saline at 150 mL/h and reduce insulin to 3 units/h",
+        "Glucose was 243 at 11:00 and is 148 at 14:00",
+        "Insulin was reduced at 11:15, but the flowsheet shows plain 0.9% saline at 250 mL/h through 14:00 and the dextrose order has no administrations",
+        "The 12:30 nursing note says the dextrose bag was requested at 11:20 and had not arrived",
+        "She is on insulin with no glucose source and almost nothing by mouth, so low glucose is likely within a few hours"
+      ],
+      "acceptable_actions": ["Start the dextrose-containing fluid now and stop the plain saline", "Obtain the bag urgently from pharmacy or stock", "Continue hourly bedside glucose and have dextrose 50% at hand", "Inform the resident"],
+      "must_not": ["Stop or pause the insulin infusion as the way to prevent low glucose", "Wait for the step-down bed before changing the fluid", "Let her eat in place of intravenous dextrose without a changed diet order and insulin plan"],
+      "evidence": ["orders: nursing pathway order", "flowsheet: fluid and glucose rows", "meds: dextrose 5% in 0.45% saline", "nursing note 12:30"]
+    },
+    {
+      "key_index": 2,
+      "kind": "doc",
+      "prompt": "Before acting on the plan in the 13:45 medicine progress note, check its statements against the 13:10 results.",
+      "expected_findings": [
+        "The note says the anion gap has closed at 12 and bicarbonate is up to 18",
+        "The 13:10 panel shows sodium 137, chloride 107, bicarbonate 14, so the gap is 16; pH 7.29 and beta-hydroxybutyrate 1.9",
+        "Ketoacidosis has not resolved; endocrinology asked for two panels with a gap of 12 or below and bicarbonate at least 18",
+        "The plan built on it is premature: stopping insulin at 16:00, restarting the pump at 15:00, spacing tests to 6-hourly and downgrading the bed",
+        "The note also says 'continue potassium', which was never started"
+      ],
+      "acceptable_actions": ["Tell the resident and ask for a corrected note", "Continue the insulin infusion and 2-hourly panels", "Keep the step-down bed request", "Hold the pump restart"],
+      "must_not": ["Stop the insulin infusion at 16:00", "Restart the pump on the basis of this note", "Accept the note's values without recalculating the gap"],
+      "evidence": ["progress note 13:45", "labs: chemistry and venous blood gas 13:10", "flowsheet: anion gap row", "consult 11:40"]
+    },
+    {
+      "key_index": 3,
+      "kind": "time",
+      "prompt": "Using every source in the chart, establish when her insulin delivery actually failed.",
+      "expected_findings": [
+        "The triage, emergency and admission notes record her account: site found leaking at about 20:00 on 16 Nov, changed at about 21:00",
+        "The pump and sensor download shows sensor glucose above 250 from 22:40 on 15 Nov, never recovering",
+        "Three correction boluses on 16 Nov (02:10, 08:30, 14:15; 11 units) had no effect, and there was an occlusion alarm at 16:20",
+        "Delivery failed at about 22:00 on 15 Nov, roughly 32 hours before arrival",
+        "The set had been in since 13 Nov 07:50, more than 3.5 days; poor intake during the stomach bug hid the problem"
+      ],
+      "acceptable_actions": ["Record the corrected timeline", "Teach set changes every 2 to 3 days, pen injection when glucose stays above 250 for 3 hours, and sick-day ketone checks", "Supply ketone strips and an in-date glargine pen"],
+      "must_not": ["Accept 20:00 on 16 Nov as the time of failure", "Blame the gastroenteritis alone", "Suggest she deliberately omitted insulin"],
+      "evidence": ["endocrinology and diabetes education consult 11:40", "triage nursing note", "emergency note", "history and physical"]
+    },
+    {
+      "key_index": 4,
+      "kind": "dis",
+      "prompt": "White cells were 18.4 on arrival, yet no antibiotics or cultures were ordered. Was an infection missed?",
+      "expected_findings": [
+        "No. A raised white cell count is common in ketoacidosis without infection",
+        "She has no fever, a clear chest X-ray, urine without nitrite or white cells, and only 2% band forms",
+        "The emergency note records this reasoning and a plan to culture only if she becomes febrile",
+        "The count fell to 12.6 by 13:10 with fluids and insulin alone",
+        "The old pump site has 1 cm of redness, no pus, marked and not spreading"
+      ],
+      "acceptable_actions": ["No antibiotics", "Keep watching temperature and the marked pump site", "Culture if she develops a fever"],
+      "must_not": ["Start empirical antibiotics", "Report the absence of cultures as an error", "Label this sepsis"],
+      "evidence": ["emergency note 07:45", "labs: blood count and urine", "imaging: chest X-ray", "vitals: temperature row", "nursing assessment: skin row"]
+    }
+  ],
+  "epilogue": {
+    "note": "What happens AFTER 'now' in this simulated world. Never shown in the chart; for outcome-prediction ground truth.",
+    "course": "Neither omission was caught before it bit. At 15:35 she became sweaty and shaky with a bedside glucose of 58; dextrose 50% was given and the dextrose fluid was finally hung, with potassium. The 15:10 panel came back showing potassium 3.0 and a gap of 15, the nurse and pharmacist rang the resident, and the plan was rewritten: insulin continued, the pump stayed off, and oral potassium was added. A repeat ECG showed flattened T waves and no arrhythmia. The gap closed on two panels by 22:20. Too tired to manage a pump, she had glargine 14 units that night and the infusion stopped after a two-hour overlap. She reached a general medical bed after more than fifteen hours in the emergency department. The pump went back on at a new site the next evening and she went home on 19 Nov with her mother, a new pen and ketone strips. She has had no further admissions.",
+    "events": [
+      {"t": "2026-11-17T15:10", "event": "Two-hourly chemistry and venous gas drawn; bedside glucose 121 at 15:00, still on plain saline."},
+      {"t": "2026-11-17T15:35", "event": "Sweaty and tremulous, bedside glucose 58; dextrose 50% 25 mL given, glucose 134 fifteen minutes later."},
+      {"t": "2026-11-17T15:50", "event": "5% dextrose in 0.45% saline with potassium chloride 20 mEq per litre started at 150 mL/h; insulin continued at 3 units/h."},
+      {"t": "2026-11-17T15:55", "event": "Results: potassium 3.0, anion gap 15, bicarbonate 15, phosphate 1.9. Resident called; note corrected, pump restart and 16:00 insulin stop cancelled; oral potassium 40 mEq given."},
+      {"t": "2026-11-17T16:20", "event": "Repeat ECG: sinus rhythm 90, flattened T waves, no arrhythmia."},
+      {"t": "2026-11-17T19:20", "event": "Mother arrives. Potassium 3.7 on the 18:10 panel."},
+      {"t": "2026-11-17T21:40", "event": "Moved to a general medical bed; step-down request withdrawn."},
+      {"t": "2026-11-17T22:20", "event": "Second consecutive panel with a closed gap (11 at 20:15, 10 at 22:20; bicarbonate 21). Ate supper."},
+      {"t": "2026-11-17T22:45", "event": "Glargine 14 units given; insulin infusion stopped at 00:45 after a 2-hour overlap."},
+      {"t": "2026-11-18T21:30", "event": "Own pump restarted with new reservoir and a site on the upper buttock, taught by the diabetes educator earlier that day."},
+      {"t": "2026-11-19T11:15", "event": "Discharged home with her mother; new glargine pen and ketone strips supplied."},
+      {"t": "2026-12-01T14:00", "event": "Endocrinology clinic: set changes every 3 days with pump reminder, time in range 68%."}
+    ],
+    "discharge": {"t": "2026-11-19T11:15", "disposition": "Home", "length_of_stay_days": 2},
+    "outcomes_30_day": {"readmitted": false, "readmission_reason": null, "emergency_visits": 0, "died": false, "notable": "One treated low glucose (58 mg/dL) and potassium nadir of 3.0 in hospital from missed pathway steps; full recovery, pump resumed."}
+  },
+  "portal_messages": [
+    {"t": "2026-09-23T18:42", "from": "patient", "channel": "patient portal", "subject": "Infusion sets - honest question", "body": "Thanks for yesterday. I know I got the lecture about changing my set every 2 to 3 days. Honest question though, is it really that bad if it's still working on day 4 or 5? A box of sets costs me a lot on a student budget, and every time I rip one off my skin comes up in an itchy rash from the tape. Stretching them means fewer rashes. You mentioned a barrier wipe. Is there anything else, like a different set with different glue?", "urgency_truth": "routine", "ideal_reply_points": ["Yes, it matters: absorption becomes unreliable after 2 to 3 days and a pump has no long-acting insulin behind it, so a failed site can lead to ketoacidosis within hours", "Practical help with the rash: barrier wipe, different set or adhesive, rotating sites away from the abdomen", "Help with cost: supply assistance or samples", "Keep ketone strips and an in-date backup glargine pen", "Non-judgemental tone; she asked honestly"]},
+    {"t": "2026-09-24T09:20", "from": "diabetes educator (nurse)", "channel": "patient portal", "subject": "Re: Infusion sets - honest question", "body": "Hi Linnea, fair question. Yes, it matters. After about three days the skin around the cannula stops absorbing insulin reliably, and because your pump only holds fast-acting insulin there is nothing in reserve if a site fails. You can be in ketoacidosis within hours. For the rash, try the barrier wipe first and move sites off your abdomen; if that fails I can order a sample set with a different adhesive. I'll also send a supply-assistance form. Last thing: please replace your backup glargine pen and get ketone strips.", "urgency_truth": "routine", "ideal_reply_points": ["Direct answer with the reason", "Two concrete options for the adhesive problem", "Addresses cost", "Reminds her about the backup pen and ketone strips"]},
+    {"t": "2026-11-16T09:12", "from": "patient", "channel": "patient portal", "subject": "Stomach bug and high sugars", "body": "I've caught my housemate's stomach bug. Loose stools since Saturday, and I've been sick twice this morning. My sensor has been over 300 since late last night. I did corrections at 2 am and again at half eight and nothing is budging. I've barely eaten so I don't get why it's so high. I don't have ketone strips. Is this just what being ill does? Should I keep correcting through the pump or do something different? I've got a seminar at 2 that I really can't miss.", "urgency_truth": "urgent", "ideal_reply_points": ["Telephone her now; this should not wait in an inbox",
+      "High glucose that ignores two pump corrections means the pump is not delivering until proved otherwise", "Inject a correction by pen or syringe, then change the whole set and site", "Vomiting with glucose above 300 and no way to test ketones means emergency assessment today", "Her backup glargine pen may be out of date; she should not rely on it", "Skip the seminar"]},
+    {"t": "2026-11-20T22:05", "from": "patient", "channel": "patient portal", "subject": "High again after set change", "body": "Sorry to message so late. I changed my set at 8 tonight like I'm meant to and had dinner. Sensor has been 280 to 290 for about two hours. I gave a correction through the pump an hour ago and it hasn't moved. I did a ketone strip and it says small. I'm not being sick and I feel okay, just scared after Tuesday. Mum is asleep in the next room and I don't want to frighten her. What do I do, and when do I need to come in?", "urgency_truth": "same day", "ideal_reply_points": ["Reply tonight, ideally by phone", "Give the correction by pen now, not through the pump", "Change the set and site again and check the tubing and reservoir", "Recheck glucose and ketones in 2 hours and drink water", "Come to the emergency department if ketones are moderate or large, if she vomits, or if glucose is still above 250 after 3 hours", "Praise her for testing ketones and acting early"]},
+    {"t": "2026-11-20T22:24", "from": "on-call endocrinology nurse", "channel": "patient portal", "subject": "Re: High again after set change", "body": "Linnea, you've done the right things and you've caught this early. Now: take your correction dose with the lispro pen, not the pump. Then put in a brand new set at a different spot and look for kinks or bubbles in the tubing. Drink a big glass of water. Check glucose and ketones again at midnight. If ketones are moderate or large, if you are sick, or if you are still above 250 at 1 am, come to the emergency department and bring the pump. I am ringing you in ten minutes to go through it.", "urgency_truth": "same day", "ideal_reply_points": ["Specific steps in order", "Clear thresholds and a time for coming in", "Follow-up by phone, not message alone", "Reassuring without minimising"]},
+    {"t": "2026-11-25T10:15", "from": "family member (mother)", "channel": "patient portal", "subject": "Linnea's mother - a few questions", "body": "Linnea has given me access to write to you. I stayed with her after the hospital and I'm home now, two hours away, and worrying. She tells me everything is fine. Is there a pump that doesn't use the tape that gives her the rash? Would she be safer back on injections? And is there any way I can see her sugar readings on my phone so I'd know if this was happening again? I don't want to nag her.", "urgency_truth": "routine", "ideal_reply_points": ["Confirm Linnea's consent before sharing details", "Options for the adhesive exist and are being tried; pump or injections is Linnea's choice with her team", "Sensor data can be shared with a follower if Linnea sets it up", "Sick-day plan and supplies are now in place; clinic visit on 1 Dec", "Acknowledge her worry and the balance between support and independence"]}
+  ],
+  "conversation": {
+    "setting": "Emergency department, bed ED-22, 17 Nov at about 11:20, just after the insulin rate was reduced; diabetes educator reviewing the pump download",
+    "participants": ["F. Lindqvist-Amadi RN (diabetes educator)", "Linnea Brackenridge-Osei (patient)", "Housemate"],
+    "turns": [
+      {"speaker": "Educator", "text": "Linnea? I'm one of the diabetes educators, Lindqvist-Amadi. I work with Dr Varga-Hale in endocrinology. Okay if I sit?"},
+      {"speaker": "Patient", "text": "Hi. Sure. Sorry, I look awful."},
+      {"speaker": "Educator", "text": "You look a lot better than your six o'clock numbers did. How's the stomach?"},
+      {"speaker": "Patient", "text": "Better. I haven't been sick since about twenty to eight. I'm actually starving."},
+      {"speaker": "Educator", "text": "Good sign. Ice chips and sips for now, I'm afraid. I've downloaded your pump and your sensor and I'd like to go through the week with you. Is it all right if your housemate stays?"},
+      {"speaker": "Patient", "text": "Yeah, she drove me in."},
+      {"speaker": "Educator", "text": "So first, tell me what you think happened."},
+      {"speaker": "Patient", "text": "The site leaked. Last night about eight it felt wet and the tape had lifted. So I put a new one in around nine and it just didn't come down. It was over four hundred all night."},
+      {"speaker": "Educator", "text": "Right. And the one that leaked, when had you put that in?"},
+      {"speaker": "Patient", "text": "Um. A couple of days before?"},
+      {"speaker": "Educator", "text": "The pump says Friday the thirteenth, ten to eight in the morning. The next change is Monday night at five past nine."},
+      {"speaker": "Patient", "text": "Oh. So that's three days."},
+      {"speaker": "Educator", "text": "Three and a half and a bit. Now look at this line, this is your sensor. It goes above two fifty at twenty to eleven on Sunday night, and it never comes back down."},
+      {"speaker": "Patient", "text": "Sunday? No, I was okay on Sunday. I just had the bug. I wasn't really eating."},
+      {"speaker": "Housemate", "text": "You were in bed all Sunday. You said you felt rough."},
+      {"speaker": "Educator", "text": "And that's exactly what hid it. You weren't eating, so you were only giving small boluses, and feeling sick just felt like the bug. But see here. Monday, ten past two in the morning, half past eight, quarter past two in the afternoon. Three corrections, eleven units in all."},
+      {"speaker": "Patient", "text": "And nothing happened."},
+      {"speaker": "Educator", "text": "Nothing. Then an occlusion alarm at twenty past four on Monday afternoon."},
+      {"speaker": "Patient", "text": "I cleared that. I thought the tube was just kinked."},
+      {"speaker": "Educator", "text": "So my reading is that insulin stopped getting in at about ten o'clock on Sunday night. That's roughly thirty-two hours with no working insulin before you got here. Not ten."},
+      {"speaker": "Patient", "text": "Oh my God. I told everyone it was last night."},
+      {"speaker": "Educator", "text": "You told them what you knew. That's why we download. When the sugar stayed up on Monday, did you check for ketones?"},
+      {"speaker": "Patient", "text": "I don't have any strips."},
+      {"speaker": "Educator", "text": "And the backup pen, the glargine?"},
+      {"speaker": "Patient", "text": "It's in the fridge. I think it's out of date. I didn't use it."},
+      {"speaker": "Educator", "text": "It expired in March. Okay. I'm not telling you off. Your A1c today is eight point one, and it was seven point nine in September, so things are drifting, and I think leaving sets in is a big part of it."},
+      {"speaker": "Patient", "text": "It's the tape, it makes me itch. And they're expensive. So I stretch them."},
+      {"speaker": "Educator", "text": "I understand. But the pump only has fast insulin in it. When a site fails there's nothing underneath, and within hours you're where you were this morning. So, the plan. The drip stays until the acid in your blood is properly back to normal on two tests in a row. Your quarter to eleven one was better but not there yet. And until you're eating."},
+      {"speaker": "Patient", "text": "And then my pump goes back on?"},
+      {"speaker": "Educator", "text": "Then the pump, with a new reservoir, fresh insulin and a new site away from your tummy. Upper buttock. You take a meal bolus and we keep the drip going an hour or two afterwards so there's no gap. If you're too wiped out tonight we give a long-acting injection, fourteen units, and do the pump later."},
+      {"speaker": "Patient", "text": "Okay."},
+      {"speaker": "Educator", "text": "Three rules for home, and I'd like you to say them back. One, change the set every two to three days, and we'll put a reminder on the pump. Two, if you're above two fifty for three hours, you inject with a pen. You don't trust the pump. Three, on sick days you follow the sick-day plan, and you have strips in the house."},
+      {"speaker": "Patient", "text": "Change every two or three days. Over two fifty for three hours, use the pen. Sick days, the plan, and check ketones."},
+      {"speaker": "Educator", "text": "Perfect. You'll go home with a new glargine pen and ketone strips, and we'll see you in clinic within two weeks."},
+      {"speaker": "Housemate", "text": "Is there anything I should know? In case it happens again."},
+      {"speaker": "Educator", "text": "Yes. If she's being sick and her sugar is high, don't wait until morning. Bring her in, like you did."},
+      {"speaker": "Patient", "text": "Thanks. I honestly thought it was just the stomach bug."}
+    ],
+    "note_it_should_produce": "Existing note: 'Endocrinology and diabetes education consult' by F. Lindqvist-Amadi RN, diabetes educator, with Dr. Oluwaseun Varga-Hale, 17 Nov 11:40."
+  }
+}

@@ -1,0 +1,12 @@
+HOSP.comorbidity({key:'dm2',name:'Type 2 diabetes mellitus',icd:'E11.9',prior:[.05,.17,.25],minAge:30,
+ problem:'Type 2 diabetes mellitus (HbA1c {a1c}%)',pmh:'Type 2 diabetes for {yrs} years (latest HbA1c {a1c}%)',home:['atorva20'],
+ opd:{clinic:{key:'endoc',p:.35},every:[13,26],
+  tracks:{a1c:{start:[7.2,10.4],drift:.12,noise:.3,floor:6.2},ldl:{start:[70,135],drift:0,noise:9,floor:45}},
+  ladder:{on:'a1c',above:7.5,effect:.8,steps:['metformin500','metformin1000','+empa10','+sema05','sema1','+glargine10','glargine20','glargine30']},
+  labs:['uacr'],
+  sx:['no low-glucose episodes; checks glucose [most mornings|a few times a week]','thirst and passing urine at night [improved|unchanged]','feet examined: sensation intact, pulses present','diet slipped over the holidays; walking [3|4] days a week'],
+  plan:['Eye examination and urine albumin due yearly','Reviewed low-glucose symptoms and treatment','Reinforced carbohydrate portions; dietitian visit offered','Foot care advice repeated']},
+ labs:{glu:48},flags:['diabetic'],hold:['metformin','sglt2','sulfonylurea','glp1'],showLabs:['a1c@1'],meds:[{m:'lisprosc'}],
+ orders:[['Nursing','Bedside glucose before meals and at bedtime'],['Nursing','Hypoglycaemia protocol if glucose below 70 mg/dL']],
+ plan:'Type 2 diabetes: hold oral agents in hospital, correction-scale insulin, target glucose 140 to 180 mg/dL.',
+ consult:{svc:'diabed',p:.15,reason:'diabetes teaching before discharge'},interact:{hypogly:1,ssi:1.6,cauti:1.3},los:.3});

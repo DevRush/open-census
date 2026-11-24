@@ -1,0 +1,12 @@
+HOSP.clinic({key:'nephrology',name:'Kidney medicine',every:[13,26],noShow:.08,age:[28,90,64],manages:['htn'],
+ visitTypes:['New patient','Return visit','Hospital follow-up','Dialysis planning'],
+ problems:[{c:'ckd',w:7},
+  {key:'stones',name:'Recurrent kidney stones',icd:'N20.0',w:1,age:[24,70,45],every:[26,52],tracks:{uric:{start:[5,8],drift:0,noise:.4,floor:3.5}},sx:['no stone pain since the last visit','drinking [2|2.5|3] L of fluid a day','passed a small stone [2 months ago|last spring]'],
+   plan:['24-hour urine collection reviewed','Fluid goal 2.5 L a day; less salt and animal protein','Imaging yearly']},
+  {key:'gn',name:'IgA kidney disease with protein in the urine',icd:'N02.8',w:1,age:[22,60,38],every:[13,26],home:['losartan50'],tracks:{cr:{start:[.9,1.5],drift:.015,noise:.06,floor:.8},uacr:{start:[300,1500],drift:-20,noise:90,floor:80}},
+   sx:['no visible blood in the urine','no ankle swelling; home blood pressure in the 120s','tolerating the blood pressure tablet without dizziness'],plan:['Blood pressure target below 125/75','Urine protein before each visit','Avoid anti-inflammatory drugs']}],
+ exam:'[Looks well|Comfortable]. [No ankle swelling|Trace ankle swelling|No ankle swelling]. Chest clear. No rash.',
+ referral:'Referred by primary care for [a falling eGFR|protein in the urine|potassium repeatedly above 5.2|blood pressure needing three medicines]',
+ notes:{new:'New patient consultation. {age} {sex}. {referral}. Urine tested in clinic.',ret:'{age} {sex} here for kidney follow-up. Blood and urine tests from this week reviewed with {his} trends.',
+  hfu:'{age} {sex} seen after a hospital stay. Kidney function during admission and medicines held or changed in hospital were reviewed.'},
+ hmAll:true,hm:[['Urine albumin-to-creatinine ratio',26,18,200],['Parathyroid hormone and phosphate',52,18,200],['Hepatitis B immunity check',260,18,200]],orders:['Laboratory: chemistry, blood count, urine albumin before each visit','Kidney ultrasound if not done in 2 years']});

@@ -1,0 +1,2 @@
+["engine/core.js","hospital/names.js","hospital/hospital.js","hospital/clinics.js","modules/shared/tables.js","modules/shared/meds.js","modules/shared/defaults.js","modules/shared/complications.js",
+ "modules/comorbidities/","modules/conditions/","modules/generic/","modules/clinics/","engine/staff.js","engine/census.js","engine/chart.js","engine/outpatient.js","engine/api.js"]

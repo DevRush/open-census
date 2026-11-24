@@ -1,0 +1,325 @@
+{
+  "id": "p4",
+  "reference": {
+    "one_line": "71-year-old woman 25 hours after tenecteplase and thrombectomy for left M1 stroke; NIH Stroke Scale 17 to 8, new atrial fibrillation, unsafe swallow, 24-hour CT without haemorrhage.",
+    "handoff": {
+      "severity": "Watch closely",
+      "summary": "Benedetta Castellane-Arce, 71, had a left middle cerebral artery (M1) occlusion on 16 Nov, last known well 11:40, treated with tenecteplase 17 mg at 13:46 and thrombectomy with complete reperfusion at 15:22. NIH Stroke Scale has improved from 17 to 8: moderate expressive aphasia, right facial droop, right arm 3/5 and leg 4/5. The 24-hour CT at 13:58 shows a moderate infarct and no haemorrhage, and aspirin 325 mg by tube is ordered for 15:00. Atrial fibrillation appeared at 02:40 today (rate to 128, one dose of intravenous metoprolol, now 96 to 105) and is the likely cause; anticoagulation timing rests with the stroke team. She failed the swallow screen and the speech therapy assessment, is nothing by mouth with a nasogastric tube placed at 12:40, and has a temperature up to 37.8, white cells 11.6 and a new right basal opacity after coughing on a tablet given by mouth last night.",
+      "to_do": [
+        "Give aspirin 325 mg by nasogastric tube at 15:00; it is the first antithrombotic permitted now that the 24-hour CT has been read.",
+        "Discontinue the 'Regular diet' order, still active from the admission order set, and change tonight's atorvastatin 80 mg from oral to tube route.",
+        "Subcutaneous heparin was given at 22:04 and 06:02, inside the 24-hour window; tell the resident and pharmacist, and confirm with the stroke team whether the 14:00 dose (now outside the window, CT clear) should go ahead.",
+        "Neuro checks and vital signs every 2 hours now that 24 hours have passed; ask the team for the new blood pressure target and when to restart home tablets.",
+        "Chest: monitor temperature, saturation and cough; ask the team whether to treat for aspiration given the X-ray.",
+        "Dietitian referral and tube feeding plan; at present only flushes are going down the tube.",
+        "Ask about removing the urinary catheter; echocardiogram pending; potassium 3.8 and magnesium 1.8 are below cardiology's targets."
+      ],
+      "if_then": [
+        "If the NIH Stroke Scale rises by 4 or more, or there is new headache, vomiting or drowsiness, then call the stroke team at once and arrange an urgent CT head; hold aspirin and heparin until reviewed.",
+        "If blood pressure exceeds 180/105, then give labetalol 10 mg intravenous as ordered and recheck in 15 minutes; do not treat pressures below this unless the team sets a new target.",
+        "If heart rate stays above 120, then give metoprolol 5 mg intravenous as ordered, checking the blood pressure first.",
+        "If temperature reaches 38 or saturation falls below 93%, then call the resident; aspiration pneumonia is likely and she will need cultures, a chest X-ray and antibiotics.",
+        "If anyone offers food, drink or tablets by mouth, then stop them; all medicines go by tube, rectally or intravenously.",
+        "If the groin swells or the foot becomes cool or pulseless, then press on the site and call the resident."
+      ]
+    },
+    "brief_hospital_course": "Mrs Castellane-Arce is a 71-year-old right-handed woman with hypertension, type 2 diabetes and a transient ischaemic attack in April 2026 who was found by her husband at 12:30 on 16 Nov with aphasia and right-sided weakness; her daughter had spoken with her normally until 11:40, taken as last known well. NIH Stroke Scale was 17. CT showed no haemorrhage and CT angiography a left M1 occlusion. After labetalol for 192/102 she received tenecteplase 17 mg at 13:46 (door to needle 34 minutes), followed by thrombectomy with complete reperfusion at 15:22 after a single pass. She was monitored in the neuro ICU with blood pressure kept below 180/105, needing one further labetalol dose. A post-procedure CT showed basal ganglia high density that had cleared on the 24-hour CT, which showed a moderate left middle cerebral artery infarct without haemorrhage; aspirin was then started. The score improved to 8, with residual expressive aphasia and right arm weakness. Atrial fibrillation was detected at 02:40 on 17 Nov and is the presumed cause; cardiology advised rate control and anticoagulation at an interval to be set by the stroke team. She failed bedside and speech therapy swallow assessments and a nasogastric tube was placed. Two departures from the post-thrombolysis and swallow orders occurred: subcutaneous heparin was given twice within 24 hours of tenecteplase, and an oral tablet was given after the failed screen, followed by low-grade temperature and a new right basal opacity. Acute inpatient rehabilitation is recommended.",
+    "problem_list": [
+      {"problem": "Acute left middle cerebral artery ischaemic stroke, M1 occlusion, after tenecteplase and thrombectomy", "status": "improving", "icd10cm": "I63.412", "evidence": ["imaging: CT angiogram 16 Nov 13:31", "procedure note 16 Nov 15:50", "flowsheet: NIH Stroke Scale 17 to 8", "imaging: CT head 17 Nov 13:58"]},
+      {"problem": "Paroxysmal atrial fibrillation, new on monitor 17 Nov 02:40, probable stroke cause, not yet anticoagulated", "status": "active", "icd10cm": "I48.0", "evidence": ["imaging: 12-lead ECG 17 Nov 02:55", "cardiology consult 17 Nov 11:55", "encounters: telephone 28 Oct, palpitations"]},
+      {"problem": "Oropharyngeal dysphagia, nothing by mouth, nasogastric tube", "status": "active", "icd10cm": "R13.12", "evidence": ["nursing assessment 16 Nov 20:00: swallow screen failed 19:30", "speech and language therapy note 17 Nov 11:35", "lines: Nasogastric tube 17 Nov 12:40"]},
+      {"problem": "Possible aspiration after oral tablet: temperature to 37.8, white cells 11.6, new right basal opacity", "status": "active", "icd10cm": "J69.0", "evidence": ["meds: Atorvastatin 16 Nov 21:10 'coughed afterwards'", "imaging: Chest X-ray 17 Nov 13:15", "labs: White cells 8.9, 10.8, 11.6", "flowsheet: Temperature 37.8 at 06:00 and 07:00"]},
+      {"problem": "Expressive aphasia", "status": "improving", "icd10cm": "R47.01", "evidence": ["speech and language therapy note 17 Nov 11:35"]},
+      {"problem": "Right-sided weakness, arm worse than leg (right-handed)", "status": "improving", "icd10cm": "G81.91", "evidence": ["flowsheet: Right arm strength 0 to 3, right leg 1 to 4", "physiotherapy note 17 Nov 10:40"]},
+      {"problem": "Hypertension, permissive target below 180/105, home tablets held", "status": "active", "icd10cm": "I10", "evidence": ["orders: blood pressure target 16 Nov 16:15", "orders: Lisinopril and amlodipine HOLD", "meds: Labetalol given 13:38 and 18:05 on 16 Nov"]},
+      {"problem": "Type 2 diabetes mellitus with hyperglycaemia, metformin held", "status": "active", "icd10cm": "E11.65", "evidence": ["labs: Glucose 212 then 148; HbA1c 7.9%", "meds: Insulin lispro sliding scale"]},
+      {"problem": "Heparin exposure within 24 hours of thrombolysis (two doses), no bleeding on 24-hour CT", "status": "resolved", "icd10cm": null, "evidence": ["meds: Heparin 5,000 units 16 Nov 22:04 and 17 Nov 06:02", "imaging: CT head 17 Nov 13:58"]},
+      {"problem": "Hypothyroidism", "status": "active", "icd10cm": "E03.9", "evidence": ["history and physical 16 Nov 17:40", "labs: Thyroid stimulating hormone 2.1"]},
+      {"problem": "Urinary catheter without a documented ongoing need", "status": "active", "icd10cm": null, "evidence": ["lines: Urinary catheter, 16 Nov 14:30", "nursing assessment 17 Nov 08:00, Urinary"]}
+    ],
+    "reconciled_medications": [
+      {"medicine": "Aspirin 81 mg oral daily (home); 325 mg by nasogastric tube daily (inpatient)", "source": "both", "recommended_action": "change", "reason": "Start 325 mg by tube at 15:00 now that the 24-hour CT shows no haemorrhage; to be replaced by an oral anticoagulant when the stroke team judges it safe."},
+      {"medicine": "Atorvastatin 20 mg nightly (home); 80 mg oral nightly (inpatient)", "source": "both", "recommended_action": "change", "reason": "High-intensity dose is appropriate (LDL 128 mg/dL), but the route must change from oral to nasogastric tube; she is nothing by mouth."},
+      {"medicine": "Lisinopril 20 mg oral daily", "source": "home", "recommended_action": "hold", "reason": "Blood pressure deliberately allowed to run up to 180/105 for the first 24 hours; restart by tube when the stroke team sets a new target."},
+      {"medicine": "Amlodipine 5 mg oral daily", "source": "home", "recommended_action": "hold", "reason": "As for lisinopril."},
+      {"medicine": "Metformin 1,000 mg oral twice daily", "source": "home", "recommended_action": "hold", "reason": "Contrast given twice on 16 Nov and nothing by mouth; glucose covered by sliding-scale insulin."},
+      {"medicine": "Levothyroxine 75 mcg daily", "source": "both", "recommended_action": "continue", "reason": "Ordered by tube from 18 Nov 06:00; the 17 Nov dose was missed while she had no enteral route."},
+      {"medicine": "Heparin 5,000 units subcutaneous every 8 hours", "source": "inpatient", "recommended_action": "hold", "reason": "Ordered 16 Nov 21:30 against the standing instruction; two doses were given inside the 24-hour window. Hold the 14:00 dose until the stroke team confirms that pharmacological prevention may now start; compression sleeves continue."},
+      {"medicine": "Metoprolol tartrate 5 mg intravenous every 6 hours as needed for heart rate above 120", "source": "inpatient", "recommended_action": "continue", "reason": "One dose used at 03:05. Cardiology advises scheduled 12.5 mg twice daily by tube once the pressure target is relaxed."},
+      {"medicine": "Labetalol 10 mg intravenous as needed for pressure above 180/105", "source": "inpatient", "recommended_action": "continue", "reason": "Used twice on 16 Nov; review threshold now 24 hours have passed."},
+      {"medicine": "Insulin lispro sliding scale every 6 hours", "source": "inpatient", "recommended_action": "continue", "reason": "Bedside glucose 142 to 196; target 140 to 180. Will need review when tube feeding starts."},
+      {"medicine": "Acetaminophen 650 mg rectal every 6 hours as needed", "source": "inpatient", "recommended_action": "continue", "reason": "Correct non-oral route; may change to tube now it is in place."},
+      {"medicine": "Sodium chloride 0.9% at 75 mL/h", "source": "inpatient", "recommended_action": "continue", "reason": "Maintenance until tube feeding is established."}
+    ],
+    "pending_items": [
+      "Echocardiogram, transthoracic (ordered 17 Nov 12:00).",
+      "Date and choice of anticoagulant for atrial fibrillation; cardiology suggests around day 4 to 6 after repeat imaging, stroke team to decide.",
+      "Dietitian feed plan and start of tube feeding.",
+      "Decision on treating possible aspiration (new right basal opacity).",
+      "Removal of the regular diet order and change of atorvastatin route.",
+      "Blood pressure target and antihypertensive restart after the first 24 hours.",
+      "Instrumental swallow study on 19 Nov if no improvement; occupational therapy referral; rehabilitation placement.",
+      "Urinary catheter removal."
+    ]
+  },
+  "qa": [
+    {"q": "What dose of tenecteplase was given, when, and how was it calculated?", "a": "17 mg as a single intravenous bolus at 13:46 on 16 Nov: 0.25 mg/kg at 68 kg. Door to needle was 34 minutes.", "type": "lookup", "evidence": ["meds: Tenecteplase 17 mg", "emergency note 16 Nov 14:40"]},
+    {"q": "What was the result of the thrombectomy?", "a": "Complete reperfusion (grade 3) of the left middle cerebral artery territory at 15:22 after a single pass, 34 minutes after groin puncture at 14:48; no distal emboli or vessel injury.", "type": "lookup", "evidence": ["procedure note 16 Nov 15:50"]},
+    {"q": "What did the 24-hour CT head show?", "a": "A moderate left middle cerebral artery infarct (insula, lentiform nucleus, frontal operculum) with no haemorrhage; the earlier high density had cleared, consistent with contrast staining. No midline shift.", "type": "lookup", "evidence": ["imaging: CT head 17 Nov 13:58"]},
+    {"q": "When was labetalol given and for what readings?", "a": "Twice on 16 Nov: 13:38 for 192/102 before thrombolysis (176/94 by 13:44) and 18:05 for 186/98 (164/88 by 19:00).", "type": "lookup", "evidence": ["meds: Labetalol 10 mg", "flowsheet: Blood pressure target met"]},
+    {"q": "How has the NIH Stroke Scale changed since arrival?", "a": "17 on arrival, 12 at 16:00 after thrombectomy, 10 from 19:00 to 21:00, 9 from 22:00 to 07:00, and 8 from 08:00 on 17 Nov onwards.", "type": "trend", "evidence": ["flowsheet: Neuro checks, NIH Stroke Scale total", "nursing note 17 Nov 07:00"]},
+    {"q": "Is there a trend suggesting a chest problem?", "a": "Yes. Temperature rose from 36.6 to 37.8 by 06:00 on 17 Nov, white cells from 8.9 to 10.8 to 11.6, coarse sounds are noted at the right base, and the 13:15 chest X-ray shows a new faint right basal opacity.", "type": "trend", "evidence": ["flowsheet: Vitals, Temperature", "labs: Blood count, White cells", "nursing assessment 17 Nov 08:00, Respiratory", "imaging: Chest X-ray 17 Nov 13:15"]},
+    {"q": "What is the true last-known-well time, and how long after it were thrombolysis, groin puncture and reperfusion?", "a": "11:40 on 16 Nov, when her daughter last spoke with her. Tenecteplase followed at 2 hours 6 minutes, groin puncture at 3 hours 8 minutes and reperfusion at 3 hours 42 minutes. The 12:30 'onset' in other notes is when she was found.", "type": "temporal", "evidence": ["history and physical 16 Nov 17:40", "emergency note 16 Nov 14:40", "procedure note 16 Nov 15:50"]},
+    {"q": "When did atrial fibrillation start and what was done?", "a": "02:40 on 17 Nov on the monitor, rate up to 128. ECG at 02:55 confirmed it (rate 124); metoprolol 5 mg intravenous was given at 03:05 and the rate settled to 100 to 116.", "type": "temporal", "evidence": ["timeline: 17 Nov 02:40", "imaging: 12-lead ECG 17 Nov 02:55", "meds: Metoprolol tartrate 5 mg", "nursing note 17 Nov 07:00"]},
+    {"q": "What was given by mouth after the swallow screen failed?", "a": "The screen failed at 19:30 on 16 Nov. Atorvastatin 80 mg was given as a whole tablet with about 30 mL of water at 21:10 and she coughed for a minute afterwards.", "type": "temporal", "evidence": ["nursing assessment 16 Nov 20:00, Speech and swallow", "meds: Atorvastatin 80 mg", "nursing note 17 Nov 07:00", "intake and output: Oral 30 mL"]},
+    {"q": "Were the two subcutaneous heparin doses appropriate?", "a": "No. They were given at 22:04 on 16 Nov and 06:02 on 17 Nov, about 8 and 16 hours after tenecteplase, against the order for no anticoagulant until the 24-hour CT was reviewed, and while the post-procedure CT could not exclude a small haemorrhage. Compression sleeves were the intended prevention.", "type": "reasoning", "evidence": ["meds: Heparin 5,000 units", "orders: No antiplatelet or anticoagulant drugs, 16 Nov 16:15", "imaging: CT head 16 Nov 16:40", "progress note 17 Nov 09:30, plan item 3"]},
+    {"q": "Her systolic pressure has been 150 to 170 with home tablets held. Is that an oversight?", "a": "No. The target for the first 24 hours after thrombolysis is below 180/105, treated only above that, to protect recovering brain tissue. The one reading above target (186/98 at 18:00) was treated.", "type": "reasoning", "evidence": ["orders: Blood pressure target 16 Nov 16:15", "flowsheet: Vitals, Blood pressure", "progress note 17 Nov 09:30, plan item 2"]},
+    {"q": "What is the most likely cause of the stroke and what supports it?", "a": "Cardioembolism from atrial fibrillation: new atrial fibrillation on the monitor, palpitations reported on 28 Oct, a brother with atrial fibrillation, a heart monitor worn for only 3 of 14 days after the April event, and carotid narrowing below 50%.", "type": "reasoning", "evidence": ["cardiology consult 17 Nov 11:55", "encounters: 28 Oct telephone; 2 May stroke clinic", "imaging: CT angiogram 16 Nov 13:31", "history: family"]},
+    {"q": "What did the echocardiogram show?", "a": "No result yet. It was ordered on 17 Nov at 12:00 and is pending.", "type": "absence", "evidence": ["orders: Echocardiogram, transthoracic, Pending"]},
+    {"q": "On what date will anticoagulation start and with which drug?", "a": "The chart does not say. Cardiology states she needs long-term anticoagulation and that a direct oral anticoagulant is usually started around day 4 to 6 after repeat imaging, but leaves timing to the stroke team, who have not documented a date or agent.", "type": "absence", "evidence": ["cardiology consult 17 Nov 11:55, recommendation 1", "progress note 17 Nov 09:30"]},
+    {"q": "What tube feed is she receiving and at what rate?", "a": "None is documented. The tube was confirmed at 13:15 and only 60 mL of flushes are recorded; speech therapy asked for a dietitian feed plan but there is no feed order.", "type": "absence", "evidence": ["intake and output: Tube (flushes) 60 mL", "speech and language therapy note, recommendation 2", "orders"]}
+  ],
+  "tasks": [
+    {
+      "key_index": 0,
+      "kind": "err",
+      "prompt": "Audit the medication administration record against the post-thrombolysis orders for the first 24 hours.",
+      "expected_findings": [
+        "Tenecteplase was given at 13:46 on 16 Nov; nursing orders, the procedure note and the progress note all say no antiplatelet or anticoagulant drugs until the 24-hour CT has been reviewed.",
+        "Heparin 5,000 units subcutaneous every 8 hours was ordered at 21:30 on 16 Nov and given at 22:04 and at 06:02 on 17 Nov, both inside the 24-hour window.",
+        "At that time the post-procedure CT (16:40) had not excluded a small haemorrhage, and there was a groin ooze at 20:00.",
+        "The 24-hour CT at 13:58 shows no haemorrhage, so no bleeding harm is evident."
+      ],
+      "acceptable_actions": [
+        "Report the event to the resident, attending and pharmacist and file a safety report.",
+        "Hold the 14:00 dose until the stroke team confirms pharmacological prevention may start now that the CT is clear; continue compression sleeves.",
+        "Recheck the groin site and note that neuro checks are stable."
+      ],
+      "must_not": [
+        "Describe the heparin doses as acceptable because the dose was only prophylactic.",
+        "Flag the aspirin ordered at 14:20 for 15:00 as a violation; it follows the clear 24-hour CT and the documented plan.",
+        "Recommend protamine or other reversal in a patient with a clear CT and no bleeding."
+      ],
+      "evidence": ["meds: Heparin 5,000 units, ordered 16 Nov 21:30", "orders: No antiplatelet or anticoagulant drugs until the 24-hour CT has been reviewed", "procedure note 16 Nov 15:50, post-procedure orders", "nursing note 17 Nov 07:00", "imaging: CT head 16 Nov 16:40 and 17 Nov 13:58"]
+    },
+    {
+      "key_index": 1,
+      "kind": "err",
+      "prompt": "Check that the diet and medication routes on this chart are consistent with the patient's swallow status.",
+      "expected_findings": [
+        "Swallow screen failed at 19:30 on 16 Nov; the standing order is nothing by mouth including tablets, and speech therapy on 17 Nov found her unsafe for any oral intake.",
+        "Atorvastatin 80 mg was given by mouth at 21:10 with sips of water and she coughed; the order is still 'Oral' with a dose due at 21:00 tonight.",
+        "A 'Regular diet' order from the admission order set is still active.",
+        "Temperature to 37.8, white cells 11.6 and a new right basal opacity on chest X-ray suggest she may have aspirated."
+      ],
+      "acceptable_actions": [
+        "Discontinue the regular diet order.",
+        "Change atorvastatin to the nasogastric route.",
+        "Tell the resident about possible aspiration and the X-ray report; keep the head of the bed at 30 degrees or more with mouth care."
+      ],
+      "must_not": [
+        "Flag rectal acetaminophen, or aspirin and levothyroxine by nasogastric tube, as route errors.",
+        "Suggest a trial of thickened fluids or purée; speech therapy found neither safe today.",
+        "Leave the oral atorvastatin order in place for tonight."
+      ],
+      "evidence": ["orders: Nothing by mouth, including tablets; Diet: Regular diet (admission order set)", "meds: Atorvastatin 80 mg, 16 Nov 21:10 note", "speech and language therapy note 17 Nov 11:35, recommendation 1", "imaging: Chest X-ray 17 Nov 13:15", "labs: White cells"]
+    },
+    {
+      "key_index": 2,
+      "kind": "doc",
+      "prompt": "Check the neurological findings in today's stroke team progress note against the nursing neuro checks.",
+      "expected_findings": [
+        "The 17 Nov 09:30 progress note states 'NIH Stroke Scale 4 this morning'.",
+        "The hourly neuro checks record 9 overnight and 8 from 08:00, including at 09:00; the nursing assessment at 08:00 also says 8.",
+        "The examination in the same note (short phrases, facial droop, right arm 3/5, leg 4/5) fits a score of about 8, not 4.",
+        "A score of 4 overstates recovery and could mislead decisions on rehabilitation level and anticoagulation timing."
+      ],
+      "acceptable_actions": [
+        "Ask the resident to correct or addend the note with the score of 8.",
+        "Use 8 as the current baseline for detecting deterioration."
+      ],
+      "must_not": [
+        "Interpret the gap between the note and later nursing scores as a neurological deterioration from 4 to 8.",
+        "Call the 'down from 17 on arrival' statement wrong."
+      ],
+      "evidence": ["progress note 17 Nov 09:30, Objective", "flowsheet: Neuro checks, NIH Stroke Scale total", "nursing assessment 17 Nov 08:00, Neurological", "problem list"]
+    },
+    {
+      "key_index": 3,
+      "kind": "time",
+      "prompt": "Establish the time of stroke onset or last known well from all sources and recalculate the treatment intervals.",
+      "expected_findings": [
+        "Last known well is 11:40 on 16 Nov: the daughter spoke with her by phone until then and her speech was normal (admission history).",
+        "12:30 is the time her husband found her; the ambulance record, the emergency note and the procedure note carry it as 'onset'.",
+        "Corrected intervals: last known well to tenecteplase 2 hours 6 minutes; to groin puncture 3 hours 8 minutes (the procedure note's 2 hours 18 minutes is calculated from 12:30); to reperfusion 3 hours 42 minutes.",
+        "Treatment was still inside the accepted windows."
+      ],
+      "acceptable_actions": [
+        "Report 11:40 as last known well and recommend the emergency and procedure notes be addended.",
+        "Use 11:40 for quality metrics and registry reporting."
+      ],
+      "must_not": [
+        "Report 12:30 as the onset time.",
+        "Use the ambulance call (12:34) or arrival (13:12).",
+        "Conclude that she was treated outside the thrombolysis window."
+      ],
+      "evidence": ["history and physical 16 Nov 17:40, History", "emergency note 16 Nov 14:40, Time of onset", "procedure note 16 Nov 15:50, Times", "timeline"]
+    },
+    {
+      "key_index": 4,
+      "kind": "dis",
+      "prompt": "Review the blood pressure record and antihypertensive orders and say whether her blood pressure has been managed appropriately.",
+      "expected_findings": [
+        "Systolic readings of about 150 to 172 are flagged high and home lisinopril and amlodipine are on hold.",
+        "This is intended: the order sets a target below 180/105 for 24 hours after thrombolysis with treatment only above it.",
+        "The single reading above target, 186/98 at 18:00 on 16 Nov, was treated with labetalol 10 mg at 18:05 and was 164/88 at 19:00.",
+        "Management has been appropriate."
+      ],
+      "acceptable_actions": [
+        "Make no change within the first 24 hours.",
+        "Ask the stroke team for the target and plan for restarting home tablets now that 24 hours have passed."
+      ],
+      "must_not": [
+        "Report the untreated readings as missed hypertension or the held tablets as an omission.",
+        "Recommend lowering the pressure to normal during the first 24 hours."
+      ],
+      "evidence": ["orders: Blood pressure target below 180/105 for 24 hours", "flowsheet: Blood pressure target met", "meds: Labetalol 16 Nov 18:05", "progress note 17 Nov 09:30, plan item 2"]
+    }
+  ],
+  "epilogue": {
+    "note": "What happens AFTER 'now' in this simulated world. Never shown in the chart; for outcome-prediction ground truth.",
+    "course": "Aspirin was given by tube at 15:00. The resident removed the regular diet order and changed atorvastatin to the tube route after reading the speech therapy note; the pharmacist found the early heparin doses that afternoon and a safety report was filed, with no bleeding. The aspiration was not without cost: at 22:10 she had a temperature of 38.6 and needed oxygen, and the next morning's X-ray showed right lower lobe pneumonia, treated with five days of ampicillin-sulbactam. Tube feeding started on 18 Nov. Echocardiography showed an enlarged left atrium and no clot. She moved to the stroke unit on 19 Nov. An instrumental swallow study on 20 Nov allowed purée and thickened fluids, and the tube came out on 23 Nov. After a clear CT on 21 Nov, apixaban 5 mg twice daily replaced aspirin. She went to inpatient rehabilitation on 25 Nov with a score of 6 and returned home on 16 Dec, walking with a stick and supervision.",
+    "events": [
+      {"t": "2026-11-17T15:00", "event": "Aspirin 325 mg given by nasogastric tube."},
+      {"t": "2026-11-17T15:10", "event": "Regular diet order discontinued; atorvastatin changed to tube route. Early heparin doses identified by pharmacist at 16:00, safety report filed; heparin continued from the evening dose."},
+      {"t": "2026-11-17T22:10", "event": "Temperature 38.6, saturation 90% on room air; oxygen 2 L, blood cultures sent."},
+      {"t": "2026-11-18T06:30", "event": "Chest X-ray: right lower lobe consolidation; white cells 14.8. Ampicillin-sulbactam started for aspiration pneumonia. Urinary catheter removed; tube feeding started."},
+      {"t": "2026-11-18T15:00", "event": "Echocardiogram: moderately enlarged left atrium, ejection fraction 60%, no thrombus."},
+      {"t": "2026-11-19T11:00", "event": "Transferred to the stroke unit; metoprolol tartrate 12.5 mg twice daily by tube started."},
+      {"t": "2026-11-20T14:00", "event": "Instrumental swallow study: purée diet and moderately thick fluids safe with supervision."},
+      {"t": "2026-11-21T10:30", "event": "CT head: no haemorrhage. Apixaban 5 mg twice daily started that evening; aspirin and heparin stopped."},
+      {"t": "2026-11-23T09:00", "event": "Nasogastric tube removed; antibiotics completed."},
+      {"t": "2026-11-25T11:20", "event": "Discharged to acute inpatient rehabilitation; NIH Stroke Scale 6."}
+    ],
+    "discharge": {"t": "2026-11-25T11:20", "disposition": "Rehabilitation", "length_of_stay_days": 9},
+    "outcomes_30_day": {"readmitted": false, "readmission_reason": null, "emergency_visits": 0, "died": false, "notable": "Aspiration pneumonia added about two days to the stay; home from rehabilitation on 16 Dec on apixaban, walking with a stick, soft diet, persistent word-finding difficulty and low mood."}
+  },
+  "portal_messages": [
+    {
+      "t": "2026-11-09T08:05",
+      "from": "patient",
+      "channel": "patient portal",
+      "subject": "Fluttering again - can the ECG be sooner?",
+      "body": "Good morning. I telephoned on 28 October about a fluttering in my chest and was given an ECG appointment for 19 November. It happened again last night while I was watching television, the longest yet, nearly an hour, and I felt a little light-headed with it. It has stopped now and I feel perfectly well. Is there any way the ECG could be brought forward? I am sorry I did not manage the heart monitor in the spring; the sticky pads brought my skin up in welts. Benedetta Castellane-Arce",
+      "urgency_truth": "same day",
+      "ideal_reply_points": [
+        "Recurrent, lengthening palpitations with light-headedness in a 71-year-old with a transient ischaemic attack seven months ago need an ECG within a day, not in ten days.",
+        "Offer a same-day or next-day ECG and clinician review, and a monitor with a different adhesive or a patch-free device.",
+        "Explain why it matters: an irregular rhythm could be the cause of the April event and would change her treatment to a blood thinner.",
+        "Call an ambulance for any weakness, facial droop, speech change, chest pain or fainting."
+      ]
+    },
+    {
+      "t": "2026-11-09T15:40",
+      "from": "primary care nurse",
+      "channel": "patient portal",
+      "subject": "Re: Fluttering again - can the ECG be sooner?",
+      "body": "Dear Mrs Castellane-Arce, thank you for letting us know. I have passed your message to the doctor. I am afraid the ECG clinic has nothing earlier than your appointment on 19 November, but I have put you on the cancellation list and we will ring if a slot opens. If the fluttering comes back and lasts more than a few minutes, please go to an urgent care centre while it is happening so that it can be recorded. If you have any weakness, trouble speaking, chest pain or fainting, call an ambulance straight away. We can discuss a different type of monitor at your visit.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "This reply gives correct safety-net advice but does not arrange the same-day ECG the message warranted; a better reply would book one within 24 hours.",
+        "Escalate to the doctor for review the same day.",
+        "Offer an alternative monitor now, not at the visit."
+      ]
+    },
+    {
+      "t": "2026-11-18T07:45",
+      "from": "family member (daughter)",
+      "channel": "patient portal",
+      "subject": "Mum has a fever - what is going on?",
+      "body": "This is Marisol, Benedetta's daughter. I have access to her account. Dad rang me late last night to say Mum had a temperature and was back on oxygen, and the nurse mentioned her chest. Yesterday everyone was telling us how well she was doing. Is this another stroke? Is it because of the tube in her nose? Dad also says she was given a tablet to swallow on Monday night and coughed badly. I am driving up this morning but would really like someone to tell us plainly what has happened.",
+      "urgency_truth": "same day",
+      "ideal_reply_points": [
+        "Reply the same day and arrange for a doctor to speak to the family in person.",
+        "State plainly that this is not another stroke; her neurological examination is stable.",
+        "Explain that she has a chest infection most likely from fluid or the tablet going down the wrong way because the stroke has weakened her swallow; antibiotics have started.",
+        "Be open that a tablet was given by mouth after she had failed the swallow test, that this should not have happened and is being reviewed.",
+        "Explain that the tube is there to prevent further aspiration and to feed her."
+      ]
+    },
+    {
+      "t": "2026-11-18T11:30",
+      "from": "stroke team resident physician",
+      "channel": "patient portal",
+      "subject": "Re: Mum has a fever - what is going on?",
+      "body": "Dear Marisol, thank you for writing; I am sorry you had a worrying night. This is not another stroke. Your mother's strength and speech are unchanged this morning. She has a pneumonia in the right lung, which we believe came from something going down the wrong way, because the stroke has weakened her swallowing. You are right that a tablet was given by mouth on Monday evening after she had failed her swallow test. That should not have happened; we have told your father, and it is being formally reviewed. She started antibiotics at 06:30 and is comfortable on a little oxygen. Dr. Okafor-Lindh and I will meet you both at the bedside at 14:00.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Direct answer to the question asked.",
+        "Honest disclosure of the error without jargon.",
+        "What is being done now.",
+        "A named time to meet in person."
+      ]
+    },
+    {
+      "t": "2026-11-22T20:15",
+      "from": "family member (husband)",
+      "channel": "patient portal",
+      "subject": "The new blood thinner",
+      "body": "Ignatius Arce writing for my wife. The doctor started a blood thinner called apixaban last night and stopped the aspirin. I looked it up and it says it can cause bleeding in the brain, and she has just had a stroke in the brain. I do not understand why this is safe now when for the first day we were told no blood thinners at all. She also has the bruise in her groin still. I am not refusing it, I just want to understand before she goes to the rehabilitation place. Will she be on it for life?",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Explain the two different risks: early after the clot-dissolving drug and a fresh stroke the brain can bleed, so blood thinners wait; the scan on 21 Nov showed no bleeding, so it is now safe to start.",
+        "The stroke was caused by a clot from the irregular heartbeat; apixaban cuts the chance of another by about two thirds, far outweighing the bleeding risk.",
+        "Yes, it is intended lifelong; do not miss doses; do not add aspirin or anti-inflammatory tablets without asking.",
+        "A groin bruise is expected and will fade; say what bleeding signs to report.",
+        "Offer a conversation with the stroke nurse before transfer."
+      ]
+    }
+  ],
+  "conversation": {
+    "setting": "Bedside in the neuro ICU, NICU-04, 17 Nov at 11:15; speech and language therapy assessment of swallow and language, husband present",
+    "participants": ["Noor Castellanos-Webb, SLP", "patient", "Ignatius (husband)", "H. Villanueva-Marsh RN"],
+    "turns": [
+      {"speaker": "Noor Castellanos-Webb", "text": "Hello, Mrs Castellane-Arce. My name is Noor. I'm a speech and language therapist. I'm here to look at your talking and your swallowing. Is that OK?"},
+      {"speaker": "Patient", "text": "Yes. ... OK."},
+      {"speaker": "Ignatius", "text": "She understands everything, you know. It's getting the words out."},
+      {"speaker": "Noor Castellanos-Webb", "text": "That's really helpful, thank you. I'll ask her directly, and I'll give her plenty of time, so bear with us if there are long gaps. Mrs Castellane-Arce, can you tell me your first name?"},
+      {"speaker": "Patient", "text": "Bene... Benedetta."},
+      {"speaker": "Noor Castellanos-Webb", "text": "Lovely. Can you close your eyes for me? ... Good. Now touch your nose, and then point to the window."},
+      {"speaker": "Patient", "text": "Nose. ... Where... the other?"},
+      {"speaker": "Noor Castellanos-Webb", "text": "No problem, that was two things at once. Point to the window. ... That's it. I'm going to show you some things. What's this?"},
+      {"speaker": "Patient", "text": "Pen."},
+      {"speaker": "Noor Castellanos-Webb", "text": "And this?"},
+      {"speaker": "Patient", "text": "It's a... for the time. A... clock. No. On the arm."},
+      {"speaker": "Noor Castellanos-Webb", "text": "A watch. You knew exactly what it was for. That's the word-finding the stroke has affected, the knowing is still there. Say after me: 'table'."},
+      {"speaker": "Patient", "text": "Table."},
+      {"speaker": "Noor Castellanos-Webb", "text": "'The garden is full of roses.'"},
+      {"speaker": "Patient", "text": "The garden... full... I can't."},
+      {"speaker": "Ignatius", "text": "She's a great talker normally. On the phone to our daughter for hours."},
+      {"speaker": "Noor Castellanos-Webb", "text": "I can imagine this is very frustrating for both of you. It's early, and what I'm seeing is encouraging: she follows what's said, she's getting single words and short phrases. Now, swallowing. Mrs Castellane-Arce, can you give me a big cough?"},
+      {"speaker": "Patient", "text": "(weak cough)"},
+      {"speaker": "Noor Castellanos-Webb", "text": "OK. Your voice sounds a bit wet, a bit gurgly. Swallow for me. ... Better. I'm going to try a small ice chip, then a teaspoon of water. Sitting right up, please, nurse."},
+      {"speaker": "H. Villanueva-Marsh RN", "text": "Bed's up. Suction's here if you need it."},
+      {"speaker": "Noor Castellanos-Webb", "text": "Ice chip first. ... The swallow's slow to start. Now a teaspoon of water. ... And swallow."},
+      {"speaker": "Patient", "text": "(coughs)"},
+      {"speaker": "Noor Castellanos-Webb", "text": "That's all right, cough it up. We'll try once more. ... Fine that time. And one more. ... Coughing again. So two out of three. I'll try a slightly thicker drink. ... Say 'ah' for me?"},
+      {"speaker": "Patient", "text": "Ahh."},
+      {"speaker": "Noor Castellanos-Webb", "text": "Hear that wet sound? That tells me some is sitting on the voice box. I'm going to stop there."},
+      {"speaker": "Ignatius", "text": "She had a tablet last night. With water. She coughed and coughed after it."},
+      {"speaker": "H. Villanueva-Marsh RN", "text": "That's in the night nurse's note. It was her cholesterol tablet at ten past nine."},
+      {"speaker": "Noor Castellanos-Webb", "text": "Thank you for telling me. Here's where we are. The stroke has weakened the right side of the mouth and throat, so drinks are slipping towards the lungs before the swallow kicks in. For today it isn't safe for her to have anything by mouth. No food, no drink, no tablets."},
+      {"speaker": "Ignatius", "text": "Nothing at all? How does she eat? She's diabetic."},
+      {"speaker": "Noor Castellanos-Webb", "text": "I'm going to ask the doctors for a thin tube through the nose into the stomach. Food and medicines go down that, so she's fed and her lungs are protected. It's temporary for most people. I can also see a regular diet is still ordered on the system, and I'll ask them to take that off."},
+      {"speaker": "Patient", "text": "Water? ... Dry."},
+      {"speaker": "Noor Castellanos-Webb", "text": "I know, your mouth is dry. The nurses will clean and moisten it every four hours. I'm sorry, I know that's not the same."},
+      {"speaker": "Ignatius", "text": "And will it come back? The swallowing, the speech?"},
+      {"speaker": "Noor Castellanos-Webb", "text": "I can't promise, but most improvement comes in the first weeks, and she's already better than yesterday. I'll see her every day. If the swallow isn't clearly better by Thursday, we'll do an X-ray type test to see exactly what's happening. Language therapy starts tomorrow."},
+      {"speaker": "Noor Castellanos-Webb", "text": "Mr Arce, can you tell me back how you're going to help her talk? Just so I know I explained it well."},
+      {"speaker": "Ignatius", "text": "Questions she can answer yes or no. Don't finish her sentences. Give her time. And the picture board."},
+      {"speaker": "Noor Castellanos-Webb", "text": "Exactly right. Mrs Castellane-Arce, nothing by mouth today. Is that clear?"},
+      {"speaker": "Patient", "text": "Nothing... mouth. Yes. ... Thank you."}
+    ],
+    "note_it_should_produce": "Therapy note, 'Speech and language therapy: swallow and language assessment' (Noor Castellanos-Webb, SLP, 17 Nov 11:35)."
+  }
+}

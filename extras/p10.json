@@ -1,0 +1,225 @@
+{
+  "id": "p10",
+  "reference": {
+    "one_line": "26-year-old motorcyclist, day 1 after splenic embolisation, chest drain and femoral nailing, now bleeding into the left chest after an unapproved enoxaparin dose; femoral neck fracture on CT addendum unacknowledged.",
+    "handoff": {
+      "severity": "Unstable",
+      "summary": "Idris Draganov-Sokol, 26, has a grade IV splenic laceration embolised on 16 Nov, left rib fractures 4 to 8 with a chest drain, and a left femoral shaft fracture nailed overnight; he has had 3 units of red cells. Since 10:00 the chest drain has put out 60, 90, 110, 120 and 130 mL an hour of fluid that is now dark red with clots, heart rate has risen from 90 to 117 and blood pressure has fallen from 120/68 to 98/54 with pain steady at 3. Laboratory haemoglobin was 8.4 at 12:00 (9.6 at 06:00), bedside haemoglobin 7.9 at 14:00, and lactate is back up to 2.6. Enoxaparin 30 mg was given at 09:05 from the orthopaedic order set although the trauma plan says none before 20:15 and only with attending approval; another dose is due at 21:00. Separately, a CT addendum at 08:10 reports an undisplaced left femoral neck fracture that the tertiary survey missed, and the physiotherapy order still says weight bearing as tolerated.",
+      "to_do": [
+        "Get a surgeon to the bedside now: the resident was paged at 13:20 and 14:05 without a documented answer, so call the trauma attending directly",
+        "Discontinue enoxaparin and make sure the 21:00 dose is not given",
+        "Send a blood count, coagulation tests and lactate now; confirm the 2 crossmatched units on hold and ask for a transfusion decision",
+        "Keep recording chest drain output hourly; check the drain is patent and on 20 cmH2O suction",
+        "Bed rest, no weight on the left leg; cancel the 15:00 physiotherapy session and tell orthopaedics about the CT addendum (hip views or fine-cut CT advised)",
+        "Abdominal examination every 2 hours; the spleen is the other possible source",
+        "Gabapentin 300 mg was due at 14:00 and final cefazolin 2 g is due at 15:30"
+      ],
+      "if_then": [
+        "If systolic pressure falls below 90 or heart rate rises above 130, then call the trauma attending and open the massive transfusion pathway",
+        "If chest drain output stays above 100 mL an hour or suddenly stops with a falling pressure, then expect imaging or theatre and keep him nothing by mouth",
+        "If he reports left shoulder-tip pain or the abdomen becomes distended, then treat as splenic re-bleeding and tell interventional radiology",
+        "If anyone asks to sit him out or walk him, then decline until the hip has been imaged and orthopaedics has set the weight-bearing status",
+        "If his heart rate rises with pain 8 to 9 and a rising blood pressure, as at 04:00, then reassess pain control first, but only after checking drain output and haemoglobin"
+      ]
+    },
+    "brief_hospital_course": "Mr Draganov-Sokol, 26, was struck by a turning car while riding his motorcycle at about 17:50 on 16 Nov and arrived at 18:22 with heart rate 128, blood pressure 92/58 and lactate 4.1 mmol/L. He received two units of emergency-release red cells and tranexamic acid. CT showed a grade IV splenic laceration with a contrast blush, left rib fractures 4 to 8 with a small haemopneumothorax and lung contusion, and a displaced left femoral shaft fracture. A left chest drain returned 320 mL of blood and the splenic artery was embolised (19:30 to 20:15). The femur was nailed overnight with one further unit of red cells. Severe rib pain at 04:00 to 05:30 settled with a chest wall nerve catheter. On 17 Nov enoxaparin 30 mg, entered from the orthopaedic order set, was given at 09:05 although the trauma plan barred anticoagulants until at least 20:15 with attending approval. From 10:00 chest drain output rose to 60 to 130 mL an hour (555 mL since 07:00) and turned dark red; heart rate reached 117, blood pressure fell to 98/54, haemoglobin fell from 9.6 to 8.4 g/dL (7.9 at the bedside at 14:00) and lactate rose to 2.6. A CT addendum at 08:10 reported an undisplaced left femoral neck fracture that the tertiary survey did not acknowledge. At the time of writing he is bleeding into the left chest and awaiting surgical review; weight bearing is unsafe until the hip is imaged.",
+    "problem_list": [
+      {"problem": "Bleeding into the left chest since about 10:00 on 17 Nov, an hour after enoxaparin", "status": "active", "icd10cm": "S27.2XXA", "evidence": ["flowsheet: chest drain output 10:00 to 14:00", "day nursing note 17 Nov 14:10", "meds: enoxaparin 09:05"]},
+      {"problem": "Grade IV splenic laceration with contrast blush, splenic artery embolised 16 Nov", "status": "active", "icd10cm": "S36.032A", "evidence": ["imaging: CT whole body 16 Nov", "interventional radiology note 16 Nov 20:55"]},
+      {"problem": "Left rib fractures 4 to 8 with lung contusion, chest drain and nerve-plane catheter", "status": "active", "icd10cm": "S22.42XA", "evidence": ["imaging: CT and chest X-ray 16 Nov", "night nursing note 17 Nov"]},
+      {"problem": "Left femoral shaft fracture, intramedullary nail 17 Nov", "status": "improving", "icd10cm": "S72.322A", "evidence": ["operative note 17 Nov 02:10", "imaging: femur X-ray 02:05"]},
+      {"problem": "Undisplaced fracture at the base of the left femoral neck, reported in CT addendum, not yet acted on", "status": "active", "icd10cm": "S72.045A", "evidence": ["imaging: CT addendum 17 Nov 08:10", "femur X-ray report: neck not adequately assessed", "orders: physiotherapy weight bearing as tolerated"]},
+      {"problem": "Acute blood loss anaemia, 3 units of red cells so far, haemoglobin falling again", "status": "active", "icd10cm": "D62", "evidence": ["labs: Haemoglobin 13.4, 10.2, 9.8, 9.6, 8.4", "flowsheet: point-of-care haemoglobin 7.9 at 14:00", "path: transfusion record"]},
+      {"problem": "Mild concussion with brief loss of consciousness, CT head normal", "status": "improving", "icd10cm": "S06.0X1A", "evidence": ["trauma history and physical", "nursing assessment: neurological row"]},
+      {"problem": "Anticoagulant given against the documented plan", "status": "active", "icd10cm": null, "evidence": ["orders: nursing, no heparin or enoxaparin until attending approves", "meds: enoxaparin ordered 02:40, given 09:05, due 21:00"]},
+      {"problem": "Uninsured, third-floor flat with 38 stairs", "status": "active", "icd10cm": null, "evidence": ["social work assessment 17 Nov 10:30"]}
+    ],
+    "reconciled_medications": [
+      {"medicine": "Enoxaparin 30 mg subcutaneous every 12 hours", "source": "inpatient", "recommended_action": "stop", "reason": "Entered from the orthopaedic order set against the trauma plan (none before 20:15 on 17 Nov, attending approval required) and he is now bleeding. Restart only when the trauma attending agrees."},
+      {"medicine": "Hydromorphone patient-controlled analgesia 0.2 mg per press, 8-minute lockout", "source": "inpatient", "recommended_action": "continue", "reason": "Pain 2 to 3; 1.8 mg used between 07:00 and 14:00. Codeine causes vomiting."},
+      {"medicine": "Ropivacaine 0.2% chest wall catheter 8 mL/h", "source": "inpatient", "recommended_action": "continue", "reason": "Controls rib pain and lets him breathe deeply; acute pain service reviews daily."},
+      {"medicine": "Acetaminophen 1,000 mg intravenous every 6 hours", "source": "inpatient", "recommended_action": "continue", "reason": "Regular non-opioid pain relief at the 4 g daily maximum; change to oral when eating."},
+      {"medicine": "Cefazolin 2 g intravenous every 8 hours for 3 doses", "source": "inpatient", "recommended_action": "continue", "reason": "Final surgical prophylaxis dose due 15:30, then it ends."},
+      {"medicine": "Gabapentin 300 mg oral three times daily", "source": "inpatient", "recommended_action": "continue", "reason": "Rib fracture pain; watch for drowsiness with the concussion."},
+      {"medicine": "Methocarbamol 750 mg oral every 8 hours", "source": "inpatient", "recommended_action": "continue", "reason": "Muscle spasm around rib and femur fractures."},
+      {"medicine": "Senna 8.6 mg with docusate 50 mg, 2 tablets twice daily", "source": "inpatient", "recommended_action": "continue", "reason": "On opioids and bed rest."},
+      {"medicine": "Ondansetron 4 mg intravenous every 8 hours as needed", "source": "inpatient", "recommended_action": "continue", "reason": "One dose after the anaesthetic."},
+      {"medicine": "Lactated Ringer's solution 75 mL/h", "source": "inpatient", "recommended_action": "change", "reason": "He is drinking and is now bleeding; fluid and blood plan needs resetting by the trauma team."},
+      {"medicine": "Ibuprofen 400 mg oral as needed (home)", "source": "home", "recommended_action": "hold", "reason": "No anti-inflammatory drugs after embolisation and while bleeding, per interventional radiology and anaesthesia."},
+      {"medicine": "Albuterol inhaler 2 puffs as needed (home)", "source": "home", "recommended_action": "continue", "reason": "Childhood asthma, not used for years; keep available given rib fractures and lung contusion."}
+    ],
+    "pending_items": [
+      "Surgical response to the two pages about chest drain bleeding",
+      "Next scheduled blood count at 18:00 (should be brought forward); no INR or fibrinogen since 06:00",
+      "Hip imaging advised by the CT addendum: not ordered",
+      "Trauma attending's decision on clot prevention, originally planned for 20:15",
+      "Physiotherapy session at 15:00, held by the nurse",
+      "Daily chest X-ray while the drain is in",
+      "Two crossmatched red cell units on hold until 19 Nov 18:27",
+      "Emergency state medical cover application and letter for his employer",
+      "Occupational therapy concussion review before discharge",
+      "Parents arriving 18 Nov; social worker to return"
+    ]
+  },
+  "qa": [
+    {"q": "How many units of red cells has he received, and when?", "a": "Three. Two emergency-release group O RhD positive units in the trauma bay (issued 18:29 and 18:41 on 16 Nov) and one crossmatched unit in theatre from 01:10 to 01:45 on 17 Nov. No plasma or platelets.", "type": "lookup", "evidence": ["path: blood bank transfusion record", "anaesthesia note 17 Nov 02:00"]},
+    {"q": "When is the earliest that heparin or enoxaparin may be started under the trauma plan?", "a": "20:15 on 17 Nov, 24 hours after embolisation, and only if the trauma attending, Dr. Hendrickx-Obi, approves and haemoglobin is steady.", "type": "lookup", "evidence": ["orders: nursing 16 Nov 20:40", "trauma history and physical plan item 2", "interventional radiology note recommendation 3"]},
+    {"q": "What did the CT addendum of 17 Nov report?", "a": "A faint, undisplaced, vertical fracture at the base of the left femoral neck on three coronal images, missed on the preliminary read. It advises internal-rotation hip views or a fine-cut CT before weight bearing; a message went to the trauma inbox at 08:12.", "type": "lookup", "evidence": ["imaging: CT whole body, addendum 08:10"]},
+    {"q": "What has the chest drain put out each hour today?", "a": "15 at 07:00, 20 at 08:00 and 25 at 09:00, then 60, 90, 110, 120 and 130 mL in the hours to 10:00, 11:00, 12:00, 13:00 and 14:00: 555 mL since 07:00, changing from straw-pink to dark red with small clots.", "type": "trend", "evidence": ["flowsheet: trauma monitoring, chest drain rows", "intake and output: chest drain 555"]},
+    {"q": "What is the laboratory haemoglobin trend?", "a": "13.4 on arrival, 10.2 at 23:10, 9.8 at 02:30, 9.6 at 06:00 and 8.4 at 12:00. Bedside haemoglobin at 14:00 was 7.9.", "type": "trend", "evidence": ["labs: blood count", "flowsheet: point-of-care haemoglobin"]},
+    {"q": "What has lactate done?", "a": "4.1 on arrival, 2.2 before theatre, 1.4 at 06:00, then up to 2.6 at 12:00 with a base deficit of 3.", "type": "trend", "evidence": ["labs: coagulation and perfusion panel"]},
+    {"q": "How soon after the enoxaparin dose did the drain output change?", "a": "The dose was given at 09:05. Output was 25 mL in the hour to 09:00 and 60 mL in the hour to 10:00, so the rise began within about an hour.", "type": "temporal", "evidence": ["meds: enoxaparin 09:05", "flowsheet: chest drain output"]},
+    {"q": "When was the call threshold for the chest drain reached, and when was a doctor first paged?", "a": "The order asks for a call after 2 hours above 100 mL/h; that was met at 13:00 (110 then 120). The resident was paged at 13:20 and again at 14:05; no response is documented by 14:10.", "type": "temporal", "evidence": ["orders: chest drain order", "day nursing note 17 Nov 14:10"]},
+    {"q": "Was the fast heart rate at 04:00 to 05:00 a sign of bleeding?", "a": "No. Heart rate reached 124 but blood pressure rose to 148/86, pain was 8 to 9 in the ribs, drain output was 15 mL/h, the abdomen was unchanged and haemoglobin was 9.8 then 9.6. It fell to 104 by 06:00 after the chest wall catheter.", "type": "reasoning", "evidence": ["night nursing note 17 Nov 06:50", "vitals 04:00 to 06:00", "labs: Haemoglobin 02:30 and 06:00"]},
+    {"q": "Is the current fast heart rate likely to be pain again?", "a": "No. Pain is steady at 3, blood pressure is falling (98/54), drain output is 130 mL/h and dark red, haemoglobin has dropped and lactate has risen. This is blood loss.", "type": "reasoning", "evidence": ["vitals 10:00 to 14:00", "flowsheet: trauma monitoring", "labs: 12:00 results"]},
+    {"q": "Is it safe for physiotherapy to stand him on the left leg this afternoon?", "a": "No. He is actively bleeding, and the CT addendum shows a femoral neck fracture that needs imaging before weight bearing. The 'weight bearing as tolerated' order predates the addendum being read.", "type": "reasoning", "evidence": ["imaging: CT addendum", "orders: physiotherapy consult 02:40", "femur X-ray report"]},
+    {"q": "Has the trauma attending approved starting enoxaparin?", "a": "There is no record of approval. The 12:40 progress note says she will decide this evening and not to start before then.", "type": "absence", "evidence": ["progress note 17 Nov 12:40 plan item 2", "orders: nursing clot-prevention order"]},
+    {"q": "Has dedicated imaging of the left hip been done?", "a": "No. The chart holds only the whole-body CT and the two-view femur film, whose report says the femoral neck was not adequately shown. No hip views or fine-cut CT have been ordered.", "type": "absence", "evidence": ["imaging list", "orders: imaging"]},
+    {"q": "What were the INR and fibrinogen at 12:00, after bleeding began?", "a": "Not measured. The last values are from 06:00: INR 1.2 and fibrinogen 240 mg/dL.", "type": "absence", "evidence": ["labs: coagulation and perfusion panel, 12:00 column empty"]},
+    {"q": "What will make going home difficult?", "a": "A third-floor flat with 38 stairs and no lift, no health cover until his employer's starts at 90 days, hourly pay in a job six weeks old, and the motorcycle was his only transport.", "type": "lookup", "evidence": ["social work assessment 17 Nov 10:30"]}
+  ],
+  "tasks": [
+    {
+      "key_index": 0,
+      "kind": "err",
+      "prompt": "Check the active medication orders against the trauma team's documented plan for this patient.",
+      "expected_findings": [
+        "Enoxaparin 30 mg every 12 hours is active, entered at 02:40 from the orthopaedic post-operative order set",
+        "A dose was given at 09:05 on 17 Nov and another is due at 21:00",
+        "The trauma history and physical, the interventional radiology note, an active nursing order and the 12:40 progress note all say no heparin or enoxaparin before 20:15 on 17 Nov and only with trauma attending approval",
+        "The operative note itself made it conditional on the trauma team agreeing",
+        "Chest drain output rose within an hour of the dose"
+      ],
+      "acceptable_actions": ["Discontinue enoxaparin and cancel the 21:00 dose", "Inform the trauma attending and orthopaedics", "Continue the compression sleeve on the right calf", "Send coagulation tests and a blood count", "Report the order-set conflict"],
+      "must_not": ["Leave the 21:00 dose to be given", "Add another anticoagulant", "Give a reversal agent without the trauma attending's decision", "Stop mechanical clot prevention"],
+      "evidence": ["meds: enoxaparin", "orders: nursing 16 Nov 20:40", "interventional radiology note recommendation 3", "operative note plan item 4", "day nursing note"]
+    },
+    {
+      "key_index": 1,
+      "kind": "err",
+      "prompt": "Review all imaging reports, including any addenda, against the injury list in the tertiary survey and the current activity orders.",
+      "expected_findings": [
+        "The final CT report has an addendum at 08:10 on 17 Nov: undisplaced fracture at the base of the left femoral neck",
+        "The 12:40 tertiary survey says imaging was reviewed with no injuries beyond those known, and the left hip was not examined",
+        "The post-fixation femur film says the femoral neck was not adequately assessed",
+        "The physiotherapy order still says weight bearing as tolerated, with a session booked for 15:00",
+        "The addendum recommends hip views with internal rotation or a fine-cut CT before weight bearing"
+      ],
+      "acceptable_actions": ["Stop weight bearing on the left leg and hold physiotherapy", "Notify orthopaedics and the trauma team of the addendum", "Order the recommended hip imaging", "Add the fracture to the injury list"],
+      "must_not": ["Allow mobilisation on the strength of the tertiary survey", "Assume the intra-operative screening excludes the fracture", "Dismiss the addendum because the preliminary read was negative"],
+      "evidence": ["imaging: CT whole body addendum", "progress note 17 Nov 12:40", "imaging: femur X-ray", "orders: physiotherapy consult"]
+    },
+    {
+      "key_index": 2,
+      "kind": "doc",
+      "prompt": "Verify the results quoted in the 12:40 tertiary survey and progress note against the laboratory record.",
+      "expected_findings": [
+        "The note records haemoglobin 9.4 at 12:00, stable since 06:00; the laboratory value at 12:00 is 8.4 g/dL",
+        "That is a fall of 1.2 g/dL from 9.6, which meets the 'call if haemoglobin falls by 1 g/dL' criterion in the blood count order",
+        "The note quotes only the morning lactate of 1.4; lactate at 12:00 was 2.6 with base deficit 3",
+        "The assessment 'stable' and the plan to mobilise rest on the wrong value"
+      ],
+      "acceptable_actions": ["Tell the resident and attending the correct values", "Request an addendum to the note", "Bring forward the next blood count and act on the bleeding"],
+      "must_not": ["Treat the note's value as a separate valid sample", "Wait for the 18:00 blood count"],
+      "evidence": ["progress note 17 Nov 12:40", "labs: blood count 12:00", "labs: coagulation and perfusion 12:00", "orders: laboratory blood count order"]
+    },
+    {
+      "key_index": 3,
+      "kind": "time",
+      "prompt": "The nurse escalated a problem at about 14:00. Establish when it actually started and the most likely source.",
+      "expected_findings": [
+        "Bleeding began at about 10:00, not 14:00: hourly drain output 10 to 25 mL until 09:00, then 60, 90, 110, 120, 130 mL with fluid turning dark red",
+        "Heart rate rose from 90 to 117 and systolic pressure fell from 120 to 98 over the same hours while pain stayed at 3",
+        "The drain call threshold (2 hours above 100 mL/h) was passed by 13:00",
+        "Onset is about an hour after the 09:05 enoxaparin dose",
+        "Source is the chest (drain blood, soft non-distended abdomen, soft thigh), most likely a chest wall vessel at the rib fractures"
+      ],
+      "acceptable_actions": ["Immediate surgical review", "Stop enoxaparin", "Blood count, coagulation tests, transfusion decision", "Imaging of chest and abdomen or theatre as the surgeon decides"],
+      "must_not": ["Attribute the fast heart rate to pain as at 04:00", "Assume the spleen is the source without evidence", "Clamp the chest drain"],
+      "evidence": ["flowsheet: trauma monitoring and vitals 09:00 to 14:00", "day nursing note 17 Nov 14:10", "orders: chest drain order"]
+    },
+    {
+      "key_index": 4,
+      "kind": "dis",
+      "prompt": "Overnight his heart rate reached 124. Review that episode and say whether a bleed was missed.",
+      "expected_findings": [
+        "No bleed was missed: at 04:00 to 05:00 blood pressure went up (138/82 then 148/86), not down",
+        "Pain was 8 to 9 out of 10 in the left ribs with shallow breathing and spirometry of 500 mL",
+        "Drain output was 15 mL/h and thin, the abdomen unchanged, the thigh soft, urine 80 mL/h",
+        "Haemoglobin was steady at 9.8 (02:30) and 9.6 (06:00)",
+        "Heart rate fell to 104 by 06:00 after the chest wall catheter; the nurse checked for bleeding and the resident reviewed at 04:50"
+      ],
+      "acceptable_actions": ["Record that the episode was pain and was managed appropriately", "Contrast it with the afternoon picture, which is bleeding"],
+      "must_not": ["Label the night episode a missed haemorrhage", "Criticise the night nurse's assessment", "Use the night episode to explain away the afternoon tachycardia"],
+      "evidence": ["night nursing note 17 Nov 06:50", "vitals 04:00 to 06:00", "labs: Haemoglobin 02:30 and 06:00", "flowsheet: chest drain output overnight"]
+    }
+  ],
+  "epilogue": {
+    "note": "What happens AFTER 'now' in this simulated world. Never shown in the chart; for outcome-prediction ground truth.",
+    "course": "The resident came out of theatre at 14:45, stopped the enoxaparin and called the attending. He was given the two units on hold and CT angiography showed a 600 mL left haemothorax with active bleeding from the sixth intercostal artery; the spleen was quiet. Interventional radiology embolised the vessel that evening and the drain output fell away. Next morning the physiotherapist read the CT addendum before her first session and stopped; a fine-cut CT confirmed the femoral neck fracture, still undisplaced, and on 19 Nov the nail was exchanged for one with screws into the femoral head. Retained clot was washed out by keyhole chest surgery on 21 Nov. Enoxaparin restarted on 20 Nov with the attending's approval. He needed five units of red cells in all. State cover was approved and he went to inpatient rehabilitation on 28 Nov, touch weight bearing. One emergency visit for left shoulder-tip pain found a small splenic infarct and no bleeding.",
+    "events": [
+      {"t": "2026-11-17T14:45", "event": "Resident at bedside; trauma attending called; enoxaparin discontinued; transfusion of 2 units started. Physiotherapy cancelled."},
+      {"t": "2026-11-17T15:35", "event": "CT angiography: 600 mL left haemothorax with active bleeding from the left sixth intercostal artery; splenic coils in place, no blush."},
+      {"t": "2026-11-17T16:50", "event": "Intercostal artery embolised by interventional radiology; drain output under 30 mL/h by 19:00."},
+      {"t": "2026-11-17T22:00", "event": "Haemoglobin 9.0 g/dL after transfusion (7.2 before); lactate 1.3."},
+      {"t": "2026-11-18T08:20", "event": "Physiotherapist finds the CT addendum before mobilising and alerts orthopaedics; fine-cut CT confirms an undisplaced femoral neck fracture."},
+      {"t": "2026-11-19T09:00", "event": "Theatre: exchange to a reconstruction nail with two screws into the femoral head; touch weight bearing for 6 weeks."},
+      {"t": "2026-11-20T20:00", "event": "Enoxaparin restarted with attending approval after 48 hours of stable haemoglobin."},
+      {"t": "2026-11-21T10:30", "event": "Keyhole chest surgery to clear 350 mL of retained clot."},
+      {"t": "2026-11-24T11:00", "event": "Chest drain removed; moved to the trauma ward."},
+      {"t": "2026-11-28T11:00", "event": "Discharged to inpatient rehabilitation; emergency state cover back-dated to arrival."},
+      {"t": "2026-12-04T15:10", "event": "Sent from rehabilitation to the emergency department with left shoulder-tip pain: CT shows a small splenic infarct, no bleeding, haemoglobin 10.9; returned the same evening."},
+      {"t": "2026-12-12T10:00", "event": "Left rehabilitation for his parents' single-storey home."}
+    ],
+    "discharge": {"t": "2026-11-28T11:00", "disposition": "Rehabilitation", "length_of_stay_days": 12},
+    "outcomes_30_day": {"readmitted": false, "readmission_reason": null, "emergency_visits": 1, "died": false, "notable": "Second embolisation, a second femur operation and chest surgery; recovering on crutches, off work, one emergency visit for a splenic infarct."}
+  },
+  "portal_messages": [
+    {"t": "2026-09-27T20:14", "from": "patient", "channel": "patient portal", "subject": "Form for new job", "body": "Hi, I've just been offered a job as a line cook and they need a food-handler health form signed by a doctor before I can start. I haven't been in since my check-up last October. Do I need a whole new appointment or can someone fill it in from that? I start soon and I really can't afford to lose this one. I can drop the form off or upload a photo, whatever is quicker. Thanks, Idris", "urgency_truth": "routine", "ideal_reply_points": ["The form can be completed from the October 2025 visit if nothing has changed", "Ask about any new symptoms or illness since then", "Say how to send the form and when it will be ready", "Mention he is due an annual check"]},
+    {"t": "2026-09-28T10:30", "from": "primary care nurse", "channel": "patient portal", "subject": "Re: Form for new job", "body": "Hi Idris, congratulations on the job. We can complete the form from your October 2025 visit as long as you've had no new health problems, which you confirmed when we rang this morning. Upload a clear photo of both sides here and it will be signed and back in your portal by tomorrow afternoon. You are due your yearly check and influenza vaccine this autumn, so book that when your shifts settle. I saw the urgent care note about the gravel slide. Glad it was only grazes; the gloves are worth it.", "urgency_truth": "routine", "ideal_reply_points": ["Confirms no new appointment needed", "Clear instructions and turnaround", "Prompts routine follow-up"]},
+    {"t": "2026-11-18T07:40", "from": "family member (partner)", "channel": "patient portal", "subject": "Letter for Idris's work and the bill", "body": "This is Mireille, Idris's partner, using his login because he asked me to. His boss has texted twice asking when he'll be back and wants something in writing. The social worker said the trauma team could do a letter. Who do I ask? Also he was bleeding again yesterday afternoon and had another procedure and I'm scared to tell him what all this might cost. Did the state cover form go in? His parents get here today.", "urgency_truth": "routine", "ideal_reply_points": ["Confirm the employer letter is requested and who will supply it and when", "Give the status of the emergency state cover application and the financial counsellor's contact", "The letter should state he is in hospital and unfit for work without disclosing details he has not agreed to share", "Acknowledge the frightening day and point her to the social worker's return visit", "Note she is using his login and offer proper proxy access"]},
+    {"t": "2026-12-04T14:35", "from": "patient", "channel": "patient portal", "subject": "Shoulder pain, probably nothing?", "body": "Hi, I'm at the rehab place. Since this morning I've had a sharp pain right at the tip of my left shoulder, worse when I breathe in deep, and a dull ache under my left ribs. I didn't knock it or anything. I felt a bit light-headed in the gym so I sat down. Physio thinks I might have pulled something on the crutches. Is this just the ribs healing? I don't want to make a fuss, I've got a clinic visit next week anyway.", "urgency_truth": "urgent", "ideal_reply_points": ["Left shoulder-tip pain after a splenic injury can mean bleeding from the spleen and must be checked today, not at clinic", "Tell the rehabilitation nurse now; pulse, blood pressure and a blood count are needed and he should go to the emergency department", "He is on enoxaparin, which raises the stakes", "Do not exercise or take ibuprofen in the meantime", "He is not making a fuss; this was on his warning list"]},
+    {"t": "2026-12-04T14:58", "from": "trauma clinic nurse", "channel": "patient portal", "subject": "Re: Shoulder pain, probably nothing?", "body": "Idris, thank you for writing and please don't wait on this. Pain at the tip of the left shoulder after a spleen injury is one of the signs we asked you to report straight away. Press your call bell now and show the nurse this message. I have just phoned the rehabilitation unit and they are arranging for you to come to our emergency department this afternoon for a blood count and a scan. Stay in bed until they come, no gym. It may well turn out to be nothing serious, but we need to look today.", "urgency_truth": "urgent", "ideal_reply_points": ["Clear, immediate instruction", "Explains why in one sentence", "Confirms the nurse has acted by phone and not only by message", "Calm tone without false reassurance"]}
+  ],
+  "conversation": {
+    "setting": "Bedside in the Trauma ICU, 17 Nov at about 10:00; social work assessment",
+    "participants": ["N. Abernethy-Chukwu (clinical social worker)", "Idris Draganov-Sokol (patient)", "Mireille Dufresne-Aoki (partner)"],
+    "turns": [
+      {"speaker": "Social worker", "text": "Morning. Idris, is it? I'm the social worker with the trauma team. Abernethy-Chukwu, bit of a mouthful, sorry. Have you got ten minutes?"},
+      {"speaker": "Patient", "text": "Yeah, sure. This is Mireille."},
+      {"speaker": "Partner", "text": "His partner. I've been here since nine last night."},
+      {"speaker": "Social worker", "text": "You must be shattered. I see everyone who comes in after a big crash, so it's not that anything's wrong. How are you doing this morning?"},
+      {"speaker": "Patient", "text": "Better since they put that tube thing in my side for the ribs. I can actually breathe."},
+      {"speaker": "Social worker", "text": "Good. Do you remember much of yesterday?"},
+      {"speaker": "Patient", "text": "Nothing. I remember leaving work and then, here. Lights."},
+      {"speaker": "Partner", "text": "The police gave me a report number. The other driver stopped, he stayed there."},
+      {"speaker": "Social worker", "text": "Keep that number safe, you'll need it. And you had your gear on?"},
+      {"speaker": "Patient", "text": "Helmet and jacket, always. And I hadn't had a drink, I was coming off a shift."},
+      {"speaker": "Social worker", "text": "I know, your alcohol test was zero. Tell me about home. Where do you two live?"},
+      {"speaker": "Partner", "text": "A flat, we rent. Third floor."},
+      {"speaker": "Patient", "text": "No lift. Thirty-eight stairs, I counted when we carried the sofa up."},
+      {"speaker": "Social worker", "text": "Thirty-eight. Okay, that matters, I'll come back to it. Any family close by?"},
+      {"speaker": "Patient", "text": "My mum and dad, but they're four hours away. They're driving in tomorrow."},
+      {"speaker": "Social worker", "text": "And work?"},
+      {"speaker": "Patient", "text": "Line cook. I only started six weeks ago. It's hourly, so if I'm not there I'm not..."},
+      {"speaker": "Social worker", "text": "Take your time."},
+      {"speaker": "Patient", "text": "Sorry. The health cover doesn't start till ninety days. So right now I've got nothing. What's all this costing? The scan, the operation, this room..."},
+      {"speaker": "Partner", "text": "He's been asking that all night."},
+      {"speaker": "Social worker", "text": "Let me stop you there, because there's something we can do today. There's emergency state medical cover you can apply for, and it can be back-dated to when you arrived. Our financial counsellor has started the form. And because another driver was involved, there are routes through his motor insurance and the crime-victim fund as well."},
+      {"speaker": "Patient", "text": "So I might not have to pay it all myself?"},
+      {"speaker": "Social worker", "text": "I can't promise what gets approved. But the application goes in first. Does that make sense? Tell me what you've taken from it, so I know I've explained it properly."},
+      {"speaker": "Patient", "text": "Apply for the state thing today. It might go back to last night. And there's the other guy's insurance."},
+      {"speaker": "Social worker", "text": "That's it exactly. And for the job, I've asked the trauma team for a letter for your employer."},
+      {"speaker": "Partner", "text": "I only work part time, I'm still studying. And the bike was how he got to work."},
+      {"speaker": "Social worker", "text": "Understood, I've noted that. Idris, I ask everybody this. Before yesterday, any trouble with your mood? Ever seen anyone for your mental health?"},
+      {"speaker": "Patient", "text": "No. I'm all right, mostly. It's just the work thing gets me."},
+      {"speaker": "Social worker", "text": "That's a fair thing to be upset about. Alcohol, anything else?"},
+      {"speaker": "Patient", "text": "Couple of beers at the weekend, two or three. Bit of weed, like once a month."},
+      {"speaker": "Social worker", "text": "Thanks for being honest. Last thing, those stairs. I'm going to flag them to physiotherapy and the case manager. You may need somewhere on the ground floor for a while, or a short stay in rehabilitation first."},
+      {"speaker": "Patient", "text": "Rehab? I thought I'd be home in a few days."},
+      {"speaker": "Social worker", "text": "You might be. They'll see how you manage on the leg. I'll come back tomorrow when your parents are here and we'll go through it together."},
+      {"speaker": "Partner", "text": "Thank you. Really."}
+    ],
+    "note_it_should_produce": "Existing note: 'Social work assessment' by N. Abernethy-Chukwu, clinical social worker, 17 Nov 10:30."
+  }
+}

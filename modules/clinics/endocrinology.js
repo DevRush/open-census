@@ -1,0 +1,13 @@
+HOSP.clinic({key:'endocrinology',name:'Endocrinology and diabetes',every:[13,26],noShow:.1,age:[19,88,57],
+ visitTypes:['New patient','Return visit','Hospital follow-up','Telephone dose adjustment'],
+ problems:[{c:'dm2',w:6},{c:'hypothyroid',w:2},
+  {key:'dm1',name:'Type 1 diabetes mellitus',icd:'E10.9',w:1.5,age:[19,60,31],every:[13],pmh:'Type 1 diabetes since childhood',problem:'Type 1 diabetes (HbA1c {a1c}%)',home:['glargine20','lispro6'],
+   tracks:{a1c:{start:[6.8,9.6],drift:.05,noise:.35,floor:6.3}},sx:['sensor shows [62|68|74]% time in range','[one|two] lows below 54 mg/dL in the past month, both after exercise','no ketone episodes','carbohydrate counting [accurate|needs a refresher]'],
+   plan:['Adjusted the insulin-to-carbohydrate ratio at [breakfast|supper]','Reviewed sick-day rules and ketone testing','Eye examination and urine albumin yearly','Glucagon kit in date']},
+  {key:'osteoporosis',name:'Osteoporosis',icd:'M81.0',w:1,age:[58,90,72],sex:[1,5],every:[52],home:['alendronate70','calcvitd'],tracks:{vitd:{start:[18,34],drift:1.5,noise:3,floor:16,ceil:60}},
+   sx:['no new fractures or height loss','takes the weekly tablet upright with water','walks daily; balance class [started|suggested]'],plan:['Bone density scan every 2 years','Fall prevention reviewed','Dental check before any change in treatment']}],
+ exam:'[Looks well|Comfortable]. Feet: skin intact, pulses present, sensation [intact|reduced at the toes]. Thyroid not enlarged.',
+ referral:'Referred by primary care for [HbA1c above target on two medicines|a new diagnosis needing insulin|abnormal thyroid tests|low bone density]',
+ notes:{new:'New patient consultation. {age} {sex}. {referral}. Meter and outside results reviewed.',ret:'{age} {sex} here for planned review. [Meter downloaded|Sensor report reviewed|Home log reviewed].',
+  hfu:'{age} {sex} seen after a hospital stay. In-hospital glucose records and the discharge medicine list reviewed.'},
+ hmAll:true,hm:[['Diabetic eye examination',52,18,200],['Foot examination',52,18,200],['Urine albumin-to-creatinine ratio',52,18,200]],orders:['Laboratory: HbA1c before each visit','Referral: eye screening when due']});

@@ -1,0 +1,13 @@
+HOSP.clinic({key:'pcp',name:'Primary care',every:[13,26,26,52],noShow:.08,age:[19,94,56],
+ visitTypes:['New patient','Return visit','Annual review','Hospital follow-up','Telephone'],
+ problems:[{c:'htn',w:6},{c:'dm2',w:4},{c:'ckd',w:1.5},{c:'depression',w:2},{c:'hypothyroid',w:2},{c:'oa',w:2},{c:'obesity',w:2},{c:'copd',w:1.5},{c:'cad',w:1.5},{c:'af',w:1},{c:'hf',w:.7},{c:'dementia',w:.7},
+  {key:'well',name:'Health maintenance',icd:'Z00.00',w:5,age:[19,70,40],every:[52],sx:['feels well; no new concerns','exercise [twice a week|most days]; diet reasonable','asks about [sleep|a mole on the back|knee ache after running|stress at work]'],
+   plan:['Screening and vaccines brought up to date','Advice on exercise, alcohol and sleep','Routine blood tests only if risk factors change']}],
+ exam:'[Looks well|Comfortable]. Heart sounds normal, chest clear, abdomen soft, no ankle swelling.',
+ referral:'[Moved to the area and needs a regular doctor|Transferred from a retiring physician’s practice|Self-referred to establish care]',
+ notes:{new:'New patient visit. {age} {sex}. {referral}. Past records requested and reviewed where available.',
+  ret:'{age} {sex} here for a planned review of long-term conditions. [Came alone|Came with a family member|Brought the home readings as asked].',
+  hfu:'{age} {sex} seen after a recent hospital stay. Medicines compared with the discharge list and corrected where they differed.'},
+ hm:[['Influenza vaccine',52,18,200],['Blood pressure check',52,18,200],['Cholesterol test',260,40,75],['Colon cancer screening',520,45,75],['Breast screening mammogram',104,40,74,'F'],['Cervical screening',156,25,65,'F'],
+  ['Bone density scan',260,65,200,'F'],['Pneumococcal vaccine',520,65,200],['Abdominal aortic ultrasound (once)',2600,65,75,'M'],['Fall-risk and memory screen',52,70,200],['Depression screen',52,18,200],['Diabetes screen',156,35,70]],
+ orders:['Laboratory: chemistry, lipids and HbA1c as due','Referral letters as needed']});

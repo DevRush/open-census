@@ -1,0 +1,230 @@
+{
+  "id": "p9",
+  "reference": {
+    "one_line": "58-year-old man with alcohol-related cirrhosis, two days after banding of bleeding oesophageal varices, now re-bleeding (haemoglobin 7.1, black stools) with worsening encephalopathy after ibuprofen and zolpidem.",
+    "handoff": {
+      "severity": "Unstable",
+      "summary": "Dunstan Hesselgrave, 58, had six bands placed on bleeding oesophageal varices on 15 Nov and came to 3 West on 16 Nov. Since 06:10 today he has passed three black stools, the last two with maroon streaks; heart rate has gone from 86 to 110, blood pressure from 112/64 to 94/54, and haemoglobin from 8.3 at 05:10 to 7.1 at 11:40. He is drowsy, unsure of the date and has marked asterixis; he was alert and fully oriented at 20:00 last night, before zolpidem 5 mg at 22:40. He also received ibuprofen 600 mg at 21:10 and 03:50. The 12:50 progress note describes him as stable with brown stools, which does not match the record, so the team may not yet know he is re-bleeding.",
+      "to_do": [
+        "Call the hepatology attending and the on-call endoscopist now: probable variceal re-bleed",
+        "Repeat blood count now and every 4 to 6 hours; confirm the type and screen (valid to 18 Nov) and that 2 units of red cells are available; transfuse 1 unit if haemoglobin is below 7.0 g/dL",
+        "Discontinue ibuprofen and zolpidem; keep acetaminophen at or below 2 g in 24 hours",
+        "Keep octreotide running at 50 micrograms/hour; do not stop it at 07:00 on 18 Nov as the note plans, and do not start carvedilol",
+        "Nothing by mouth for endoscopy; the 14:00 lactulose is due and he is slow to swallow, so ask the team about the route",
+        "Hourly vital signs, orientation and stool chart; consider a higher level of care",
+        "Update his wife Marit, who is due after 13:00"
+      ],
+      "if_then": [
+        "If he vomits blood, systolic pressure falls below 90 or heart rate rises above 120, then call the rapid response team and prepare for ICU transfer and airway protection",
+        "If haemoglobin is below 7.0 g/dL, then transfuse 1 unit of red cells and recheck; do not over-transfuse",
+        "If someone proposes plasma or platelets for the INR of 1.9 or platelets of 57, then decline unless hepatology asks: the standing order and consult say not to give them for the numbers alone",
+        "If tremor with sweating or agitation returns, then give lorazepam 1 mg as ordered and no other sedative",
+        "If he cannot be roused to voice, then check bedside glucose and call the physician at once"
+      ]
+    },
+    "brief_hospital_course": "Mr Hesselgrave, 58, with alcohol-related cirrhosis (ascites since March 2026, no previous screening endoscopy, ibuprofen most days since August), presented on 15 Nov vomiting blood, with heart rate 124, blood pressure 84/50, haemoglobin 7.4 g/dL and lactate 4.6 mmol/L. He received two units of red cells, octreotide, ceftriaxone and pantoprazole, was intubated for airway protection, and had six bands placed on large oesophageal varices. He was extubated at 15:40 and haemoglobin rose to 8.9. Mild encephalopathy was treated with lactulose, and alcohol withdrawal with symptom-triggered lorazepam (two doses). He moved to 3 West on 16 Nov, where a diagnostic paracentesis showed no infection (neutrophils 62 cells/µL). Overnight on 16 to 17 Nov he was given ibuprofen 600 mg twice and zolpidem 5 mg once, both contrary to hepatology and addiction medicine advice. From 06:10 on 17 Nov he passed three black stools, the later ones with maroon streaks. Heart rate rose to 110, blood pressure fell to 94/54, urea nitrogen rose from 28 to 34 mg/dL and haemoglobin fell from 8.3 to 7.1 g/dL by 11:40, with new drowsiness and marked asterixis. This indicates early re-bleeding with worsening encephalopathy, although the 12:50 progress note records him as stable. At the time of writing octreotide continues, diuretics and carvedilol remain on hold, and urgent hepatology review and repeat endoscopy are required.",
+    "problem_list": [
+      {"problem": "Bleeding oesophageal varices, banded 15 Nov, with probable re-bleed since about 06:00 on 17 Nov", "status": "active", "icd10cm": "I85.11", "evidence": ["procedure note 15 Nov 11:20", "flowsheet: stool colour 17 Nov 04:00 to 12:00 columns", "labs: Haemoglobin 17 Nov 11:40 (7.1)", "vitals: 17 Nov 12:00 heart rate 110, blood pressure 94/54"]},
+      {"problem": "Alcohol-related cirrhosis with portal hypertension and moderate ascites", "status": "active", "icd10cm": "K70.31", "evidence": ["imaging: ultrasound abdomen 15 Nov", "labs: liver panel 17 Nov (bilirubin 4.1, albumin 2.3, INR 1.9)", "labs: ascitic fluid 16 Nov"]},
+      {"problem": "Hepatic encephalopathy, worse since the night of 16 Nov (sedative and new blood in the gut)", "status": "active", "icd10cm": "K76.82", "evidence": ["flowsheet: mental state and asterixis rows", "meds: zolpidem 16 Nov 22:40", "labs: Ammonia 17 Nov (96)"]},
+      {"problem": "Acute blood loss anaemia, 2 units of red cells on 15 Nov", "status": "active", "icd10cm": "D62", "evidence": ["labs: blood count series 7.4, 8.9, 8.6, 8.3, 7.1"]},
+      {"problem": "Alcohol use disorder with withdrawal, last drink evening of 14 Nov", "status": "improving", "icd10cm": "F10.230", "evidence": ["addiction medicine consult 16 Nov", "flowsheet: withdrawal signs row", "meds: lorazepam 16 Nov 02:15 and 14:20"]},
+      {"problem": "Clotting changes of liver disease (INR 1.9, platelets 57, fibrinogen 172), not for correction", "status": "active", "icd10cm": "D68.4", "evidence": ["hepatology consult item 4", "orders: transfusion order 15 Nov"]},
+      {"problem": "Severe protein-calorie malnutrition with refeeding risk", "status": "active", "icd10cm": "E43", "evidence": ["nutrition consult 17 Nov 10:30", "labs: Phosphate 2.1 then 2.4"]},
+      {"problem": "Low sodium (130 mmol/L); diuretics on hold", "status": "active", "icd10cm": "E87.1", "evidence": ["labs: Sodium 17 Nov 05:10", "orders: furosemide and spironolactone on hold"]},
+      {"problem": "Chronic low back pain, treated in hospital with a contraindicated anti-inflammatory", "status": "active", "icd10cm": "M54.50", "evidence": ["meds: ibuprofen 16 Nov 21:10 and 17 Nov 03:50", "hepatology consult item 7"]}
+    ],
+    "reconciled_medications": [
+      {"medicine": "Octreotide infusion 50 micrograms/hour", "source": "inpatient", "recommended_action": "continue", "reason": "Signs of re-bleeding today; the planned stop at 07:00 on 18 Nov should be reviewed by hepatology, not followed automatically."},
+      {"medicine": "Ceftriaxone 1 g intravenous daily", "source": "inpatient", "recommended_action": "continue", "reason": "Prophylaxis after variceal bleeding, up to 7 days; ascitic fluid shows no infection."},
+      {"medicine": "Pantoprazole 40 mg intravenous twice daily", "source": "inpatient", "recommended_action": "continue", "reason": "Recent banding and active upper gut bleeding."},
+      {"medicine": "Lactulose 20 g (30 mL) oral three times daily", "source": "inpatient", "recommended_action": "change", "reason": "Encephalopathy is worse; the note proposes four times daily but the order is unchanged, and he is slow to swallow. Team to decide dose and route (rectal if not safe by mouth)."},
+      {"medicine": "Thiamine 200 mg intravenous daily (home thiamine 100 mg, not taking)", "source": "both", "recommended_action": "continue", "reason": "Alcohol use disorder with malnutrition; give before any glucose-containing fluid."},
+      {"medicine": "Folic acid 1 mg oral daily", "source": "inpatient", "recommended_action": "continue", "reason": "Poor nutrition, mean cell volume 100 fL."},
+      {"medicine": "Lorazepam 1 mg oral every 4 hours as needed", "source": "inpatient", "recommended_action": "continue", "reason": "Only for objective withdrawal signs, as addiction medicine advised; none needed since 16 Nov 14:20."},
+      {"medicine": "Acetaminophen 500 mg oral every 6 hours as needed (maximum 2 g in 24 hours)", "source": "inpatient", "recommended_action": "continue", "reason": "The preferred pain relief in cirrhosis at this dose."},
+      {"medicine": "Ibuprofen 600 mg oral every 6 hours as needed (home ibuprofen 400 mg)", "source": "both", "recommended_action": "stop", "reason": "Anti-inflammatory painkillers are barred by the hepatology consult: variceal bleed, platelets 57, kidney risk. Two doses given. Stop in hospital and at discharge."},
+      {"medicine": "Zolpidem 5 mg oral nightly as needed", "source": "inpatient", "recommended_action": "stop", "reason": "Sedatives worsen hepatic encephalopathy and mask withdrawal; both consults say to avoid them. One dose given 16 Nov 22:40."},
+      {"medicine": "Furosemide 40 mg and spironolactone 100 mg oral daily", "source": "home", "recommended_action": "hold", "reason": "Bleeding, sodium 130 and falling blood pressure; the plan to restart tomorrow should not go ahead as things stand."},
+      {"medicine": "Carvedilol 3.125 mg oral twice daily", "source": "inpatient", "recommended_action": "hold", "reason": "Ordered to start when octreotide stops; not while he is bleeding with blood pressure 94/54."}
+    ],
+    "pending_items": [
+      "Physician review of the 11:40 haemoglobin of 7.1 and the black stools: no documented response",
+      "Decision on repeat endoscopy and level of care",
+      "Lactulose 20 g due at 14:00, not yet given",
+      "Ascitic fluid culture: no growth at 24 hours, bottles held 5 days",
+      "Blood cultures from 15 Nov: no growth at 48 hours, final at 5 days",
+      "Type and screen valid only to 18 Nov",
+      "Multivitamin with zinc and daily phosphate, potassium and magnesium checks recommended by the dietitian, not yet ordered",
+      "Addiction medicine review on 18 Nov; dietitian review on 19 Nov",
+      "Repeat banding in 2 to 4 weeks; hepatitis A and B vaccine course incomplete"
+    ]
+  },
+  "qa": [
+    {"q": "How many bands were placed at endoscopy, and when?", "a": "Six bands on large oesophageal varices on 15 Nov, procedure 10:40 to 11:05.", "type": "lookup", "evidence": ["procedure note 15 Nov 11:20"]},
+    {"q": "At what haemoglobin should he be transfused, and with how much?", "a": "1 unit of red cells if haemoglobin is below 7.0 g/dL. The latest value is 7.1, so the order has not yet been triggered.", "type": "lookup", "evidence": ["orders: nursing, 15 Nov 08:40", "labs: Haemoglobin 17 Nov 11:40"]},
+    {"q": "What has his haemoglobin done since admission?", "a": "7.4 on arrival, 8.9 after two units, then 8.6, 8.3 at 05:10 on 17 Nov and 7.1 at 11:40: a fall of 1.2 g/dL in six and a half hours.", "type": "trend", "evidence": ["labs: blood count, all five time points"]},
+    {"q": "How have heart rate and blood pressure changed over the last three sets of vital signs?", "a": "04:00: 86 and 112/64. 08:00: 98 and 104/60. 12:00: 110 and 94/54. Heart rate rising and pressure falling.", "type": "trend", "evidence": ["flowsheet: vitals 17 Nov 04:00, 08:00, 12:00"]},
+    {"q": "What stools have been charted since he reached the ward?", "a": "Dark brown at 16:00 and brown at 20:00 on 16 Nov (19:40 in the nursing note), then black and loose at 06:10 on 17 Nov, and black, tarry with maroon streaks at 09:30 and 11:50.", "type": "trend", "evidence": ["flowsheet: liver and bleeding monitoring, stool colour row", "night nursing note 17 Nov 07:00"]},
+    {"q": "When was zolpidem given, and what was his mental state before and after?", "a": "Zolpidem 5 mg at 22:40 on 16 Nov. He was alert and fully oriented at 20:00, hard to rouse at 04:00, and drowsy and unsure of the date with marked asterixis at 08:00 and 12:00.", "type": "temporal", "evidence": ["meds: zolpidem", "flowsheet: mental state and asterixis rows"]},
+    {"q": "How long is it since his last drink, and is he still in the withdrawal risk window?", "a": "Last drink was the evening of 14 Nov; the addiction consult counted about 43 hours at 16:10 on 16 Nov, so about 65 hours now. Risk runs to about 72 to 96 hours, so yes.", "type": "temporal", "evidence": ["addiction medicine consult 16 Nov 16:10"]},
+    {"q": "Which pain medicines has he received in the last 24 hours?", "a": "Acetaminophen 500 mg at 16:30 on 16 Nov, and ibuprofen 600 mg at 21:10 on 16 Nov and 03:50 on 17 Nov.", "type": "lookup", "evidence": ["meds: acetaminophen and ibuprofen as-needed records"]},
+    {"q": "Did the paracentesis show spontaneous bacterial peritonitis?", "a": "No. Neutrophils were 62 cells/µL (threshold 250), Gram stain showed no organisms and culture has no growth at 24 hours. The sample was taken after two doses of ceftriaxone.", "type": "lookup", "evidence": ["labs: ascitic fluid 16 Nov 14:30", "micro: ascitic fluid culture"]},
+    {"q": "The progress note attributes today's drowsiness to too little lactulose. Does the chart support that?", "a": "Not well. He had been passing stools on lactulose three times daily and was fully oriented at 20:00. The change followed zolpidem at 22:40 and coincides with new black stools, a rising urea nitrogen (28 to 34) and a falling haemoglobin, which point to a sedative plus fresh blood in the gut.", "type": "reasoning", "evidence": ["progress note 17 Nov 12:50", "meds: zolpidem", "flowsheet: stool and mental state rows", "labs: chemistry and blood count 17 Nov"]},
+    {"q": "Should the INR of 1.9 be corrected with plasma now that he may be bleeding again?", "a": "Not for the number alone. The hepatology consult explains that INR does not measure bleeding risk in cirrhosis and plasma raises portal pressure; platelets 57 and fibrinogen 172 are above the stated replacement levels of 50 and 120. Any change is a hepatology decision.", "type": "reasoning", "evidence": ["hepatology consult items 3 and 4", "orders: transfusion order", "labs: liver panel and blood count 17 Nov"]},
+    {"q": "Is it safe to follow the plan to stop octreotide at 07:00 tomorrow and start carvedilol?", "a": "No. That plan assumed no re-bleeding. With black stools, haemoglobin 7.1, heart rate 110 and blood pressure 94/54, octreotide should continue and a beta-blocker should wait until bleeding is controlled.", "type": "reasoning", "evidence": ["progress note 17 Nov plan item 1", "labs: Haemoglobin 11:40", "vitals 17 Nov 12:00", "orders: carvedilol on hold"]},
+    {"q": "Was a physician told about the black stool at 06:10?", "a": "The chart does not record it. The night nurse wrote that it would be passed on at handover; there is no note of a physician being called then or after the 09:30 and 11:50 stools, despite the standing order.", "type": "absence", "evidence": ["night nursing note 17 Nov 07:00", "orders: nursing stool order 16 Nov 11:25"]},
+    {"q": "Who requested the 11:40 blood count, and why?", "a": "The chart does not say. The routine order is daily at 05:00; no order or note explains the late-morning sample.", "type": "absence", "evidence": ["orders: laboratory", "labs: blood count 17 Nov 11:40"]},
+    {"q": "What was his blood alcohol level on arrival?", "a": "Not recorded. No ethanol level appears in the results; the history gives only the last drink as the evening of 14 Nov.", "type": "absence", "evidence": ["labs: all panels", "history and physical 15 Nov"]}
+  ],
+  "tasks": [
+    {
+      "key_index": 0,
+      "kind": "err",
+      "prompt": "Review the pain-relief orders and the doses given since he arrived on the ward. Is anything unsafe for this patient?",
+      "expected_findings": [
+        "Ibuprofen 600 mg every 6 hours as needed is active, ordered 16 Nov 11:25 with the ward transfer orders",
+        "Two doses were given: 16 Nov 21:10 and 17 Nov 03:50",
+        "An anti-inflammatory painkiller is contraindicated here: variceal bleed two days earlier, cirrhosis, platelets about 60, kidney risk; hepatology consult item 7 says none now or after discharge",
+        "Acetaminophen up to 2 g in 24 hours is the correct choice and is already ordered"
+      ],
+      "acceptable_actions": ["Discontinue ibuprofen", "Notify the hepatology team that two doses were given", "Use acetaminophen within the 2 g limit and non-drug measures for back pain", "Watch creatinine and urine output", "Remove ibuprofen from the discharge medication list and counsel patient and wife"],
+      "must_not": ["Stop or criticise the acetaminophen order as unsafe in cirrhosis", "Substitute another anti-inflammatory such as naproxen or ketorolac", "Substitute codeine (allergy: vomiting) or a sedating opioid without discussion"],
+      "evidence": ["meds: ibuprofen 600 mg as-needed record", "hepatology consult 15 Nov item 7", "night nursing note 17 Nov 07:00", "alerts: acetaminophen"]
+    },
+    {
+      "key_index": 1,
+      "kind": "err",
+      "prompt": "Review the medication orders and administrations from the night of 16 to 17 Nov against the consultants' recommendations.",
+      "expected_findings": [
+        "Zolpidem 5 mg nightly as needed was ordered by night cover at 22:20 and given at 22:40 on 16 Nov",
+        "Both the hepatology consult (item 7) and the addiction medicine consult (item 2) say no sedatives or sleeping tablets beyond lorazepam for objective withdrawal",
+        "He was alert and fully oriented at 20:00, hard to rouse at 04:00, and drowsy, unsure of the date with marked asterixis since",
+        "The order is still active"
+      ],
+      "acceptable_actions": ["Discontinue zolpidem", "Tell the hepatology team and record the event", "Use lights-down, ear plugs and a quiet room for sleep", "Reassess mental state and airway safety; check bedside glucose"],
+      "must_not": ["Give flumazenil or another reversal agent as a reflex", "Stop the lorazepam order for withdrawal", "Blame the drowsiness on the sleeping tablet alone and stop looking for bleeding"],
+      "evidence": ["meds: zolpidem 5 mg", "addiction medicine consult item 2", "hepatology consult item 7", "flowsheet: mental state and orientation row"]
+    },
+    {
+      "key_index": 2,
+      "kind": "doc",
+      "prompt": "Compare the hepatology progress note of 17 Nov 12:50 with the results, flowsheets and vital signs. Report any differences that matter.",
+      "expected_findings": [
+        "The note says haemoglobin was 8.3 and stable on the late-morning repeat; the 11:40 result is 7.1 g/dL",
+        "The note says stool is brown with no further black stool on the ward; the flowsheet records black stools at 06:10, 09:30 and 11:50, the last two with maroon streaks",
+        "The note says heart rate and blood pressure are stable; at 12:00 they were 110 and 94/54",
+        "The assessment of no re-bleeding, and the plan to stop octreotide, start carvedilol, restart diuretics and space blood counts, rest on the wrong picture"
+      ],
+      "acceptable_actions": ["Contact the resident and attending to correct the assessment", "Treat as a possible re-bleed: repeat blood count, keep octreotide, call the endoscopist", "Ask for an addendum to the note"],
+      "must_not": ["Accept the note as the source of truth over the laboratory and flowsheet data", "Carry out the note's plan to stop octreotide or restart diuretics"],
+      "evidence": ["progress note 17 Nov 12:50", "labs: blood count 17 Nov 11:40", "flowsheet: stool colour row", "vitals 17 Nov 12:00"]
+    },
+    {
+      "key_index": 3,
+      "kind": "time",
+      "prompt": "He looks worse today than yesterday evening. Work out when the change began and what is driving it.",
+      "expected_findings": [
+        "Re-bleeding began at about 06:00 on 17 Nov: stools had turned brown by the evening of 16 Nov, so the black stool at 06:10 was new blood, not old blood moved on by lactulose",
+        "Supporting signs: urea nitrogen 28 to 34 at 05:10, heart rate 86 at 04:00 to 98 at 08:00 and 110 at 12:00 with no withdrawal signs, blood pressure down to 94/54, haemoglobin 7.1 at 11:40",
+        "The standing order to tell the physician and send a blood count for any black stool was not followed at 06:10",
+        "The worse encephalopathy is explained by the re-bleed on top of zolpidem, not by too little lactulose"
+      ],
+      "acceptable_actions": ["Escalate now to the hepatology attending and on-call endoscopist", "Repeat blood count and confirm blood is available", "Continue octreotide and prepare for repeat endoscopy", "Record the missed escalation"],
+      "must_not": ["Date the problem to the 11:40 blood count or to the 12:50 note", "Attribute the fast heart rate to alcohol withdrawal", "Conclude the black stool is old blood"],
+      "evidence": ["flowsheet: stool colour and withdrawal rows", "night nursing note 17 Nov 07:00", "labs: chemistry 05:10, blood count 11:40", "orders: nursing stool order"]
+    },
+    {
+      "key_index": 4,
+      "kind": "dis",
+      "prompt": "A colleague points out that the INR is 1.9 and platelets are 57 and no plasma or platelets have been ordered. Is this an omission?",
+      "expected_findings": [
+        "No. It is deliberate and justified in the chart",
+        "The hepatology consult states that INR does not measure bleeding risk in cirrhosis and that plasma adds volume and raises portal pressure",
+        "Platelets 57 and fibrinogen 172 are above the replacement levels given (50 and 120)",
+        "The standing order says not to give plasma or platelets for the INR or platelet count alone; red cells only below 7.0 g/dL"
+      ],
+      "acceptable_actions": ["Leave the orders as they are", "Recheck platelets and fibrinogen if bleeding continues and discuss with hepatology"],
+      "must_not": ["Order plasma, vitamin K-driven correction or platelets on the numbers alone", "Report the absence of plasma as a medication error"],
+      "evidence": ["hepatology consult items 3 and 4", "orders: transfusion order 15 Nov 08:40", "labs: liver panel and blood count 17 Nov"]
+    }
+  ],
+  "epilogue": {
+    "note": "What happens AFTER 'now' in this simulated world. Never shown in the chart; for outcome-prediction ground truth.",
+    "course": "The re-bleed was recognised only when his wife arrived and could not wake him. The resident found the haemoglobin of 7.1, stopped ibuprofen and zolpidem and called the attending, but at 15:40 he vomited a large amount of fresh blood and his blood pressure fell to 76/44. He was intubated in the ICU. Endoscopy showed bleeding from an ulcer where a band had come away; further bands and a balloon tube failed to hold it, and an emergency shunt through the liver was placed that night after six more units of red cells. The bleeding stopped, but aspiration pneumonia, kidney failure and progressive liver failure followed, and he never regained consciousness. He was not a transplant candidate. After a family meeting care was directed at comfort, and he died on 26 Nov with his wife beside him. The team disclosed the medication and escalation failures to her, and a safety review was opened.",
+    "events": [
+      {"t": "2026-11-17T14:50", "event": "Wife arrives and cannot wake him; nurse calls the resident. Heart rate 118, blood pressure 88/50."},
+      {"t": "2026-11-17T15:10", "event": "Resident at bedside reviews the 11:40 haemoglobin of 7.1; ibuprofen and zolpidem discontinued; attending and endoscopist called."},
+      {"t": "2026-11-17T15:40", "event": "Vomits about 400 mL of fresh blood; blood pressure 76/44; rapid response call. Haemoglobin 6.2."},
+      {"t": "2026-11-17T16:15", "event": "Transferred to Medical ICU and intubated; transfusion started."},
+      {"t": "2026-11-17T17:20", "event": "Emergency endoscopy: bleeding post-banding ulcer; three more bands, bleeding slowed but not stopped; balloon tamponade tube placed."},
+      {"t": "2026-11-17T22:10", "event": "Emergency shunt through the liver placed by interventional radiology; bleeding controlled. Six units of red cells since the afternoon."},
+      {"t": "2026-11-18T11:00", "event": "Attending meets his wife and discloses that ibuprofen and a sleeping tablet were given against advice and that the black stool was not escalated."},
+      {"t": "2026-11-19T06:30", "event": "Temperature 38.6 °C, right lower lobe aspiration pneumonia; antibiotics broadened."},
+      {"t": "2026-11-20T08:00", "event": "Creatinine 2.4 mg/dL with falling urine output; albumin and vasoconstrictor treatment started."},
+      {"t": "2026-11-23T10:00", "event": "Bilirubin 19 mg/dL, INR 3.1, creatinine 3.8 mg/dL, Glasgow Coma Scale 6 off sedation. Transplant team: not a candidate."},
+      {"t": "2026-11-24T15:00", "event": "Family meeting with wife and brother; code status changed to comfort-focused care."},
+      {"t": "2026-11-26T04:35", "event": "Died in the Medical ICU, wife present."}
+    ],
+    "discharge": {"t": null, "disposition": "Died", "length_of_stay_days": 11},
+    "outcomes_30_day": {"readmitted": false, "readmission_reason": null, "emergency_visits": 0, "died": true, "notable": "Died in hospital on day 11 of liver and kidney failure after an early variceal re-bleed recognised about nine hours late."}
+  },
+  "portal_messages": [
+    {"t": "2026-10-07T09:15", "from": "family member (wife)", "channel": "patient portal", "subject": "Missed liver appointment and camera test", "body": "This is Marit, Dunstan's wife, writing on his account. I'm sorry he missed the clinic and the camera test yesterday. He is drinking again and wasn't fit to come. Can they be booked again? Also his back has been bad since he fell in August and he takes ibuprofen from the pharmacy most days, sometimes three times. Is that all right with his liver? He isn't taking the water tablets every day either. I don't know what else to do.", "urgency_truth": "routine", "ideal_reply_points": ["Rebook the liver clinic and the screening endoscopy and confirm how the dates will reach them", "Ask him to stop ibuprofen: bleeding and kidney risk in cirrhosis; acetaminophen up to 2 g a day is the safer choice", "Encourage taking the diuretics daily and offer the alcohol service again", "Give red flags: vomiting blood, black stools, confusion, swollen belly with fever mean emergency care", "Acknowledge how hard this is for her"]},
+    {"t": "2026-10-08T11:40", "from": "hepatology clinic nurse", "channel": "patient portal", "subject": "Re: Missed liver appointment and camera test", "body": "Dear Mrs Hesselgrave, thank you for letting us know, and please don't apologise. New dates for the clinic and the endoscopy are in the post. Please ask Dunstan to stop the ibuprofen: with his liver it can cause bleeding and harm the kidneys. Acetaminophen is safer, no more than 2 g (four 500 mg tablets) in a day. The water tablets work best taken every morning. If he vomits blood, passes black sticky stools or becomes confused, call an ambulance; do not wait for us. Our alcohol nurse can ring you both if he agrees.", "urgency_truth": "routine", "ideal_reply_points": ["Confirms rebooking", "Clear instruction to stop ibuprofen with a safe alternative and dose limit", "Emergency warning signs stated plainly", "Offers alcohol support without judgement"]},
+    {"t": "2026-11-14T10:25", "from": "family member (wife)", "channel": "patient portal", "subject": "Black stools - should we wait for Monday?", "body": "Marit again. Since yesterday Dunstan's stools have been black and sticky like tar and they smell terrible. He went dizzy getting up from the sofa this morning and had to sit down. He's still drinking and still taking the ibuprofen for his back, I couldn't get him to stop. He says it's the beer and won't let me call anyone. I know the clinic is shut at the weekend. Is it all right to wait and ring on Monday, or is this one of the things you warned me about?", "urgency_truth": "urgent", "ideal_reply_points": ["This cannot wait: black tarry stools with dizziness in a man with cirrhosis means bleeding until proved otherwise", "Call an ambulance or go to the emergency department now", "No more ibuprofen or alcohol; nothing to eat on the way", "A portal inbox is not monitored at weekends: the system should direct such messages to an urgent line", "Yes, this is exactly the warning sign she was told about"]},
+    {"t": "2026-11-19T08:30", "from": "family member (wife)", "channel": "patient portal", "subject": "What happened to my husband on Tuesday?", "body": "On Monday Dunstan was sitting up talking to me and the alcohol doctor. On Tuesday afternoon I couldn't wake him and then he was sick with blood everywhere. Now he's on a breathing machine and they've put a tube through his liver. One of the nurses said he'd been given a sleeping tablet and ibuprofen in the night. The alcohol doctor told us on Monday, in front of me, no sleeping tablets. I need someone to explain how this happened and whether he is going to wake up.", "urgency_truth": "same day", "ideal_reply_points": ["Respond the same day and offer a face-to-face meeting with the attending", "Be honest: both medicines were given against the specialists' advice and the black stool was not escalated; a review is under way", "Explain the shunt in plain words: a channel through the liver to take pressure off the bleeding veins", "Do not predict the outcome by message; say who will update her daily", "Offer support: social work, chaplaincy, patient relations"]},
+    {"t": "2026-11-19T13:10", "from": "attending physician (hepatology)", "channel": "patient portal", "subject": "Re: What happened to my husband on Tuesday?", "body": "Dear Mrs Hesselgrave, you deserve a full answer in person and I will be in the ICU family room at 16:00 today; if another time is better, tell the ICU nurse. You are right. He was given a sleeping tablet and ibuprofen overnight when our own advice said he should have neither, and the black stool on Tuesday morning should have been acted on sooner. I am sorry. We are reviewing exactly how this happened and I will share what we find. The tube is a shunt that lowers the pressure in the veins that bled. He remains very seriously ill.", "urgency_truth": "same day", "ideal_reply_points": ["Apology and plain acknowledgement of the errors", "Named person, time and place for a meeting", "Short lay explanation of the shunt", "Honest that he is critically ill without false reassurance"]},
+    {"t": "2026-12-03T19:45", "from": "family member (wife)", "channel": "patient portal", "subject": "Records and the review", "body": "I don't know if anyone still reads this now that Dunstan has died. Dr Ferreira-Nkemelu said there would be a review of what happened that night and that I would be told the findings. I would like a copy of his records from this admission and to know when the review will finish. His brother wants to come to the meeting too. I'm not sleeping much. I keep thinking I should have rung the ambulance on the Saturday instead of writing a message.", "urgency_truth": "routine", "ideal_reply_points": ["Condolences, and confirmation that the message has been read by a named person", "How to request the records and who in patient relations will handle it", "Expected date of the review findings and an invitation for her and his brother", "Reassure her that she did not cause this; she sought help", "Offer bereavement support and ask gently how she is coping; suggest her own doctor if sleep does not improve"]}
+  ],
+  "conversation": {
+    "setting": "Bedside on 3 West, afternoon of 16 Nov, about an hour after the 14:20 lorazepam dose; addiction medicine consultation",
+    "participants": ["Dr. Philippa Nwosu-Hartmann (addiction medicine)", "Dunstan Hesselgrave (patient)", "Marit Hesselgrave (wife)"],
+    "turns": [
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Mr Hesselgrave? I'm Dr Nwosu-Hartmann, from the addiction medicine team. The liver doctors asked me to come by. Is now all right?"},
+      {"speaker": "Patient", "text": "Yeah. Go on. Bit slow today, sorry."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "No rush at all. And you are?"},
+      {"speaker": "Wife", "text": "Marit. I'm his wife."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Good to meet you. Dunstan, are you happy for Marit to stay while we talk about the drinking?"},
+      {"speaker": "Patient", "text": "She knows all of it anyway."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Okay. First, just so I know how your head is today, where are we, and what's the date?"},
+      {"speaker": "Patient", "text": "Hospital. Up on the ward now, not the intensive care. It's... Monday. The sixteenth."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Spot on. So tell me about the drinking in your own words. When did it start?"},
+      {"speaker": "Patient", "text": "My twenties, really. Just beers then. It got, it got heavier after the warehouse let me go."},
+      {"speaker": "Wife", "text": "That was 2024."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "And these days, a typical day?"},
+      {"speaker": "Patient", "text": "Half a bottle of vodka. The small one, the three seven five. And some beers."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "How many beers?"},
+      {"speaker": "Patient", "text": "Three. Four, maybe."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "So about twelve drinks a day all told. When was the very last one?"},
+      {"speaker": "Patient", "text": "Saturday evening. Before all the, before the blood."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Saturday the fourteenth, in the evening. So that's about forty-three hours ago. At home, first thing in the morning, how are your hands?"},
+      {"speaker": "Patient", "text": "Shaky. Till I've had one."},
+      {"speaker": "Wife", "text": "That's been going on a year at least, the shakes."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Have you ever had a fit when you stopped? Or seen or heard things that weren't there?"},
+      {"speaker": "Patient", "text": "No. Never."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Have you stopped properly before?"},
+      {"speaker": "Patient", "text": "Did a detox. A supervised one, 2024. Four months dry after that."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Four months is real, you've done it once. Anything else? Other drugs, cigarettes?"},
+      {"speaker": "Patient", "text": "No drugs. Ten a day, the cigarettes."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Would a nicotine patch help while you're stuck in here?"},
+      {"speaker": "Patient", "text": "Not now. Maybe later."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "That's fine, the offer stands. How has your mood been?"},
+      {"speaker": "Patient", "text": "Low. Pretty low."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Low enough that you've thought about harming yourself?"},
+      {"speaker": "Patient", "text": "No. Nothing like that."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Thank you for being straight with me. Right now I can see a fine shake in your hands, you're a bit sweaty and a bit on edge. The nurse gave you a lorazepam at twenty past two. That's the second one, there was one in the small hours as well."},
+      {"speaker": "Wife", "text": "Can't he just have something regular, to keep him settled? And to sleep? He hardly slept last night."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "I understand why you'd ask. Here's the problem. His liver is already making him a little foggy, and any sedative can tip that over and hide the withdrawal from us. So he gets lorazepam only when we can see it, shaking with sweating, or agitation. No regular doses, and no sleeping tablets at all. For sleep it's lights down, ear plugs, a quiet room."},
+      {"speaker": "Patient", "text": "No sleeping tablets."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "None. Can you tell me back why?"},
+      {"speaker": "Patient", "text": "Because the liver makes me muddled. And tablets make it worse."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Exactly that. The risky stretch runs to three or four days after the last drink, so we keep watching. You're getting a vitamin every day too, thiamine. Now, after here. Would you come to our outpatient programme, and see the alcohol nurse at the liver clinic?"},
+      {"speaker": "Patient", "text": "Yeah. I'll go. I have to, don't I."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "I think you do, and I think you can. There's also a tablet, acamprosate, that takes the edge off the craving. We can start it before you leave if your kidneys stay fine."},
+      {"speaker": "Wife", "text": "I'll make sure he gets there."},
+      {"speaker": "Dr. Nwosu-Hartmann", "text": "Good. I'll be back to see you both on Wednesday."}
+    ],
+    "note_it_should_produce": "Existing note: 'Addiction medicine consult' by Dr. Philippa Nwosu-Hartmann, 16 Nov 16:10."
+  }
+}

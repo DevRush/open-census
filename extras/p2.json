@@ -1,0 +1,283 @@
+{
+  "id": "p2",
+  "reference": {
+    "one_line": "57-year-old woman, day 2 after laparoscopic right hemicolectomy for stage IIIB ascending colon cancer, with postoperative ileus on sips only; overnight low urine output improved after a bolus.",
+    "handoff": {
+      "severity": "Watch closely",
+      "summary": "Marisol Vandekamp, 57, had a laparoscopic right hemicolectomy on 15 Nov for adenocarcinoma of the ascending colon; final pathology today is pT3 pN1a with clear margins. Since the afternoon of 16 Nov she has had an ileus: distension, nausea, two vomits (150 mL at 19:40 and 200 mL at 01:15) and no gas passed; this morning's abdominal X-ray fits ileus with no obstruction or perforation. Urine fell to 60 to 70 mL per 4 hours overnight with heart rate 105 to 107 and responded to a 500 mL bolus at 03:30. Haemoglobin is 9.1 g/dL (11.8 before surgery) with no sign of bleeding, creatinine has crept from 0.78 to 1.08 mg/dL, and potassium and magnesium were replaced this morning. She is on a hydromorphone pain pump, walking 80 m, and oncology has seen her.",
+      "to_do": [
+        "Enoxaparin 40 mg daily and heparin 5,000 units every 8 hours are both active. Hold the heparin dose due at 14:00 and get one of the two discontinued today.",
+        "Keep to sips only; nasogastric tube if she vomits again.",
+        "Recheck potassium, magnesium and phosphate after this morning's replacement (phosphate 2.3 mg/dL has not been addressed).",
+        "Watch urine output each 4 hours; lactated Ringer's continues at 75 mL/h.",
+        "Ketorolac course is complete; do not restart with creatinine rising.",
+        "Tell the patient the pathology result if the surgical team has not yet done so; oncology clinic in 3 weeks is being arranged.",
+        "Morning blood count and chemistry on 18 Nov."
+      ],
+      "if_then": [
+        "If she vomits again or distension worsens, then call the resident for a nasogastric tube and make her nothing by mouth.",
+        "If urine is below 140 mL over 4 hours again, then call the resident; check the abdomen and vital signs before any further bolus.",
+        "If temperature goes above 38.3, heart rate stays above 110, or abdominal pain becomes severe or generalised, then call the surgical team urgently; she will need assessment for a leak or abscess.",
+        "If haemoglobin falls below 8 g/dL or there is bleeding from wounds or bowel, then hold clot prevention and call the resident.",
+        "If she passes gas, then tell the team so the diet can be advanced."
+      ]
+    },
+    "brief_hospital_course": "Mrs Vandekamp is a 57-year-old teacher with hypothyroidism and hyperlipidaemia who was found to have iron-deficiency anaemia in September. Colonoscopy on 21 Oct showed an ulcerated ascending colon mass, biopsy adenocarcinoma; staging CT showed no distant disease and CEA was 6.8 ng/mL. On 15 Nov she underwent an uncomplicated laparoscopic right hemicolectomy with stapled ileocolic anastomosis under general anaesthesia with a latex-free set-up; blood loss was 150 mL. She followed the enhanced recovery pathway, the urinary catheter was removed on day 1 and she walked in the hall. From the afternoon of 16 Nov she developed abdominal distension and nausea and vomited twice; she has not passed gas. Abdominal X-ray on 17 Nov showed postoperative ileus without obstruction, and she is on sips only with intravenous fluid. Overnight oliguria with mild tachycardia responded to a 500 mL bolus. Creatinine rose from 0.78 to 1.08 mg/dL; ketorolac finished after eight doses and was not extended. Haemoglobin drifted from 11.8 to 9.1 g/dL without evidence of bleeding, attributed to dilution with about 3.9 L positive balance. Potassium 3.4 and magnesium 1.6 were replaced. A single temperature of 38.2 on the evening of day 1 settled. Enoxaparin and subcutaneous heparin were found to be prescribed together and this is being corrected. Final pathology showed a 4.5 cm moderately differentiated adenocarcinoma, pT3 pN1a (1 of 22 nodes), margins clear, mismatch repair intact. Oncology recommends three months of adjuvant capecitabine and oxaliplatin.",
+    "problem_list": [
+      {"problem": "Adenocarcinoma of ascending colon, pT3 pN1a (stage IIIB), after right hemicolectomy 15 Nov", "status": "active", "icd10cm": "C18.2", "evidence": ["path: S26-48817, 17 Nov 11:05", "operative report 15 Nov 11:20", "oncology consult 17 Nov 13:10"]},
+      {"problem": "Regional lymph node metastasis, 1 of 22 nodes", "status": "active", "icd10cm": "C77.2", "evidence": ["path: lymph nodes 1 of 22 involved"]},
+      {"problem": "Postoperative ileus", "status": "active", "icd10cm": "K91.89", "evidence": ["flowsheet: Abdomen 'Mildly distended' 16 Nov 16:00, 'Distended' 16 Nov 20:00 to 17 Nov 08:00", "imaging: Abdominal X-ray 17 Nov 09:40", "nursing note 17 Nov 07:05"]},
+      {"problem": "Postoperative anaemia, dilutional, no bleeding identified", "status": "active", "icd10cm": null, "evidence": ["labs: Haemoglobin 11.8, 10.9, 9.6, 9.1", "intake and output: net +3,920 mL to 17 Nov 07:00", "flowsheet: Incisions dry, intact"]},
+      {"problem": "Low urine output overnight with rising creatinine", "status": "improving", "icd10cm": "R34", "evidence": ["flowsheet: Urine 70 mL at 17 Nov 00:00, 60 mL at 04:00, 160 and 220 mL after bolus", "labs: Creatinine 0.78 to 1.08"]},
+      {"problem": "Hypokalaemia and hypomagnesaemia, replaced; phosphate 2.3 mg/dL", "status": "active", "icd10cm": "E87.6", "evidence": ["labs: Potassium 3.4, Magnesium 1.6, Phosphate 2.3 on 17 Nov 05:20", "orders: potassium chloride and magnesium sulfate 17 Nov 07:10"]},
+      {"problem": "Duplicate pharmacological clot prevention (enoxaparin and heparin)", "status": "active", "icd10cm": null, "evidence": ["meds: Enoxaparin 40 mg ordered 15 Nov 11:00; Heparin 5,000 units ordered 16 Nov 05:50", "nursing note 17 Nov 07:05"]},
+      {"problem": "Hypothyroidism", "status": "active", "icd10cm": "E03.9", "evidence": ["preoperative history and physical 15 Nov 06:20", "meds: Levothyroxine 88 mcg"]},
+      {"problem": "Hyperlipidaemia", "status": "active", "icd10cm": "E78.5", "evidence": ["meds: Atorvastatin 20 mg"]},
+      {"problem": "Low-grade postoperative temperature, peak 38.2 on 16 Nov 20:00", "status": "improving", "icd10cm": null, "evidence": ["flowsheet: Temperature 38.2 at 16 Nov 20:00, 37.4 at 17 Nov 12:00", "labs: White cells 13.4 then 12.1"]}
+    ],
+    "reconciled_medications": [
+      {"medicine": "Levothyroxine 88 mcg oral daily", "source": "both", "recommended_action": "continue", "reason": "Long-term therapy; tolerated with sips."},
+      {"medicine": "Atorvastatin 20 mg oral nightly", "source": "both", "recommended_action": "continue", "reason": "Home medicine; one dose held on 16 Nov for vomiting. No harm in missing doses while the ileus lasts."},
+      {"medicine": "Enoxaparin 40 mg subcutaneous daily at 21:00", "source": "inpatient", "recommended_action": "continue", "reason": "Intended clot prevention after cancer surgery; creatinine 1.08 mg/dL does not require a change."},
+      {"medicine": "Heparin 5,000 units subcutaneous every 8 hours", "source": "inpatient", "recommended_action": "stop", "reason": "Duplicate of enoxaparin, added 16 Nov 05:50 without stopping it; four doses given alongside enoxaparin."},
+      {"medicine": "Hydromorphone pain pump 0.2 mg per demand", "source": "inpatient", "recommended_action": "continue", "reason": "Pain 3 to 4 out of 10 with falling use; change to oral pain relief when tolerating liquids. Opioid may be prolonging the ileus, so keep to the minimum."},
+      {"medicine": "Acetaminophen 1,000 mg oral every 6 hours", "source": "inpatient", "recommended_action": "continue", "reason": "Opioid-sparing; consider the intravenous route while she is vomiting."},
+      {"medicine": "Ketorolac 15 mg intravenous every 6 hours", "source": "inpatient", "recommended_action": "stop", "reason": "Eight-dose course completed 17 Nov 06:10; creatinine rising, do not extend."},
+      {"medicine": "Ondansetron 4 mg intravenous every 6 hours as needed", "source": "inpatient", "recommended_action": "continue", "reason": "Three doses since 16 Nov 19:45 for nausea and vomiting."},
+      {"medicine": "Lactated Ringer's 75 mL/h", "source": "inpatient", "recommended_action": "continue", "reason": "Sips only with ileus and recent oliguria."},
+      {"medicine": "Potassium chloride 20 mEq and magnesium sulfate 2 g intravenous, once each", "source": "inpatient", "recommended_action": "change", "reason": "One-off replacement completed; recheck levels and repeat if potassium is still below 4 or magnesium below 2 while the ileus persists."}
+    ],
+    "pending_items": [
+      "Decision on which clot-prevention drug to stop (night nurse's question is unanswered in the chart).",
+      "Potassium, magnesium and phosphate recheck after replacement.",
+      "Haemoglobin recheck on 18 Nov.",
+      "Return of bowel function; decision on nasogastric tube if vomiting recurs.",
+      "Oncology clinic appointment in 3 weeks, genetics referral, repeat CEA at first visit.",
+      "Change from pain pump to oral pain relief once tolerating liquids."
+    ]
+  },
+  "qa": [
+    {"q": "What is the final pathological stage and were the margins clear?", "a": "pT3 pN1a, stage IIIB: 4.5 cm moderately differentiated adenocarcinoma, 1 of 22 nodes involved, all margins negative (closest radial, 2.2 cm), lymphovascular invasion present, mismatch repair proteins intact.", "type": "lookup", "evidence": ["path: S26-48817, 17 Nov 11:05"]},
+    {"q": "How much blood was lost in theatre and how long was the operation?", "a": "Estimated blood loss 150 mL; incision 07:52, closure 10:28 (2 hours 36 minutes).", "type": "lookup", "evidence": ["operative report 15 Nov 11:20"]},
+    {"q": "What allergies does she have and how were they handled around surgery?", "a": "Latex (contact rash) and codeine (nausea and vomiting). A latex-free set-up was used throughout, and hydromorphone rather than a codeine-containing drug is used for pain.", "type": "lookup", "evidence": ["allergies", "anaesthesia record summary 15 Nov 10:50", "meds: Hydromorphone pain pump"]},
+    {"q": "What electrolyte problems were found this morning and what was ordered?", "a": "Potassium 3.4 mmol/L, magnesium 1.6 mg/dL and phosphate 2.3 mg/dL. Potassium chloride 20 mEq and magnesium sulfate 2 g intravenous were ordered once each at 07:10; phosphate has not been replaced.", "type": "lookup", "evidence": ["labs: Chemistry 17 Nov 05:20", "orders: 17 Nov 07:10"]},
+    {"q": "How has the haemoglobin changed?", "a": "11.8 g/dL on 10 Nov, then 10.9 after surgery, 9.6 on day 1 and 9.1 on day 2.", "type": "trend", "evidence": ["labs: Blood count, Haemoglobin"]},
+    {"q": "What is the creatinine trend and what nephrotoxic drug was she receiving?", "a": "0.78, 0.81, 0.94 and 1.08 mg/dL. She received ketorolac 15 mg every 6 hours for eight doses, finishing 17 Nov 06:10.", "type": "trend", "evidence": ["labs: Chemistry, Creatinine", "meds: Ketorolac"]},
+    {"q": "What happened to her urine output overnight?", "a": "It fell to 130 mL for the 4 hours to 20:00, 70 mL to midnight and 60 mL to 04:00, then recovered to 160 mL and 220 mL after a 500 mL bolus at 03:30.", "type": "trend", "evidence": ["flowsheet: Surgical recovery, Urine output", "nursing note 17 Nov 07:05"]},
+    {"q": "When did the ileus start, and when did a doctor first document it?", "a": "First distension was charted at 16:00 on 16 Nov, first vomit at 19:40; the first medical mention is the progress note at 06:45 on 17 Nov, about 15 hours after onset.", "type": "temporal", "evidence": ["flowsheet: Surgical recovery, Abdomen and Nausea", "timeline: 16 Nov 19:40", "progress note 17 Nov 06:45"]},
+    {"q": "How many heparin doses have been given while enoxaparin was also active?", "a": "Four: 16 Nov 06:12, 14:10 and 22:02, and 17 Nov 06:08. Enoxaparin was given at 21:10 on 15 Nov and 21:05 on 16 Nov. A fifth heparin dose is due at 14:00 today.", "type": "temporal", "evidence": ["meds: Heparin 5,000 units", "meds: Enoxaparin 40 mg"]},
+    {"q": "What was her highest temperature and when?", "a": "38.2 at 20:00 on 16 Nov; it was 37.4 at 12:00 on 17 Nov.", "type": "temporal", "evidence": ["flowsheet: Vitals, Temperature"]},
+    {"q": "Is the fall in haemoglobin likely to be bleeding?", "a": "Unlikely on the evidence in the chart: blood loss in theatre was 150 mL, she is about 3.9 L fluid positive to 07:00 on 17 Nov, incisions are dry with only mild bruising, platelets are normal and the X-ray shows no collection. The tachycardia has an alternative explanation in the ileus and low intake. Recheck tomorrow as planned.", "type": "reasoning", "evidence": ["intake and output", "operative report", "flowsheet: Incisions", "progress note 17 Nov 06:45, plan item 2"]},
+    {"q": "Has she passed gas since the operation?", "a": "No. Every flowsheet entry reads 'No' and the night nurse wrote 'No gas passed'. The progress note's 'Passing flatus' is contradicted by the record.", "type": "reasoning", "evidence": ["flowsheet: Surgical recovery, Passing gas", "nursing note 17 Nov 07:05", "progress note 17 Nov 06:45"]},
+    {"q": "What adjuvant treatment is planned and when?", "a": "Three months of capecitabine with oxaliplatin, starting 4 to 8 weeks after surgery once she is eating and wounds have healed; clinic in 3 weeks, repeat CEA and a genetics referral.", "type": "lookup", "evidence": ["oncology consult 17 Nov 13:10"]},
+    {"q": "What were the potassium and magnesium after this morning's replacement?", "a": "Not in the chart. No level has been drawn since 05:20 on 17 Nov.", "type": "absence", "evidence": ["labs: Chemistry, last time point 17 Nov 05:20"]},
+    {"q": "What is the tumour's KRAS or BRAF mutation status?", "a": "Not reported. The pathology report gives mismatch repair immunohistochemistry only.", "type": "absence", "evidence": ["path: S26-48817"]}
+  ],
+  "tasks": [
+    {
+      "key_index": 0,
+      "kind": "err",
+      "prompt": "Review the active medication orders for safety problems.",
+      "expected_findings": [
+        "Two pharmacological clot-prevention drugs are active together: enoxaparin 40 mg daily (ordered 15 Nov 11:00) and heparin 5,000 units every 8 hours (ordered 16 Nov 05:50).",
+        "Four heparin doses have been given alongside two enoxaparin doses, and another heparin dose is due at 14:00 today.",
+        "The night nurse asked the day team to confirm both were intended and the progress note answered only 'Clot prevention: continue'."
+      ],
+      "acceptable_actions": [
+        "Hold the 14:00 heparin dose and discontinue one of the two drugs (normally keep enoxaparin once daily).",
+        "Notify the resident and pharmacist; check wounds for bleeding and review the falling haemoglobin in that light.",
+        "File a medication safety report."
+      ],
+      "must_not": [
+        "Stop both drugs, leaving a cancer surgery patient with no clot prevention.",
+        "Give the 14:00 heparin dose because it is 'as ordered'.",
+        "Report ketorolac as an active order problem; the course is complete."
+      ],
+      "evidence": ["meds: Enoxaparin 40 mg", "meds: Heparin 5,000 units", "nursing note 17 Nov 07:05, last paragraph", "progress note 17 Nov 06:45, plan item 6"]
+    },
+    {
+      "key_index": 1,
+      "kind": "doc",
+      "prompt": "Compare this morning's surgical progress note with the nursing flowsheets and nursing note, and report any discrepancy.",
+      "expected_findings": [
+        "The 17 Nov 06:45 progress note states 'Passing flatus.'",
+        "The surgical recovery flowsheet records 'Passing gas: No' at every time point from 15 Nov 12:00 to 17 Nov 12:00, and the night nursing note says 'No gas passed.'",
+        "The discrepancy matters because return of gas would be taken as the ileus resolving and could lead to the diet being advanced too early."
+      ],
+      "acceptable_actions": [
+        "Ask the resident to correct the note.",
+        "Keep the diet at sips until gas is actually passed."
+      ],
+      "must_not": [
+        "Advance the diet on the strength of the progress note.",
+        "Report 'Walking in the hall' as false; the flowsheet shows hall walks of 40 m and 80 m today."
+      ],
+      "evidence": ["progress note 17 Nov 06:45, Subjective", "flowsheet: Surgical recovery, Passing gas", "nursing note 17 Nov 07:05", "nursing assessment 17 Nov 08:00, Gastrointestinal"]
+    },
+    {
+      "key_index": 2,
+      "kind": "time",
+      "prompt": "From the structured data, determine when this patient's postoperative ileus began and how long it took to be recognised in a medical note.",
+      "expected_findings": [
+        "Onset about 16 Nov 16:00: the abdomen is first charted as mildly distended and nausea rises to 5 out of 10.",
+        "First vomit at 19:40 on 16 Nov; diet returned to sips at 20:10.",
+        "First mention by a doctor is the progress note at 06:45 on 17 Nov, roughly 15 hours after onset."
+      ],
+      "acceptable_actions": [
+        "Report onset as 16 Nov 16:00 (any time from 16:00 to the 19:40 vomit is defensible if the reasoning is shown).",
+        "Report recognition at 17 Nov 06:45."
+      ],
+      "must_not": [
+        "Date the onset to the day of surgery because bowel sounds were absent then; that is expected immediately after surgery.",
+        "Date the onset to the X-ray at 09:40 on 17 Nov."
+      ],
+      "evidence": ["flowsheet: Surgical recovery, Abdomen and Nausea at 16 Nov 16:00", "timeline: 16 Nov 19:40", "orders: Sips of clear liquid only, 16 Nov 20:10", "progress note 17 Nov 06:45"]
+    },
+    {
+      "key_index": 3,
+      "kind": "dis",
+      "prompt": "Haemoglobin has fallen from 11.8 to 9.1 g/dL and the heart rate has been above 100. Assess whether this patient is bleeding.",
+      "expected_findings": [
+        "No evidence of haemorrhage: theatre blood loss 150 mL, incisions dry and intact, no drain, platelets normal, blood pressure maintained, X-ray without free fluid or collection.",
+        "The fall is explained by 150 mL operative loss plus about 3.9 L positive fluid balance by 07:00 on 17 Nov (haemodilution).",
+        "Tachycardia and low urine are explained by the ileus, vomiting and poor intake, and improved after a bolus."
+      ],
+      "acceptable_actions": [
+        "Recheck haemoglobin on 18 Nov as planned and continue to observe.",
+        "Mention that the duplicate clot prevention should be corrected, as a separate issue."
+      ],
+      "must_not": [
+        "Diagnose postoperative haemorrhage or call for urgent transfusion, CT angiography or return to theatre.",
+        "Stop all clot prevention on the basis of the haemoglobin alone."
+      ],
+      "evidence": ["labs: Haemoglobin and Platelets", "intake and output: Net balance", "operative report: blood loss 150 mL", "progress note 17 Nov 06:45, plan item 2", "imaging: Abdominal X-ray 17 Nov 09:40"]
+    }
+  ],
+  "epilogue": {
+    "note": "What happens AFTER 'now' in this simulated world. Never shown in the chart; for outcome-prediction ground truth.",
+    "course": "The day nurse held the overdue heparin dose and paged the resident; heparin was discontinued at 15:20 and enoxaparin continued. No bleeding followed. That evening she vomited 400 mL of bile-stained fluid and a nasogastric tube was placed, draining 650 mL at once. Haemoglobin reached 8.8 g/dL on 18 Nov and then rose as fluids were reduced; creatinine returned to 0.85 mg/dL. She passed gas on 19 Nov, the tube came out on 20 Nov and her bowels opened that night. The pain pump was changed to oral hydromorphone on 21 Nov. She went home on 22 Nov eating a light diet, with enoxaparin to complete 28 days. On 27 Nov she attended the emergency department with a superficial infection of the extraction wound, which was opened at the bedside and treated with oral cephalexin; she was not admitted. Oncology saw her on 8 Dec and chemotherapy was booked for 21 Dec.",
+    "events": [
+      {"t": "2026-11-17T15:20", "event": "Heparin 5,000 units order discontinued after nurse query; 14:00 dose not given. Enoxaparin continued."},
+      {"t": "2026-11-17T18:50", "event": "Vomited 400 mL bile-stained fluid; nasogastric tube placed at 19:30, 650 mL drained, made nothing by mouth."},
+      {"t": "2026-11-18T05:15", "event": "Haemoglobin 8.8 g/dL, creatinine 0.98 mg/dL, potassium 3.9 mmol/L, phosphate 2.1 mg/dL (replaced)."},
+      {"t": "2026-11-19T16:20", "event": "Passed gas for the first time; tube output falling."},
+      {"t": "2026-11-20T09:00", "event": "Nasogastric tube removed after a clamp trial; clear liquids started. Bowels opened at 22:00."},
+      {"t": "2026-11-21T10:00", "event": "Pain pump stopped; oral hydromorphone 2 mg as needed. Haemoglobin 9.4 g/dL."},
+      {"t": "2026-11-22T11:15", "event": "Discharged home on a light diet with enoxaparin 40 mg daily to complete 28 days after surgery."},
+      {"t": "2026-11-27T10:40", "event": "Emergency department visit: superficial wound infection at the periumbilical extraction site, opened 1 cm, cephalexin for 5 days, discharged."},
+      {"t": "2026-12-08T14:00", "event": "Oncology clinic: CEA 2.1 ng/mL; capecitabine and oxaliplatin to start 21 Dec."}
+    ],
+    "discharge": {"t": "2026-11-22T11:15", "disposition": "Home", "length_of_stay_days": 7},
+    "outcomes_30_day": {"readmitted": false, "readmission_reason": null, "emergency_visits": 1, "died": false, "notable": "Ileus needed a nasogastric tube for three days; superficial wound infection treated as an outpatient; adjuvant chemotherapy on schedule."}
+  },
+  "portal_messages": [
+    {
+      "t": "2026-11-12T18:30",
+      "from": "patient",
+      "channel": "patient portal",
+      "subject": "Questions before my operation on the 15th",
+      "body": "Hi, it's Marisol Vandekamp. I've read the leaflet three times and I'm still not sure about a couple of things. Do I take my thyroid tablet on the morning of surgery, or skip it because I'm not meant to eat? And the sugary drink, is that instead of breakfast? I've got the bowel prep and the antibiotic tablets ready for the day before. Also, please can someone make sure the latex allergy is on my notes. I came up in a rash from gloves at the dentist once. Sorry for all the questions, I'm quite nervous.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Take levothyroxine as usual with a sip of water on the morning of surgery.",
+        "Carbohydrate drink at the time stated in her instructions; no solid food after midnight.",
+        "Confirm the latex allergy is recorded and a latex-free theatre is requested.",
+        "Acknowledge the nerves and give a number to call."
+      ]
+    },
+    {
+      "t": "2026-11-13T09:10",
+      "from": "colorectal surgery nurse",
+      "channel": "patient portal",
+      "subject": "Re: Questions before my operation on the 15th",
+      "body": "Good morning Mrs Vandekamp, no need to apologise, these are good questions. Yes, take your levothyroxine as normal on the morning with a small sip of water. The carbohydrate drink is to be finished by 04:30; nothing to eat after midnight, and clear fluids only until the drink. Take the bowel preparation and both antibiotic tablets the day before exactly as on the sheet. Your latex allergy is on your record and we have requested a latex-free theatre; the anaesthetist will confirm it with you. Please arrive at 05:45. If the bowel prep makes you vomit, ring the ward.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Answer each question directly.",
+        "Confirm latex-free arrangements.",
+        "Give arrival time and what to do if the preparation is not tolerated."
+      ]
+    },
+    {
+      "t": "2026-11-26T20:30",
+      "from": "patient",
+      "channel": "patient portal",
+      "subject": "Wound by my belly button looks angry",
+      "body": "I've been home four days and doing well, eating small meals, bowels working. But tonight the bigger cut near my belly button is red about a finger-width all round and there is some cloudy yellowish fluid on the dressing. It is more sore than yesterday. My temperature is 37.9. The little cuts look fine. I'm still doing the blood-thinner injections. Should I be worried or can it wait until my clinic visit next week?",
+      "urgency_truth": "same day",
+      "ideal_reply_points": [
+        "This should be seen within 24 hours, not left to next week: spreading redness, cloudy discharge and a rising temperature suggest a wound infection.",
+        "Come to the surgical clinic or emergency department; go at once if fever above 38.5, severe abdominal pain, vomiting or the wound opens.",
+        "Do not stop enoxaparin unless told to.",
+        "Ask her to bring a list of medicines; note latex allergy for dressings."
+      ]
+    },
+    {
+      "t": "2026-11-27T07:50",
+      "from": "colorectal surgery nurse",
+      "channel": "patient portal",
+      "subject": "Re: Wound by my belly button looks angry",
+      "body": "Good morning Mrs Vandekamp. Thank you for describing it so clearly. Redness that is spreading with cloudy fluid and a temperature of 37.9 needs to be looked at today, not next week. Our clinic is full this morning, so please go to the emergency department; I have told the surgical resident on call to expect you. Carry on with your enoxaparin injection as usual. If you develop bad tummy pain, vomiting, shivering or a temperature over 38.5 before you get there, call an ambulance. Please tell the staff about your latex allergy when they dress it.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Same-day assessment arranged with a named route.",
+        "Continue enoxaparin.",
+        "Escalation symptoms stated.",
+        "Latex reminder."
+      ]
+    },
+    {
+      "t": "2026-12-09T16:00",
+      "from": "patient",
+      "channel": "patient portal",
+      "subject": "Chemo starting on the 21st: a few things I forgot to ask",
+      "body": "Thank you for seeing me yesterday, Dr. Feldkamp. My head was spinning and I forgot half my questions. One, you mentioned tingling with cold from the drip one. Does that mean no cold drinks at all? Two, I teach seven-year-olds. Can I go back in January or is that silly with all their coughs and colds? Three, my last blood-thinner injection is this Saturday, do I just stop? The wound is nearly closed now. My husband wants to know if he can come to the first session.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Oxaliplatin cold sensitivity: avoid cold drinks and cold air for several days after each infusion; it is temporary early on, and she should report tingling that persists between cycles.",
+        "Work: possible for many people, but infection risk is highest about a week to ten days after each cycle; discuss a phased return and when to call with fever of 38 or above.",
+        "Enoxaparin: stop after the last planned dose, 28 days after surgery; no taper.",
+        "Husband is welcome at the first session.",
+        "Check the wound is healed before cycle 1."
+      ]
+    }
+  ],
+  "conversation": {
+    "setting": "Surgical ward round at the bedside, 6W-21, 17 Nov at about 06:25, before the progress note was written",
+    "participants": ["Dr. Brigid Castellanos (resident)", "patient", "S. Okpara-Lindgren RN (night nurse)"],
+    "turns": [
+      {"speaker": "Dr. Castellanos", "text": "Morning, Mrs Vandekamp. Sorry to wake you. It's Dr Castellanos from the surgical team. I hear it was a rough night."},
+      {"speaker": "Patient", "text": "I wasn't asleep. I feel like a balloon. I was sick again in the night."},
+      {"speaker": "S. Okpara-Lindgren RN", "text": "Twice in total. 150 at twenty to eight last night and 200 at quarter past one, green. Ondansetron both times."},
+      {"speaker": "Dr. Castellanos", "text": "Thanks. And how's the sick feeling right now, nought to ten?"},
+      {"speaker": "Patient", "text": "Four? Five? It comes in waves. Worse when I sit up fast."},
+      {"speaker": "Dr. Castellanos", "text": "OK. Now, an important one. Have you passed any wind? From below, I mean."},
+      {"speaker": "Patient", "text": "No. Nothing. I keep thinking I'm going to and then, no. I've burped."},
+      {"speaker": "Dr. Castellanos", "text": "Burping doesn't count, I'm afraid. And no bowel movement?"},
+      {"speaker": "Patient", "text": "No. Is that bad? Has something come apart inside?"},
+      {"speaker": "Dr. Castellanos", "text": "I don't think so, and I'll tell you why in a second. Let me feel your tummy first. Tell me if anything really hurts. Here? ... Here?"},
+      {"speaker": "Patient", "text": "Sore by the cuts. The rest is just tight. Like a drum."},
+      {"speaker": "Dr. Castellanos", "text": "It is like a drum. But it's soft underneath and you're not jumping when I press, which is what I want. Cuts look clean and dry. Calves aren't sore? Good."},
+      {"speaker": "Dr. Castellanos", "text": "So what I think is going on is something called an ileus. After an operation the bowel goes on strike for a while. Nothing's blocked, it just isn't squeezing things along yet, so gas and fluid build up and you feel bloated and sick. It's common, and it gets better with time."},
+      {"speaker": "Patient", "text": "So the bowel's asleep."},
+      {"speaker": "Dr. Castellanos", "text": "That's a good way of putting it. To be sure, I'm getting an X-ray of your tummy this morning. Until it wakes up it's sips only, I'm sorry. Chewing gum actually helps, and so does walking."},
+      {"speaker": "Patient", "text": "I did walk to the door and back. That was all I could manage."},
+      {"speaker": "Dr. Castellanos", "text": "That counts. Try for the corridor today if the nausea lets you. If you're sick again, we'd pass a thin tube through the nose into the stomach to drain it. It's not pleasant going in but people feel a lot better once it's there."},
+      {"speaker": "Patient", "text": "Oh. I'd rather not. But if I have to."},
+      {"speaker": "S. Okpara-Lindgren RN", "text": "Doctor, the urine. She only did 70 to midnight and 60 midnight to four. That's when I rang. It's picked up since the bolus."},
+      {"speaker": "Dr. Castellanos", "text": "Yes, thank you for calling that. Mrs Vandekamp, you got a bit dry overnight because you're not drinking and you've been sick, so we gave extra fluid in the drip and your kidneys responded. Your temperature's 37.8, pulse about 102, blood pressure 106 over 62. All fits with that."},
+      {"speaker": "Patient", "text": "And my bloods? Someone took some at five."},
+      {"speaker": "Dr. Castellanos", "text": "Your blood count is 9.1. It was 9.6 yesterday and 11.8 before the operation. That's a slow drift, and with the amount of fluid we've given you it's mostly dilution. I don't see any sign of bleeding. We'll check it again tomorrow. Your potassium and magnesium are a little low, so those will go in through the drip this morning."},
+      {"speaker": "Dr. Castellanos", "text": "The kidney number has crept up a touch as well, so the anti-inflammatory injection finishes with this morning's dose and we won't give more."},
+      {"speaker": "S. Okpara-Lindgren RN", "text": "One more from me. She had the enoxaparin at nine last night and she's also written up for heparin three times a day. I gave the six o'clock one as ordered. Are both meant to be on?"},
+      {"speaker": "Dr. Castellanos", "text": "Mm. I'll check the orders when I'm back at the desk. Mrs Vandekamp, pain-wise, is the button doing its job?"},
+      {"speaker": "Patient", "text": "Yes. Three or four. I'm pressing it less."},
+      {"speaker": "Patient", "text": "Is there any news on the... on what they took out?"},
+      {"speaker": "Dr. Castellanos", "text": "Not yet. The pathology report is still pending; I expect it today or tomorrow. The cancer doctor, Dr Feldkamp, is coming to see you today either way, and Dr Okafor-Lindh will go through the result with you properly."},
+      {"speaker": "Dr. Castellanos", "text": "Can I check I've been clear? Tell me what's happening today."},
+      {"speaker": "Patient", "text": "X-ray. Only sips. Walk. Chew gum. And if I'm sick again, the tube. And you'll check the blood tomorrow."},
+      {"speaker": "Dr. Castellanos", "text": "Perfect. And press the bell if the pain changes or you feel worse. I'll talk it all through with Dr Okafor-Lindh this morning."}
+    ],
+    "note_it_should_produce": "Surgery progress note, day 2 (Dr. Brigid Castellanos, 17 Nov 06:45). A correct note from this conversation would say she has not passed flatus (the chart note says 'Passing flatus') and would record a decision on the enoxaparin and heparin question raised by the night nurse instead of 'Clot prevention: continue'."
+  }
+}

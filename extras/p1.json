@@ -1,0 +1,288 @@
+{
+  "id": "p1",
+  "reference": {
+    "one_line": "68-year-old man, ICU day 2 with septic shock from pneumococcal pneumonia and bacteraemia; norepinephrine weaning at 0.04 mcg/kg/min, high-flow oxygen 40%, lactate cleared, kidney function recovering.",
+    "handoff": {
+      "severity": "Watch closely",
+      "summary": "Harlan Okonkwo-Reyes, 68, was admitted late on 15 Nov with septic shock from right lower lobe pneumonia; blood and sputum grew penicillin-susceptible Streptococcus pneumoniae. He is improving: norepinephrine is down from 0.12 to 0.04 mcg/kg/min with mean arterial pressure 75 to 80, lactate has fallen from 4.6 to 1.4 mmol/L and creatinine from a peak of 2.4 to 1.7 mg/dL (baseline 1.1). He remains on high-flow nasal oxygen at 40 L/min, FiO2 0.40, saturating 95 to 96%, alert and oriented, on clear liquids. He is on ceftriaxone day 3 and azithromycin, which stops after its third dose. Full code; wife Adaeze is updated daily.",
+      "to_do": [
+        "Wean norepinephrine to off, keeping mean arterial pressure 65 or above; remove the arterial line once off.",
+        "Get the home metformin order discontinued before the 18:00 dose; it has been held twice by nurses but is still active.",
+        "Repeat blood cultures were planned for today in the progress note but no order is on the chart; confirm they are ordered and drawn.",
+        "Give the 14:00 subcutaneous heparin and the 14:00 ipratropium-albuterol nebuliser, both due now.",
+        "Azithromycin dose 3 is due 18 Nov 00:15 and should be the last.",
+        "Stop lactated Ringer's 75 mL/h once he is drinking well; no further boluses (about 2.7 L positive since 16 Nov 07:00 on top of the 2,580 mL emergency bolus).",
+        "Review the need for the urinary catheter and the central line; physical therapy evaluation is pending."
+      ],
+      "if_then": [
+        "If mean arterial pressure falls below 65 as norepinephrine is reduced, then go back to the last effective rate and call the resident rather than giving a fluid bolus.",
+        "If oxygen saturation stays below 92% or respiratory rate climbs above 30 on high-flow, then raise the oxygen fraction and call the team; the admission plan was a low threshold to intubate.",
+        "If urine output drops below 43 mL/h for two hours, then tell the resident and recheck creatinine and lactate.",
+        "If a new fever above 38 appears after 48 hours of treatment, then repeat the chest X-ray and consider ultrasound of the right pleural effusion.",
+        "If rash, wheeze or swelling follows a ceftriaxone dose, then stop it and call the team and pharmacist."
+      ]
+    },
+    "brief_hospital_course": "Mr Okonkwo-Reyes is a 68-year-old man with type 2 diabetes, COPD and hypertension who arrived by ambulance at 21:55 on 15 Nov after three days of productive cough, rigors and right-sided pleuritic pain, with new confusion. He was febrile (39.4), hypotensive (84/46) and hypoxaemic (84% on room air), with lactate 4.6 mmol/L, creatinine 2.3 mg/dL (baseline 1.1) and right lower lobe consolidation. Blood cultures were drawn at 23:10, ceftriaxone was given at 23:50 and azithromycin at 00:20, with 2,580 mL of lactated Ringer's. Mean arterial pressure fell below 65 again at 00:35 on 16 Nov and norepinephrine was started; central and arterial lines were placed and he was admitted to the Medical ICU on high-flow nasal oxygen. Focused echocardiography showed a hyperdynamic ventricle, in keeping with distributive shock. Blood (2 of 2 sets) and sputum cultures grew penicillin-susceptible Streptococcus pneumoniae. Ceftriaxone was continued after pharmacy review judged his childhood penicillin rash to be low risk. Over the next 36 hours lactate cleared to 1.4, norepinephrine was weaned from 0.12 to 0.04 mcg/kg/min, the oxygen fraction from 0.60 to 0.40, and creatinine improved to 1.7. Home lisinopril was held. Home metformin was carried over in error at admission; one dose was given on 16 Nov before nurses withheld it, and the order needs to be discontinued. At the time of writing he is alert, taking clear liquids, and remains in the ICU for vasopressor weaning, with repeat blood cultures planned.",
+    "problem_list": [
+      {"problem": "Septic shock, vasopressor requirement falling", "status": "improving", "icd10cm": "R65.21", "evidence": ["timeline: 16 Nov 00:35 mean arterial pressure below 65 after fluid", "flowsheet: Norepinephrine 0.12 on 16 Nov 14:00 to 0.04 from 17 Nov 11:00", "labs: Lactate 4.6 on 15 Nov 23:05 to 1.4 on 17 Nov 04:40"]},
+      {"problem": "Streptococcus pneumoniae bacteraemia", "status": "active", "icd10cm": "A40.3", "evidence": ["micro: Blood culture 15 Nov 23:10, 2 of 2 sets, penicillin MIC 0.03 mcg/mL", "labs: Procalcitonin 18.4 to 9.7"]},
+      {"problem": "Right lower lobe pneumococcal pneumonia with small parapneumonic effusion", "status": "active", "icd10cm": "J13", "evidence": ["imaging: Chest X-ray 17 Nov 05:10, consolidation and effusion unchanged", "micro: Sputum culture 16 Nov 03:00", "micro: Pneumococcal urinary antigen positive"]},
+      {"problem": "Acute hypoxaemic respiratory failure on high-flow nasal oxygen", "status": "improving", "icd10cm": "J96.01", "evidence": ["flowsheet: FiO2 0.60 to 0.40, flow 50 to 40 L/min", "labs: Arterial pO2 62 on 16 Nov 02:10, 78 on 17 Nov 04:40"]},
+      {"problem": "Acute kidney injury", "status": "improving", "icd10cm": "N17.9", "evidence": ["labs: Creatinine 2.3, 2.4, 2.0, 1.7 (baseline 1.1)", "flowsheet: Urine output 19 mL/h rising to 60 to 73 mL/h"]},
+      {"problem": "Type 2 diabetes mellitus with hyperglycaemia; metformin contraindicated at present", "status": "active", "icd10cm": "E11.65", "evidence": ["labs: Glucose 248 on arrival, 154 on 17 Nov", "meds: Metformin 1,000 mg still active", "history and physical: HbA1c 7.9% in August"]},
+      {"problem": "COPD, former smoker", "status": "active", "icd10cm": "J44.0", "evidence": ["history and physical 16 Nov 01:10", "imaging: Chest X-ray 15 Nov 23:20, hyperinflated lungs"]},
+      {"problem": "Hypertension, lisinopril on hold", "status": "active", "icd10cm": "I10", "evidence": ["orders: Lisinopril 10 mg HOLD 16 Nov 01:20"]},
+      {"problem": "Penicillin allergy label, low-risk history, tolerating ceftriaxone", "status": "active", "icd10cm": "Z88.0", "evidence": ["pharmacy note 16 Nov 09:20"]},
+      {"problem": "Sacral skin at risk (blanching redness)", "status": "active", "icd10cm": null, "evidence": ["nursing assessment: Skin, all three shifts"]}
+    ],
+    "reconciled_medications": [
+      {"medicine": "Metformin 1,000 mg oral twice daily", "source": "both", "recommended_action": "stop", "reason": "Shock on a vasopressor, lactate was raised and creatinine is 1.7 against a baseline of 1.1. Discontinue the inpatient order; consider restarting only after kidney function has recovered."},
+      {"medicine": "Lisinopril 10 mg oral daily", "source": "home", "recommended_action": "hold", "reason": "Vasopressor-dependent hypotension and acute kidney injury. Already on hold; revisit when off norepinephrine and creatinine is back near 1.1."},
+      {"medicine": "Tiotropium inhaler daily", "source": "home", "recommended_action": "hold", "reason": "Receiving scheduled ipratropium-albuterol nebulisers; restart the home inhaler when nebulisers stop."},
+      {"medicine": "Albuterol inhaler as needed", "source": "home", "recommended_action": "change", "reason": "Covered in hospital by ipratropium-albuterol nebuliser every 6 hours; return to the home inhaler at discharge."},
+      {"medicine": "Ceftriaxone 2 g intravenous every 24 hours", "source": "inpatient", "recommended_action": "continue", "reason": "Active against the isolate; plan is 7 days from the first negative blood culture. Tolerated despite the penicillin label."},
+      {"medicine": "Azithromycin 500 mg intravenous every 24 hours", "source": "inpatient", "recommended_action": "stop", "reason": "Legionella antigen negative; stop after dose 3, due 18 Nov 00:15."},
+      {"medicine": "Norepinephrine infusion, 0.04 mcg/kg/min", "source": "inpatient", "recommended_action": "change", "reason": "Wean to off today with mean arterial pressure 65 or above."},
+      {"medicine": "Heparin 5,000 units subcutaneous every 8 hours", "source": "inpatient", "recommended_action": "continue", "reason": "Clot prevention while immobile; preferred over enoxaparin with reduced kidney function."},
+      {"medicine": "Pantoprazole 40 mg intravenous daily", "source": "inpatient", "recommended_action": "continue", "reason": "Stress-ulcer prevention while on a vasopressor; stop when off norepinephrine and eating."},
+      {"medicine": "Insulin regular correction scale every 6 hours", "source": "inpatient", "recommended_action": "continue", "reason": "Bedside glucose 158 to 196; target 150 to 180."},
+      {"medicine": "Lactated Ringer's 75 mL/h", "source": "inpatient", "recommended_action": "stop", "reason": "Net positive; progress note plan is to stop once drinking well."},
+      {"medicine": "Acetaminophen 650 mg oral every 6 hours as needed", "source": "inpatient", "recommended_action": "continue", "reason": "Fever and pleuritic pain; three doses in the last 24 hours."}
+    ],
+    "pending_items": [
+      "Repeat blood cultures: planned for 17 Nov in the progress note, no order or result on the chart.",
+      "Decision on the active metformin order before the 18:00 dose.",
+      "Physical therapy evaluation (ordered 17 Nov 08:45).",
+      "Azithromycin stop after the 18 Nov 00:15 dose.",
+      "Daily review of urinary catheter, central line and arterial line.",
+      "Morning chemistry and blood count on 18 Nov."
+    ]
+  },
+  "qa": [
+    {"q": "What grew in the blood cultures and is it susceptible to penicillin?", "a": "Streptococcus pneumoniae in 2 of 2 sets; penicillin susceptible with an MIC of 0.03 mcg/mL, also susceptible to ceftriaxone, levofloxacin and vancomycin.", "type": "lookup", "evidence": ["micro: Blood culture, 2 sets, 15 Nov 23:10"]},
+    {"q": "What is the current norepinephrine rate and when was it last changed?", "a": "0.04 mcg/kg/min (3.2 mL/h), reduced from 0.05 at 11:00 on 17 Nov.", "type": "lookup", "evidence": ["meds: Norepinephrine infusion", "flowsheet: Haemodynamic and respiratory, Norepinephrine"]},
+    {"q": "How much fluid did he receive as the initial bolus?", "a": "2,580 mL of lactated Ringer's, which is 30 mL/kg at 86 kg.", "type": "lookup", "evidence": ["orders: Lactated Ringer's 30 mL/kg bolus 15 Nov 22:20", "history and physical 16 Nov 01:10"]},
+    {"q": "How has the lactate changed since arrival?", "a": "4.6, 3.9, 3.1, 2.2 and 1.4 mmol/L; it was back in the normal range by 04:40 on 17 Nov.", "type": "trend", "evidence": ["labs: Blood gas and sepsis markers, Lactate"]},
+    {"q": "What is the creatinine trend and his baseline?", "a": "2.3 on arrival, peak 2.4 on 16 Nov 04:30, then 2.0 and 1.7 mg/dL; baseline 1.1.", "type": "trend", "evidence": ["labs: Chemistry, Creatinine", "problem list"]},
+    {"q": "How has his oxygen support changed over the last 24 hours?", "a": "FiO2 0.60 to 0.50 at 20:00 on 16 Nov, 0.45 at 04:00 and 0.40 at 12:00 on 17 Nov; flow 50 to 40 L/min at 10:00. Saturation rose from 91 to 92% to 95 to 96%.", "type": "trend", "evidence": ["flowsheet: Haemodynamic and respiratory", "flowsheet: Vitals, Oxygen saturation"]},
+    {"q": "How long after arrival was the first antibiotic given, and were cultures drawn first?", "a": "Arrival 21:55, ceftriaxone at 23:50: 1 hour 55 minutes (1 hour 45 minutes after the sepsis pathway started at 22:05). Blood cultures were drawn at 23:10, before the antibiotic.", "type": "temporal", "evidence": ["timeline", "emergency note 16 Nov 00:10", "meds: Ceftriaxone"]},
+    {"q": "When did shock begin and when was it first written down as a diagnosis?", "a": "Mean arterial pressure first fell below 65 after the fluid bolus at 00:35 on 16 Nov; septic shock first appears in a note at 01:10, 35 minutes later.", "type": "temporal", "evidence": ["timeline: 16 Nov 00:35", "history and physical 16 Nov 01:10"]},
+    {"q": "How many azithromycin doses has he had and when should it stop?", "a": "Two (16 Nov 00:20 and 17 Nov 00:15). The third is due 18 Nov 00:15 and is planned to be the last.", "type": "temporal", "evidence": ["meds: Azithromycin", "progress note 17 Nov 08:30, plan item 2"]},
+    {"q": "Is it safe that he is receiving ceftriaxone with a penicillin allergy on file?", "a": "Yes. The reaction was a flat itchy childhood rash with no swelling or breathing difficulty, he has since taken cephalexin without a reaction, and the first ceftriaxone dose was tolerated; the pharmacist documented this as low risk.", "type": "reasoning", "evidence": ["pharmacy note 16 Nov 09:20", "allergies"]},
+    {"q": "Should the metformin dose due at 18:00 be given?", "a": "No. He is still on a vasopressor with creatinine 1.7 against a baseline of 1.1, and nurses have held the last two doses for those reasons. The order should be discontinued, not just held dose by dose.", "type": "reasoning", "evidence": ["meds: Metformin 1,000 mg administration notes", "nursing note 17 Nov 07:10", "labs: Creatinine"]},
+    {"q": "Why has the team decided against more fluid boluses?", "a": "He is net positive about 2.1 L for the 24 hours to 07:00 on 17 Nov (2.7 L by 14:30) on top of the 2,580 mL emergency bolus, his perfusion has recovered (lactate 1.4, urine 60 to 70 mL/h, capillary refill 2 seconds) and he still needs high-flow oxygen.", "type": "reasoning", "evidence": ["intake and output", "progress note 17 Nov 08:30, plan item 1", "flowsheet: Urine output"]},
+    {"q": "What did the repeat blood cultures show?", "a": "The chart does not say. Repeat cultures are planned for 17 Nov in the progress note, but there is no order and no result.", "type": "absence", "evidence": ["progress note 17 Nov 08:30", "orders: only the 15 Nov blood cultures are listed", "micro"]},
+    {"q": "Has he had a pneumococcal vaccine?", "a": "Not documented. No immunisation history is recorded anywhere in this chart.", "type": "absence", "evidence": ["history and physical 16 Nov 01:10", "emergency note"]},
+    {"q": "What was his most recent HbA1c and was it repeated this admission?", "a": "7.9% in August, from the history. It has not been measured during this admission.", "type": "lookup", "evidence": ["history and physical 16 Nov 01:10", "labs: no HbA1c row"]}
+  ],
+  "tasks": [
+    {
+      "key_index": 0,
+      "kind": "time",
+      "prompt": "Using the timeline, flowsheets, orders and notes, state when this patient first met the definition of septic shock and when that diagnosis was first documented by a clinician.",
+      "expected_findings": [
+        "Onset of shock is 16 Nov 00:35: the first mean arterial pressure below 65 after the 30 mL/kg fluid bolus had finished.",
+        "Norepinephrine was ordered at 00:40 in response.",
+        "The diagnosis 'septic shock' is first written in the ICU admission history and physical at 01:10, a lag of 35 minutes."
+      ],
+      "acceptable_actions": [
+        "Report 00:35 (answers between 00:35 and 00:40 are acceptable) as onset and 01:10 as first documentation.",
+        "Use 00:35 as the reference timestamp when scoring an early-warning model."
+      ],
+      "must_not": [
+        "Give the triage time (21:55) or the first hypotensive reading of 84/46 as shock onset; that was before fluid resuscitation.",
+        "Give the central line time (01:45) or the ICU admission order (00:50) as onset.",
+        "Treat the 01:10 note time as the onset."
+      ],
+      "evidence": ["timeline: 16 Nov 00:35", "meds: Norepinephrine ordered 16 Nov 00:40", "history and physical 16 Nov 01:10", "emergency note 16 Nov 00:10 (pressure 96/52 after 1.5 L)"]
+    },
+    {
+      "key_index": 1,
+      "kind": "err",
+      "prompt": "Review the active medication orders against this patient's current organ function and haemodynamic state.",
+      "expected_findings": [
+        "Metformin 1,000 mg twice daily, carried over from the home list, is still an active order.",
+        "One dose was given at 08:12 on 16 Nov while he was on norepinephrine with creatinine 2.4 and lactate 3.1.",
+        "Nurses held the 16 Nov 18:00 and 17 Nov 08:00 doses and asked the resident about the order, but it was not discontinued; the next dose is due at 18:00 today."
+      ],
+      "acceptable_actions": [
+        "Discontinue the metformin order now and tell the resident and pharmacist.",
+        "Continue correction insulin for glucose control.",
+        "Document that the home metformin is to be reconsidered only after kidney function recovers."
+      ],
+      "must_not": [
+        "Give the 18:00 dose because the lactate is now normal.",
+        "Leave the order active and rely on nurses to keep holding it.",
+        "Flag ceftriaxone or heparin as needing a renal dose change; the pharmacist has reviewed them."
+      ],
+      "evidence": ["meds: Metformin 1,000 mg, doses 16 Nov 08:12, 18:00 and 17 Nov 08:00", "nursing note 17 Nov 07:10", "labs: Creatinine 16 Nov 04:30; Lactate 16 Nov 08:15", "pharmacy note 16 Nov 09:20, last recommendation"]
+    },
+    {
+      "key_index": 2,
+      "kind": "doc",
+      "prompt": "Check today's ICU progress note against the flowsheets and medication record for accuracy.",
+      "expected_findings": [
+        "The 17 Nov 08:30 progress note states norepinephrine 0.10 mcg/kg/min.",
+        "The flowsheet shows 0.05 at 08:00 and 09:00; 0.10 was the rate between about 19:00 and 21:00 on 16 Nov.",
+        "The note therefore overstates the vasopressor dose by a factor of two; the rest of the examination and laboratory values match the record."
+      ],
+      "acceptable_actions": [
+        "Ask the author to addend the note with the correct rate of 0.05 mcg/kg/min.",
+        "Use the flowsheet and infusion record, not the note, for the current rate."
+      ],
+      "must_not": [
+        "Change the infusion to 0.10 to match the note.",
+        "Call small rounding differences in vital signs (for example heart rate 92 against 91) documentation errors."
+      ],
+      "evidence": ["progress note 17 Nov 08:30, Objective", "flowsheet: Norepinephrine 16 Nov 20:00 and 17 Nov 08:00", "nursing note 17 Nov 07:10 (weaned from 0.10 to 0.06 overnight)"]
+    },
+    {
+      "key_index": 3,
+      "kind": "dis",
+      "prompt": "Review the antibiotic orders against the allergy list and say whether any change is needed.",
+      "expected_findings": [
+        "Ceftriaxone is being given to a patient with a listed penicillin allergy.",
+        "This is deliberate and appropriate: childhood flat rash only, later cephalexin tolerated, pharmacist review documented, three days of ceftriaxone without a reaction.",
+        "No change to the antibiotic is needed."
+      ],
+      "acceptable_actions": [
+        "Continue ceftriaxone.",
+        "Suggest the allergy entry be annotated as low risk, or formal penicillin allergy assessment after recovery."
+      ],
+      "must_not": [
+        "Report ceftriaxone as a medication error or recommend stopping it.",
+        "Recommend a switch to vancomycin or a fluoroquinolone on allergy grounds."
+      ],
+      "evidence": ["pharmacy note 16 Nov 09:20", "allergies: Penicillin, rash in childhood", "meds: Ceftriaxone given 15 Nov 23:50 and 16 Nov 23:45", "micro: susceptibilities"]
+    }
+  ],
+  "epilogue": {
+    "note": "What happens AFTER 'now' in this simulated world. Never shown in the chart; for outcome-prediction ground truth.",
+    "course": "The day nurse held the 18:00 metformin for the third time and paged the pharmacist, who had the order discontinued at 16:40; no harm resulted from the single dose given on 16 Nov. Repeat blood cultures were drawn that afternoon and stayed negative. Norepinephrine came off at 19:20 on 17 Nov and was not needed again. Azithromycin stopped after its third dose. On 18 Nov the arterial line and urinary catheter were removed, maintenance fluid stopped, and high-flow oxygen was changed to 4 L by nasal cannula. He moved to the medical ward on 19 Nov after the central line came out. Creatinine fell to 1.2 mg/dL. After a supervised oral amoxicillin test dose on 21 Nov caused no reaction, ceftriaxone was changed to oral amoxicillin to finish on 24 Nov, and the penicillin allergy label was removed. He went home on 23 Nov on room air, walking with a stick, with home physiotherapy.",
+    "events": [
+      {"t": "2026-11-17T15:10", "event": "Repeat blood cultures, 2 sets, ordered and drawn; final result no growth."},
+      {"t": "2026-11-17T16:40", "event": "Metformin order discontinued by the resident after pharmacist page; 18:00 dose not given."},
+      {"t": "2026-11-17T19:20", "event": "Norepinephrine stopped; mean arterial pressure 72 to 80 afterwards."},
+      {"t": "2026-11-18T00:15", "event": "Third and final azithromycin dose given."},
+      {"t": "2026-11-18T10:30", "event": "Arterial line and urinary catheter removed; maintenance fluid stopped; pantoprazole stopped."},
+      {"t": "2026-11-18T14:00", "event": "High-flow oxygen changed to nasal cannula 4 L/min, saturation 94%."},
+      {"t": "2026-11-19T11:00", "event": "Central line removed; transferred to the medical ward. Creatinine 1.4 mg/dL."},
+      {"t": "2026-11-21T10:00", "event": "Supervised oral amoxicillin test dose tolerated; changed to amoxicillin 1 g three times daily; allergy label removed."},
+      {"t": "2026-11-23T13:30", "event": "Discharged home with home physiotherapy; room air saturation 93%, creatinine 1.2 mg/dL."},
+      {"t": "2026-11-24T20:00", "event": "Last antibiotic dose, 7 days after the first negative blood culture."}
+    ],
+    "discharge": {"t": "2026-11-23T13:30", "disposition": "Home with services", "length_of_stay_days": 8},
+    "outcomes_30_day": {"readmitted": false, "readmission_reason": null, "emergency_visits": 0, "died": false, "notable": "Creatinine 1.1 mg/dL on 1 Dec; metformin and lisinopril restarted by primary care; still tired at two weeks; follow-up chest X-ray booked for early January."}
+  },
+  "portal_messages": [
+    {
+      "t": "2026-11-14T09:20",
+      "from": "patient",
+      "channel": "patient portal",
+      "subject": "Bad cough and shivering",
+      "body": "Hello, this is Harlan. I've had a cough since Thursday and now I'm bringing up brown, rusty-looking stuff. Last night I was shaking so hard the bed rattled, and it hurts on my right side when I breathe in deep. I'm more winded than usual just walking to the bathroom, even with my inhaler. My wife says my sugar was 260 this morning. Could the doctor call in an antibiotic to the pharmacy? I'd rather not sit in a waiting room if I can avoid it.",
+      "urgency_truth": "urgent",
+      "ideal_reply_points": [
+        "Do not prescribe by message: rigors, rust-coloured sputum, pleuritic pain and new breathlessness in a 68-year-old with COPD and diabetes need assessment in person today.",
+        "Advise the emergency department or an ambulance now if breathless at rest, confused, faint or unable to keep fluids down.",
+        "Say plainly that this could be pneumonia and can worsen quickly.",
+        "Tell him the portal is not monitored at weekends and give the out-of-hours number."
+      ]
+    },
+    {
+      "t": "2026-11-16T08:40",
+      "from": "primary care nurse",
+      "channel": "patient portal",
+      "subject": "Re: Bad cough and shivering",
+      "body": "Dear Mr Okonkwo-Reyes and Mrs Okonkwo-Reyes, I am sorry: this message arrived on Saturday when the office was closed and I have only read it this morning. I can see from the hospital record that Harlan was admitted last night, and I am glad he is being looked after. Please do not worry about replying. For the future, symptoms like shaking chills, chest pain on breathing or worsening breathlessness should go to the out-of-hours line or the emergency department, not the portal. We will arrange a visit with Dr. Varga's discharge summary in hand once he is home.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Acknowledge the delay honestly.",
+        "Confirm awareness of the admission.",
+        "Explain where urgent symptoms should be directed.",
+        "Offer follow-up after discharge."
+      ]
+    },
+    {
+      "t": "2026-11-25T10:05",
+      "from": "family member (wife)",
+      "channel": "patient portal",
+      "subject": "Which of his old tablets do we give?",
+      "body": "This is Adaeze, Harlan's wife. He came home Monday. The hospital paper says not to take the metformin or the lisinopril until he is told, but nobody said who tells us. His sugars have been 180 to 210 in the mornings and his blood pressure on our machine was 150 over 88. He finished the amoxicillin last night like they said. Is it all right to leave him off both tablets? He is eating well and drinking plenty but he is very tired.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Confirm both stay on hold until kidney function is rechecked; give a date for the blood test.",
+        "Reassure that morning glucose around 200 for a week or two is acceptable; give thresholds to call (above 300, marked thirst, vomiting).",
+        "Blood pressure of 150/88 does not need action before the visit.",
+        "Tiredness is expected after sepsis; say which symptoms would be worrying (fever, more breathlessness, new chest pain)."
+      ]
+    },
+    {
+      "t": "2026-11-25T15:30",
+      "from": "primary care nurse",
+      "channel": "patient portal",
+      "subject": "Re: Which of his old tablets do we give?",
+      "body": "Hello Mrs Okonkwo-Reyes, you are doing exactly the right thing. Please keep him off both metformin and lisinopril for now. His kidneys were affected by the infection and we want a blood test to show they have recovered first; I have booked that for Tuesday 1 December at 9:15 with a visit afterwards. Morning sugars around 200 are fine for this short stretch. Call us the same day if a reading is over 300, or if he is very thirsty or vomiting. Call the out-of-hours line for fever, worse breathing or chest pain. Tiredness for several weeks is expected.",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Clear instruction on both medicines.",
+        "A concrete date for the blood test and visit.",
+        "Specific thresholds for calling.",
+        "Normalise fatigue after critical illness."
+      ]
+    },
+    {
+      "t": "2026-12-04T19:15",
+      "from": "patient",
+      "channel": "patient portal",
+      "subject": "Still wiped out, and can I drive?",
+      "body": "Harlan here. Thanks for restarting my tablets on Tuesday. Two questions. It's been nearly two weeks since I got home and I still nap twice a day and get puffed on the stairs. No fever, and what I cough up is clear now. Is that normal or is something wrong? And when can I drive again? The physio who comes to the house says I'm steadier but told me to ask you. Also, should I be getting the pneumonia shot?",
+      "urgency_truth": "routine",
+      "ideal_reply_points": [
+        "Fatigue and reduced stamina for 4 to 8 weeks after septic shock and pneumonia are expected; clear sputum and no fever are reassuring.",
+        "Ask about red flags: breathlessness at rest, chest pain, leg swelling, fever.",
+        "Driving is reasonable once he can concentrate, is not light-headed and can do an emergency stop; start with short trips.",
+        "Pneumococcal vaccination is advised after recovery; offer to arrange it at the next visit.",
+        "Remind him of the follow-up chest X-ray in early January."
+      ]
+    }
+  ],
+  "conversation": {
+    "setting": "Bedside ICU round, MICU-12, 17 Nov at about 08:10; wife present",
+    "participants": ["Dr. Tae-yang Brandt (resident)", "patient", "Adaeze (wife)", "C. Adeyemi-Frost RN"],
+    "turns": [
+      {"speaker": "Dr. Brandt", "text": "Morning, Mr Okonkwo-Reyes. Dr Brandt again, one of the ICU doctors. Morning, Mrs Okonkwo-Reyes. How was the night?"},
+      {"speaker": "Patient", "text": "Bit broken up. Something's always beeping. But I can get a breath now. Yesterday I couldn't."},
+      {"speaker": "Dr. Brandt", "text": "So less short of breath than yesterday?"},
+      {"speaker": "Patient", "text": "A lot less. Still coughing up that brown stuff, though."},
+      {"speaker": "Adaeze", "text": "It's that rusty colour, doctor. Is that blood?"},
+      {"speaker": "Dr. Brandt", "text": "It's a little old blood mixed into the phlegm, and it's very typical for this kind of pneumonia. If it turned bright red or there was a lot more of it, I'd want to know. Any pain at the moment?"},
+      {"speaker": "Patient", "text": "Here, on the right, when I take a big breath. Or cough."},
+      {"speaker": "Dr. Brandt", "text": "Sharp? Catches you?"},
+      {"speaker": "Patient", "text": "Yeah. The tablet I got early this morning took the edge off. It's maybe a two now."},
+      {"speaker": "C. Adeyemi-Frost RN", "text": "That was acetaminophen at 05:40 from nights. And just so you have it, the norepinephrine's at 0.05 as of eight o'clock. Nights brought him down from 0.10."},
+      {"speaker": "Dr. Brandt", "text": "0.05, great. Pressures on that?"},
+      {"speaker": "C. Adeyemi-Frost RN", "text": "Mean's mid-seventies, 76 on the last one. High-flow is 45 percent at 50 litres, sats 95. Temp 37.5, nothing over 38 since about three."},
+      {"speaker": "Adaeze", "text": "Sorry, the nor... what is that one?"},
+      {"speaker": "Dr. Brandt", "text": "Norepinephrine. It's the medicine running into the line in his neck that holds his blood pressure up. When the infection got into his bloodstream his pressure dropped, and that's what we call septic shock. Yesterday he needed quite a bit. Now he needs less than half, and I'd like to have it off today."},
+      {"speaker": "Adaeze", "text": "And they said something grew? In the blood?"},
+      {"speaker": "Dr. Brandt", "text": "Yes. Pneumococcus. It's the commonest pneumonia germ, and it grew in his blood and in his sputum. The good news is the antibiotic he's on, ceftriaxone, kills it."},
+      {"speaker": "Adaeze", "text": "But he's allergic to penicillin. I told the pharmacist lady."},
+      {"speaker": "Dr. Brandt", "text": "You did, and that really helped us. A rash as a child, no swelling, no trouble breathing, and he's had cephalexin since with no problem. So this one is safe for him, and he's had two doses now without any reaction."},
+      {"speaker": "Patient", "text": "When can I eat? I'm starving."},
+      {"speaker": "Dr. Brandt", "text": "That's a good sign. Clear liquids from this morning, and if that goes down well we'll move you up. Let me listen. Big breath in... and again. Still crackly at the bottom on the right, which I'd expect. Hands are warm. Tummy's soft."},
+      {"speaker": "Dr. Brandt", "text": "Your bloods are going the right way. The infection count is 12.8, down from 16. The kidney number was 2.4 at its worst and it's 1.7 today. And the lactate, which tells us about the shock, is back to normal at 1.4."},
+      {"speaker": "Adaeze", "text": "His kidneys were damaged?"},
+      {"speaker": "Dr. Brandt", "text": "Stunned by the low blood pressure, more than damaged. They're recovering. We're keeping away from anything that's hard on them, which is why his lisinopril is on hold."},
+      {"speaker": "C. Adeyemi-Frost RN", "text": "On that, the metformin's still on his list. Nights held it yesterday evening and I held it at eight. Can somebody look at that order?"},
+      {"speaker": "Dr. Brandt", "text": "Yes, thanks, I'll look at it after rounds. Mr Okonkwo-Reyes, can you tell me in your own words what the plan is today? I want to be sure I've explained it properly."},
+      {"speaker": "Patient", "text": "Get off the blood pressure medicine. Keep the antibiotic going. Turn the oxygen down. And... breathe into that plastic thing."},
+      {"speaker": "Dr. Brandt", "text": "The spirometer, exactly. One more thing: we'll take fresh blood cultures today to show the germ has cleared, and the physiotherapist will come and get you moving. You'll stay in intensive care today."},
+      {"speaker": "Adaeze", "text": "How long is he on the antibiotics?"},
+      {"speaker": "Dr. Brandt", "text": "About a week, counted from the first clean blood culture. The second antibiotic, azithromycin, stops after the dose just after midnight. And we'll stop the drip fluid once he's drinking well; he's had plenty."},
+      {"speaker": "Patient", "text": "All right. Thank you, doctor."},
+      {"speaker": "Dr. Brandt", "text": "I'll go through all of this with Dr Varga and we'll be back later in the morning. Press the bell if the breathing gets harder."}
+    ],
+    "note_it_should_produce": "ICU progress note, day 2 (Dr. Tae-yang Brandt, 17 Nov 08:30). A correct note written from this conversation would record norepinephrine at 0.05 mcg/kg/min, as the nurse reported (the chart note carries forward 0.10), and would include a decision on the metformin order the nurse raised, which the chart note omits."
+  }
+}
